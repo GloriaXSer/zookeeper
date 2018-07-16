@@ -1,0 +1,43 @@
+Testsuite: org.apache.zookeeper.test.LoadFromLogNoServerTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.066 sec
+------------- Standard Output ---------------
+2018-06-28 17:59:25,262 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testPad
+2018-06-28 17:59:25,269 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testPad
+2018-06-28 17:59:25,285 [myid:] - INFO  [main:FileTxnLog@213] - Creating new log file: log.123
+2018-06-28 17:59:25,289 [myid:] - INFO  [main:LoadFromLogNoServerTest@170] - Received magic : 1514884167 Expected : 1514884167
+2018-06-28 17:59:25,289 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17985
+2018-06-28 17:59:25,289 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:59:25,289 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testPad
+2018-06-28 17:59:25,289 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testPad
+2018-06-28 17:59:25,289 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testPad
+2018-06-28 17:59:25,293 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testTxnFailure
+2018-06-28 17:59:25,293 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testTxnFailure
+2018-06-28 17:59:25,301 [myid:] - INFO  [main:LoadFromLogNoServerTest@70] - Attempting to create /test/3
+2018-06-28 17:59:25,302 [myid:] - INFO  [main:LoadFromLogNoServerTest@107] - Children: 1 2 3  for /test
+2018-06-28 17:59:25,302 [myid:] - INFO  [main:LoadFromLogNoServerTest@108] - (cverions, pzxid): 3, 3
+2018-06-28 17:59:25,307 [myid:] - INFO  [main:LoadFromLogNoServerTest@145] - Children: 1 2 3  for /test
+2018-06-28 17:59:25,307 [myid:] - INFO  [main:LoadFromLogNoServerTest@146] - (cverions, pzxid): 4, 4
+2018-06-28 17:59:25,309 [myid:] - INFO  [main:LoadFromLogNoServerTest@73] - Attempting to create /test/3
+2018-06-28 17:59:25,309 [myid:] - INFO  [main:LoadFromLogNoServerTest@107] - Children: 1 2 3  for /test
+2018-06-28 17:59:25,309 [myid:] - INFO  [main:LoadFromLogNoServerTest@108] - (cverions, pzxid): 4, 4
+2018-06-28 17:59:25,309 [myid:] - INFO  [main:LoadFromLogNoServerTest@145] - Children: 1 2 3  for /test
+2018-06-28 17:59:25,310 [myid:] - INFO  [main:LoadFromLogNoServerTest@146] - (cverions, pzxid): 5, 5
+2018-06-28 17:59:25,310 [myid:] - INFO  [main:LoadFromLogNoServerTest@77] - Attempting to create /test/3
+2018-06-28 17:59:25,310 [myid:] - INFO  [main:LoadFromLogNoServerTest@107] - Children: 1 2 3  for /test
+2018-06-28 17:59:25,310 [myid:] - INFO  [main:LoadFromLogNoServerTest@108] - (cverions, pzxid): 5, 5
+2018-06-28 17:59:25,311 [myid:] - INFO  [main:LoadFromLogNoServerTest@145] - Children: 1 2 3  for /test
+2018-06-28 17:59:25,311 [myid:] - INFO  [main:LoadFromLogNoServerTest@146] - (cverions, pzxid): 6, 6
+2018-06-28 17:59:25,312 [myid:] - INFO  [main:LoadFromLogNoServerTest@81] - Attempting to create /test/3
+2018-06-28 17:59:25,312 [myid:] - INFO  [main:LoadFromLogNoServerTest@107] - Children: 1 2 3  for /test
+2018-06-28 17:59:25,312 [myid:] - INFO  [main:LoadFromLogNoServerTest@108] - (cverions, pzxid): 6, 6
+2018-06-28 17:59:25,312 [myid:] - INFO  [main:LoadFromLogNoServerTest@145] - Children: 1 2 3  for /test
+2018-06-28 17:59:25,312 [myid:] - INFO  [main:LoadFromLogNoServerTest@146] - (cverions, pzxid): 7, 7
+2018-06-28 17:59:25,312 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 19316
+2018-06-28 17:59:25,312 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:59:25,313 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testTxnFailure
+2018-06-28 17:59:25,313 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testTxnFailure
+2018-06-28 17:59:25,313 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testTxnFailure
+------------- ---------------- ---------------
+
+Testcase: testPad took 0.029 sec
+Testcase: testTxnFailure took 0.02 sec

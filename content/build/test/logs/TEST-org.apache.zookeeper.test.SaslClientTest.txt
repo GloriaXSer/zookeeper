@@ -1,0 +1,13 @@
+Testsuite: org.apache.zookeeper.test.SaslClientTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.028 sec
+------------- Standard Output ---------------
+2018-06-28 18:42:56,171 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testSaslClientDisabled
+2018-06-28 18:42:56,179 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testSaslClientDisabled
+2018-06-28 18:42:56,181 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17991
+2018-06-28 18:42:56,181 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:42:56,182 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testSaslClientDisabled
+2018-06-28 18:42:56,183 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testSaslClientDisabled
+2018-06-28 18:42:56,183 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testSaslClientDisabled
+------------- ---------------- ---------------
+
+Testcase: testSaslClientDisabled took 0.012 sec

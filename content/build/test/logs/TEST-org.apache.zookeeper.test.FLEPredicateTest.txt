@@ -1,0 +1,25 @@
+Testsuite: org.apache.zookeeper.test.FLEPredicateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.098 sec
+------------- Standard Output ---------------
+2018-06-28 17:57:08,125 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testPredicate
+2018-06-28 17:57:08,134 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testPredicate
+2018-06-28 17:57:08,136 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11221
+2018-06-28 17:57:08,136 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11222
+2018-06-28 17:57:08,144 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:57:08,144 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11223
+2018-06-28 17:57:08,144 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11224
+2018-06-28 17:57:08,145 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:57:08,145 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11225
+2018-06-28 17:57:08,145 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11226
+2018-06-28 17:57:08,145 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:57:08,157 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11227
+2018-06-28 17:57:08,164 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:57:08,178 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11227
+2018-06-28 17:57:08,201 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 20017
+2018-06-28 17:57:08,201 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 6
+2018-06-28 17:57:08,203 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testPredicate
+2018-06-28 17:57:08,203 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testPredicate
+2018-06-28 17:57:08,204 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testPredicate
+------------- ---------------- ---------------
+
+Testcase: testPredicate took 0.08 sec

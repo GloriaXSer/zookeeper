@@ -1,0 +1,37 @@
+Testsuite: org.apache.zookeeper.test.WatchedEventTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+------------- Standard Output ---------------
+2018-06-28 18:43:25,918 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testConvertingToEventWrapper
+2018-06-28 18:43:25,925 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testConvertingToEventWrapper
+2018-06-28 18:43:25,928 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17320
+2018-06-28 18:43:25,928 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:43:25,928 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testConvertingToEventWrapper
+2018-06-28 18:43:25,928 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testConvertingToEventWrapper
+2018-06-28 18:43:25,928 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testConvertingToEventWrapper
+2018-06-28 18:43:25,932 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testCreatingWatchedEvent
+2018-06-28 18:43:25,932 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testCreatingWatchedEvent
+2018-06-28 18:43:25,933 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17985
+2018-06-28 18:43:25,933 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:43:25,933 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testCreatingWatchedEvent
+2018-06-28 18:43:25,933 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testCreatingWatchedEvent
+2018-06-28 18:43:25,933 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testCreatingWatchedEvent
+2018-06-28 18:43:25,934 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testCreatingWatchedEventFromInvalidWrapper
+2018-06-28 18:43:25,934 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testCreatingWatchedEventFromInvalidWrapper
+2018-06-28 18:43:25,935 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17985
+2018-06-28 18:43:25,935 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:43:25,935 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testCreatingWatchedEventFromInvalidWrapper
+2018-06-28 18:43:25,936 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testCreatingWatchedEventFromInvalidWrapper
+2018-06-28 18:43:25,936 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testCreatingWatchedEventFromInvalidWrapper
+2018-06-28 18:43:25,936 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testCreatingWatchedEventFromWrapper
+2018-06-28 18:43:25,936 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testCreatingWatchedEventFromWrapper
+2018-06-28 18:43:25,936 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17985
+2018-06-28 18:43:25,936 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:43:25,937 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testCreatingWatchedEventFromWrapper
+2018-06-28 18:43:25,937 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testCreatingWatchedEventFromWrapper
+2018-06-28 18:43:25,937 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testCreatingWatchedEventFromWrapper
+------------- ---------------- ---------------
+
+Testcase: testConvertingToEventWrapper took 0.012 sec
+Testcase: testCreatingWatchedEvent took 0.001 sec
+Testcase: testCreatingWatchedEventFromInvalidWrapper took 0.002 sec
+Testcase: testCreatingWatchedEventFromWrapper took 0.001 sec

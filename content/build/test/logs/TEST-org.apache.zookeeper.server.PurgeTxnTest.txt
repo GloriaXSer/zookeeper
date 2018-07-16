@@ -1,0 +1,819 @@
+Testsuite: org.apache.zookeeper.server.PurgeTxnTest
+Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.146 sec
+------------- Standard Output ---------------
+2018-06-28 17:39:50,556 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11221
+2018-06-28 17:39:50,640 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testPurge
+2018-06-28 17:39:50,643 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testPurge
+2018-06-28 17:39:50,667 [myid:] - INFO  [main:Environment@100] - Server environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT
+2018-06-28 17:39:50,668 [myid:] - INFO  [main:Environment@100] - Server environment:host.name=10.0.0.10
+2018-06-28 17:39:50,668 [myid:] - INFO  [main:Environment@100] - Server environment:java.version=1.8.0_172
+2018-06-28 17:39:50,668 [myid:] - INFO  [main:Environment@100] - Server environment:java.vendor=Oracle Corporation
+2018-06-28 17:39:50,668 [myid:] - INFO  [main:Environment@100] - Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre
+2018-06-28 17:39:50,668 [myid:] - INFO  [main:Environment@100] - Server environment:java.class.path=/Users/hanm/Desktop/projects/git/apache/zookeeper/build/classes:/Users/hanm/Desktop/projects/git/apache/zookeeper/src/java/lib/ant-eclipse-1.0-jvm1.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/src/java/lib/ivy-2.4.0.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/classes:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr-2.7.7.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr4-annotations-4.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr4-runtime-4.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-api-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-avl-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-constants-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-shared-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-i18n-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptor-kerberos-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-admin-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-authn-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-authz-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-changelog-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-collective-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-event-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-exception-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-journal-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-normalization-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-operational-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-referral-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-schema-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-subtree-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-trigger-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-jdbm-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-jdbm1-2.0.0-M2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-ldif-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-mavibot-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-kerberos-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-ldap-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-shared-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-xdbm-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-all-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-asn1-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-asn1-ber-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-i18n-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-client-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-codec-core-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-aci-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-codec-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-codec-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-sp-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-trigger-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-util-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-model-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-util-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/audience-annotations-0.5.0.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/bcprov-jdk15-140.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/checkstyle-6.1.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-beanutils-core-1.8.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-cli-1.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-collections-3.2.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-io-2.4.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-lang-2.6.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-logging-1.1.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-pool-1.6.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/ehcache-core-2.4.4.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/guava-18.0.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/hamcrest-all-1.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/hamcrest-core-1.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/jline-0.9.94.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/junit-4.12.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/log4j-1.2.17.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mavibot-1.0.0-M1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mina-core-2.0.7.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mockito-all-1.8.5.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/netty-3.10.6.Final.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/org.abego.treelayout.core-1.0.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/slf4j-api-1.7.25.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/slf4j-log4j12-1.7.25.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-junit4.jar
+2018-06-28 17:39:50,668 [myid:] - INFO  [main:Environment@100] - Server environment:java.library.path=/Users/hanm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2018-06-28 17:39:50,669 [myid:] - INFO  [main:Environment@100] - Server environment:java.io.tmpdir=/var/folders/wv/j6wmf1nj5h7c36qz9b81kmfw0000gn/T/
+2018-06-28 17:39:50,669 [myid:] - INFO  [main:Environment@100] - Server environment:java.compiler=<NA>
+2018-06-28 17:39:50,669 [myid:] - INFO  [main:Environment@100] - Server environment:os.name=Mac OS X
+2018-06-28 17:39:50,669 [myid:] - INFO  [main:Environment@100] - Server environment:os.arch=x86_64
+2018-06-28 17:39:50,669 [myid:] - INFO  [main:Environment@100] - Server environment:os.version=10.13.5
+2018-06-28 17:39:50,669 [myid:] - INFO  [main:Environment@100] - Server environment:user.name=hanm
+2018-06-28 17:39:50,671 [myid:] - INFO  [main:Environment@100] - Server environment:user.home=/Users/hanm
+2018-06-28 17:39:50,671 [myid:] - INFO  [main:Environment@100] - Server environment:user.dir=/Users/hanm/Desktop/projects/git/apache/zookeeper
+2018-06-28 17:39:50,683 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2
+2018-06-28 17:39:50,692 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:39:50,704 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11221
+2018-06-28 17:39:50,783 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11221
+2018-06-28 17:39:50,794 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50552
+2018-06-28 17:39:50,800 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ServerCnxn@324] - The list of known four letter word commands is : [{1936881266=srvr, 1937006964=stat, 2003003491=wchc, 1685417328=dump, 1668445044=crst, 1936880500=srst, 1701738089=envi, 1668247142=conf, 2003003507=wchs, 2003003504=wchp, 1668247155=cons, 1835955314=mntr, 1769173615=isro, 1920298859=ruok, 1735683435=gtmk, 1937010027=stmk}]
+2018-06-28 17:39:50,800 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ServerCnxn@325] - The list of enabled four letter word commands is : [[wchs, stat, wchp, stmk, conf, ruok, mntr, srvr, wchc, envi, srst, isro, dump, gtmk, crst, cons]]
+2018-06-28 17:39:50,800 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:50552
+2018-06-28 17:39:50,801 [myid:] - INFO  [Thread-1:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:39:50,802 [myid:] - INFO  [Thread-1:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50552 (no session established for client)
+2018-06-28 17:39:50,806 [myid:] - INFO  [main:Environment@100] - Client environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT
+2018-06-28 17:39:50,807 [myid:] - INFO  [main:Environment@100] - Client environment:host.name=10.0.0.10
+2018-06-28 17:39:50,807 [myid:] - INFO  [main:Environment@100] - Client environment:java.version=1.8.0_172
+2018-06-28 17:39:50,807 [myid:] - INFO  [main:Environment@100] - Client environment:java.vendor=Oracle Corporation
+2018-06-28 17:39:50,807 [myid:] - INFO  [main:Environment@100] - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre
+2018-06-28 17:39:50,807 [myid:] - INFO  [main:Environment@100] - Client environment:java.class.path=/Users/hanm/Desktop/projects/git/apache/zookeeper/build/classes:/Users/hanm/Desktop/projects/git/apache/zookeeper/src/java/lib/ant-eclipse-1.0-jvm1.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/src/java/lib/ivy-2.4.0.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/classes:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr-2.7.7.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr4-annotations-4.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr4-runtime-4.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-api-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-avl-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-constants-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-shared-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-i18n-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptor-kerberos-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-admin-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-authn-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-authz-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-changelog-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-collective-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-event-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-exception-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-journal-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-normalization-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-operational-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-referral-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-schema-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-subtree-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-trigger-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-jdbm-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-jdbm1-2.0.0-M2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-ldif-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-mavibot-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-kerberos-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-ldap-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-shared-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-xdbm-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-all-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-asn1-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-asn1-ber-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-i18n-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-client-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-codec-core-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-aci-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-codec-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-codec-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-sp-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-trigger-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-util-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-model-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-util-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/audience-annotations-0.5.0.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/bcprov-jdk15-140.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/checkstyle-6.1.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-beanutils-core-1.8.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-cli-1.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-collections-3.2.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-io-2.4.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-lang-2.6.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-logging-1.1.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-pool-1.6.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/ehcache-core-2.4.4.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/guava-18.0.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/hamcrest-all-1.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/hamcrest-core-1.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/jline-0.9.94.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/junit-4.12.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/log4j-1.2.17.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mavibot-1.0.0-M1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mina-core-2.0.7.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mockito-all-1.8.5.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/netty-3.10.6.Final.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/org.abego.treelayout.core-1.0.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/slf4j-api-1.7.25.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/slf4j-log4j12-1.7.25.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-junit4.jar
+2018-06-28 17:39:50,807 [myid:] - INFO  [main:Environment@100] - Client environment:java.library.path=/Users/hanm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2018-06-28 17:39:50,808 [myid:] - INFO  [main:Environment@100] - Client environment:java.io.tmpdir=/var/folders/wv/j6wmf1nj5h7c36qz9b81kmfw0000gn/T/
+2018-06-28 17:39:50,808 [myid:] - INFO  [main:Environment@100] - Client environment:java.compiler=<NA>
+2018-06-28 17:39:50,808 [myid:] - INFO  [main:Environment@100] - Client environment:os.name=Mac OS X
+2018-06-28 17:39:50,808 [myid:] - INFO  [main:Environment@100] - Client environment:os.arch=x86_64
+2018-06-28 17:39:50,808 [myid:] - INFO  [main:Environment@100] - Client environment:os.version=10.13.5
+2018-06-28 17:39:50,808 [myid:] - INFO  [main:Environment@100] - Client environment:user.name=hanm
+2018-06-28 17:39:50,808 [myid:] - INFO  [main:Environment@100] - Client environment:user.home=/Users/hanm
+2018-06-28 17:39:50,808 [myid:] - INFO  [main:Environment@100] - Client environment:user.dir=/Users/hanm/Desktop/projects/git/apache/zookeeper
+2018-06-28 17:39:50,809 [myid:] - INFO  [main:ZooKeeper@442] - Initiating client connection, connectString=127.0.0.1:11221 sessionTimeout=3000 watcher=org.apache.zookeeper.server.PurgeTxnTest@59fa1d9b
+2018-06-28 17:39:50,823 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11221. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:39:50,824 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50553
+2018-06-28 17:39:50,825 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11221, initiating session
+2018-06-28 17:39:50,827 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:50553
+2018-06-28 17:39:50,829 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1
+2018-06-28 17:39:50,839 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x10006536a7d0000 with negotiated timeout 6000 for client /127.0.0.1:50553
+2018-06-28 17:39:50,839 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11221, sessionid = 0x10006536a7d0000, negotiated timeout = 6000
+2018-06-28 17:39:50,907 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x4f to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.4f
+2018-06-28 17:39:50,907 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.51
+2018-06-28 17:39:50,946 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x8a to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.8a
+2018-06-28 17:39:50,946 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.8c
+2018-06-28 17:39:50,998 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0xdc to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.dc
+2018-06-28 17:39:50,998 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.de
+2018-06-28 17:39:51,056 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x13f to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.13f
+2018-06-28 17:39:51,057 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.141
+2018-06-28 17:39:51,092 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x17f to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.17f
+2018-06-28 17:39:51,093 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.181
+2018-06-28 17:39:51,146 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x1de to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.1de
+2018-06-28 17:39:51,147 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1e0
+2018-06-28 17:39:51,186 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x229 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.229
+2018-06-28 17:39:51,187 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.22b
+2018-06-28 17:39:51,229 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x284 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.284
+2018-06-28 17:39:51,229 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.286
+2018-06-28 17:39:51,258 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x2c1 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.2c1
+2018-06-28 17:39:51,258 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.2c3
+2018-06-28 17:39:51,282 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x2f5 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.2f5
+2018-06-28 17:39:51,283 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.2f7
+2018-06-28 17:39:51,310 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x32c to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.32c
+2018-06-28 17:39:51,311 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.32e
+2018-06-28 17:39:51,343 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x376 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.376
+2018-06-28 17:39:51,344 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.378
+2018-06-28 17:39:51,392 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x3c4 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.3c4
+2018-06-28 17:39:51,392 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.3c6
+2018-06-28 17:39:51,470 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x419 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.419
+2018-06-28 17:39:51,470 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.41b
+2018-06-28 17:39:51,546 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x479 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.479
+2018-06-28 17:39:51,546 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.47b
+2018-06-28 17:39:51,584 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x4c2 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.4c2
+2018-06-28 17:39:51,585 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.4c4
+2018-06-28 17:39:51,612 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x4fd to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.4fd
+2018-06-28 17:39:51,612 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.4ff
+2018-06-28 17:39:51,656 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x55e to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.55e
+2018-06-28 17:39:51,656 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.560
+2018-06-28 17:39:51,701 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x5a9 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.5a9
+2018-06-28 17:39:51,702 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.5ab
+2018-06-28 17:39:51,735 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x5f5 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.5f5
+2018-06-28 17:39:51,735 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.5f7
+2018-06-28 17:39:51,760 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x632 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.632
+2018-06-28 17:39:51,760 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.634
+2018-06-28 17:39:51,794 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x68a to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.68a
+2018-06-28 17:39:51,794 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.68c
+2018-06-28 17:39:51,826 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x6d0 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.6d0
+2018-06-28 17:39:51,827 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.6d2
+2018-06-28 17:39:51,859 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x711 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.711
+2018-06-28 17:39:51,859 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.713
+2018-06-28 17:39:51,900 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x773 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.773
+2018-06-28 17:39:51,900 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.775
+2018-06-28 17:39:51,934 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x7ce to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.7ce
+2018-06-28 17:39:51,934 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.7d0
+2018-06-28 17:39:51,937 [myid:] - INFO  [ProcessThread(sid:0 cport:11221)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x10006536a7d0000
+2018-06-28 17:39:51,938 [myid:] - INFO  [main:ZooKeeper@693] - Session: 0x10006536a7d0000 closed
+2018-06-28 17:39:51,938 [myid:] - INFO  [main-EventThread:ClientCnxn$EventThread@522] - EventThread shut down for session: 0x10006536a7d0000
+2018-06-28 17:39:51,938 [myid:] - INFO  [main:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50553 which had sessionid 0x10006536a7d0000
+2018-06-28 17:39:51,938 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50553 which had sessionid 0x10006536a7d0000
+2018-06-28 17:39:51,939 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:39:51,939 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:39:51,939 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:39:51,939 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:39:51,939 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:39:51,939 [myid:] - INFO  [ProcessThread(sid:0 cport:11221)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:39:51,939 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:39:51,940 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:39:51,943 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11221
+2018-06-28 17:39:51,952 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.22b
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.22b
+2018-06-28 17:39:51,953 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.68c
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.68c
+2018-06-28 17:39:51,954 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.47b
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.47b
+2018-06-28 17:39:51,954 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:50 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.51
+Removing file: Jun 28, 2018 5:39:50 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.51
+2018-06-28 17:39:51,955 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.2f7
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.2f7
+2018-06-28 17:39:51,955 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.2c3
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.2c3
+2018-06-28 17:39:51,955 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.141
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.141
+2018-06-28 17:39:51,956 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.3c6
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.3c6
+2018-06-28 17:39:51,956 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.5f7
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.5f7
+2018-06-28 17:39:51,957 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.1e0
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.1e0
+2018-06-28 17:39:51,957 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.286
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.286
+2018-06-28 17:39:51,958 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.41b
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.41b
+2018-06-28 17:39:51,958 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:50 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.1
+Removing file: Jun 28, 2018 5:39:50 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.1
+2018-06-28 17:39:51,958 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.5ab
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.5ab
+2018-06-28 17:39:51,959 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.de
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.de
+2018-06-28 17:39:51,959 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.4c4
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.4c4
+2018-06-28 17:39:51,960 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.4ff
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.4ff
+2018-06-28 17:39:51,960 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.560
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.560
+2018-06-28 17:39:51,961 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.181
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.181
+2018-06-28 17:39:51,961 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.378
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.378
+2018-06-28 17:39:51,962 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.32e
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.32e
+2018-06-28 17:39:51,962 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:50 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.8c
+Removing file: Jun 28, 2018 5:39:50 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.8c
+2018-06-28 17:39:51,963 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.634
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/log.634
+2018-06-28 17:39:51,963 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.479
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.479
+2018-06-28 17:39:51,964 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:50 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.4f
+Removing file: Jun 28, 2018 5:39:50 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.4f
+2018-06-28 17:39:51,964 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.229
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.229
+2018-06-28 17:39:51,965 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.68a
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.68a
+2018-06-28 17:39:51,965 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.2f5
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.2f5
+2018-06-28 17:39:51,966 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.2c1
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.2c1
+2018-06-28 17:39:51,966 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.4c2
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.4c2
+2018-06-28 17:39:51,967 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.376
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.376
+2018-06-28 17:39:51,967 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.dc
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.dc
+2018-06-28 17:39:51,968 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.6d0
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.6d0
+2018-06-28 17:39:51,968 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.32c
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.32c
+2018-06-28 17:39:51,969 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.632
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.632
+2018-06-28 17:39:51,969 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.5f5
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.5f5
+2018-06-28 17:39:51,970 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.3c4
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.3c4
+2018-06-28 17:39:51,970 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.1de
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.1de
+2018-06-28 17:39:51,971 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.5a9
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.5a9
+2018-06-28 17:39:51,971 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.419
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.419
+2018-06-28 17:39:51,972 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.284
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.284
+2018-06-28 17:39:51,972 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:50 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.8a
+Removing file: Jun 28, 2018 5:39:50 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.8a
+2018-06-28 17:39:51,973 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.4fd
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.4fd
+2018-06-28 17:39:51,973 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.13f
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.13f
+2018-06-28 17:39:51,974 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.55e
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.55e
+2018-06-28 17:39:51,974 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.17f
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4830346169747700757.junit.dir/version-2/snapshot.17f
+2018-06-28 17:39:51,975 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 34054
+2018-06-28 17:39:51,975 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 6
+2018-06-28 17:39:51,976 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testPurge
+2018-06-28 17:39:51,978 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testPurge
+2018-06-28 17:39:51,978 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testPurge
+2018-06-28 17:39:51,983 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testPurgeTxnLogWithoutDataDir
+2018-06-28 17:39:51,983 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testPurgeTxnLogWithoutDataDir
+2018-06-28 17:39:51,992 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.3
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.3
+2018-06-28 17:39:51,992 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.4
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.4
+2018-06-28 17:39:51,993 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.5
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.5
+2018-06-28 17:39:51,993 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.2
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.2
+2018-06-28 17:39:51,994 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.9
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.9
+2018-06-28 17:39:51,994 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.7
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.7
+2018-06-28 17:39:51,995 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.0
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.0
+2018-06-28 17:39:51,995 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.1
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.1
+2018-06-28 17:39:51,996 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.6
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.6
+2018-06-28 17:39:51,997 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.8
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/log.8
+2018-06-28 17:39:51,997 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.5
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.5
+2018-06-28 17:39:51,998 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.2
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.2
+2018-06-28 17:39:51,998 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.3
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.3
+2018-06-28 17:39:51,999 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.4
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.4
+2018-06-28 17:39:52,000 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.8
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.8
+2018-06-28 17:39:52,000 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.1
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.1
+2018-06-28 17:39:52,001 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.6
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.6
+2018-06-28 17:39:52,002 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.7
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.7
+2018-06-28 17:39:52,002 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.0
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.0
+2018-06-28 17:39:52,003 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.9
+Removing file: Jun 28, 2018 5:39:51 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3844076991964116751.junit.dir/dataLogDir/version-2/snapshot.9
+2018-06-28 17:39:52,009 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 35133
+2018-06-28 17:39:52,009 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 6
+2018-06-28 17:39:52,009 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testPurgeTxnLogWithoutDataDir
+2018-06-28 17:39:52,010 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testPurgeTxnLogWithoutDataDir
+2018-06-28 17:39:52,010 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testPurgeTxnLogWithoutDataDir
+2018-06-28 17:39:52,011 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testSnapFilesEqualsToRetain
+2018-06-28 17:39:52,011 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testSnapFilesEqualsToRetain
+2018-06-28 17:39:52,014 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 35133
+2018-06-28 17:39:52,014 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 6
+2018-06-28 17:39:52,014 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testSnapFilesEqualsToRetain
+2018-06-28 17:39:52,016 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testSnapFilesEqualsToRetain
+2018-06-28 17:39:52,016 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testSnapFilesEqualsToRetain
+2018-06-28 17:39:52,017 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testPurgeDoesNotDeleteOverlappingLogFile
+2018-06-28 17:39:52,017 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testPurgeDoesNotDeleteOverlappingLogFile
+2018-06-28 17:39:52,018 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test1665982629294473005.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test1665982629294473005.junit.dir/version-2
+2018-06-28 17:39:52,018 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:39:52,019 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11221
+2018-06-28 17:39:52,020 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11221
+2018-06-28 17:39:52,021 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50559
+2018-06-28 17:39:52,021 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:50559
+2018-06-28 17:39:52,021 [myid:] - INFO  [Thread-2:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:39:52,022 [myid:] - INFO  [Thread-2:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50559 (no session established for client)
+2018-06-28 17:39:52,022 [myid:] - INFO  [main:ZooKeeper@442] - Initiating client connection, connectString=127.0.0.1:11221 sessionTimeout=30000 watcher=org.apache.zookeeper.test.ClientBase$CountdownWatcher@6f7fd0e6
+2018-06-28 17:39:52,024 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11221. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:39:52,024 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50560
+2018-06-28 17:39:52,024 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11221, initiating session
+2018-06-28 17:39:52,025 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:50560
+2018-06-28 17:39:52,025 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1
+2018-06-28 17:39:52,027 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x10006536f980000 with negotiated timeout 30000 for client /127.0.0.1:50560
+2018-06-28 17:39:52,027 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11221, sessionid = 0x10006536f980000, negotiated timeout = 30000
+2018-06-28 17:39:52,070 [myid:] - INFO  [main:FileTxnSnapLog@301] - Snapshotting: 0x65 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test1665982629294473005.junit.dir/version-2/snapshot.65
+2018-06-28 17:39:52,124 [myid:] - INFO  [main:FileTxnSnapLog@301] - Snapshotting: 0xc9 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test1665982629294473005.junit.dir/version-2/snapshot.c9
+2018-06-28 17:39:52,171 [myid:] - INFO  [main:FileTxnSnapLog@301] - Snapshotting: 0x12d to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test1665982629294473005.junit.dir/version-2/snapshot.12d
+2018-06-28 17:39:52,219 [myid:] - INFO  [ProcessThread(sid:0 cport:11221)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x10006536f980000
+2018-06-28 17:39:52,220 [myid:] - INFO  [main:ZooKeeper@693] - Session: 0x10006536f980000 closed
+2018-06-28 17:39:52,220 [myid:] - INFO  [main-EventThread:ClientCnxn$EventThread@522] - EventThread shut down for session: 0x10006536f980000
+2018-06-28 17:39:52,220 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50560 which had sessionid 0x10006536f980000
+2018-06-28 17:39:52,220 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:39:52,220 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:39:52,220 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:39:52,220 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:39:52,221 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:39:52,221 [myid:] - INFO  [ProcessThread(sid:0 cport:11221)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:39:52,221 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:39:52,221 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:39:52,226 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11221
+2018-06-28 17:39:52,228 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test1665982629294473005.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test1665982629294473005.junit.dir/version-2
+2018-06-28 17:39:52,228 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:39:52,228 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11221
+2018-06-28 17:39:52,230 [myid:] - INFO  [main:FileSnap@86] - Reading snapshot /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test1665982629294473005.junit.dir/version-2/snapshot.12d
+2018-06-28 17:39:52,246 [myid:] - INFO  [main:ZooKeeper@442] - Initiating client connection, connectString=127.0.0.1:11221 sessionTimeout=30000 watcher=org.apache.zookeeper.test.ClientBase$CountdownWatcher@77caeb3e
+2018-06-28 17:39:52,248 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11221. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:39:52,249 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11221, initiating session
+2018-06-28 17:39:52,249 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50562
+2018-06-28 17:39:52,249 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:50562
+2018-06-28 17:39:52,249 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.193
+2018-06-28 17:39:52,251 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x1000653707a0000 with negotiated timeout 30000 for client /127.0.0.1:50562
+2018-06-28 17:39:52,251 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11221, sessionid = 0x1000653707a0000, negotiated timeout = 30000
+2018-06-28 17:39:52,256 [myid:] - INFO  [main:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50562 which had sessionid 0x1000653707a0000
+2018-06-28 17:39:52,257 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:39:52,257 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:39:52,257 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1162] - Unable to read additional data from server sessionid 0x1000653707a0000, likely server has closed socket, closing socket connection and attempting reconnect
+2018-06-28 17:39:52,257 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:39:52,257 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:39:52,258 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:39:52,258 [myid:] - INFO  [ProcessThread(sid:0 cport:11221)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:39:52,258 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:39:52,258 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:39:52,259 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 10998
+2018-06-28 17:39:52,259 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 10
+2018-06-28 17:39:52,259 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testPurgeDoesNotDeleteOverlappingLogFile
+2018-06-28 17:39:52,261 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testPurgeDoesNotDeleteOverlappingLogFile
+2018-06-28 17:39:52,261 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testPurgeDoesNotDeleteOverlappingLogFile
+2018-06-28 17:39:52,262 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testSnapFilesGreaterThanToRetain
+2018-06-28 17:39:52,262 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testSnapFilesGreaterThanToRetain
+2018-06-28 17:39:52,266 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test6999428544142141226.junit.dir/version-2/log.1
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test6999428544142141226.junit.dir/version-2/log.1
+2018-06-28 17:39:52,267 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test6999428544142141226.junit.dir/version-2/snapshot.2
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test6999428544142141226.junit.dir/version-2/snapshot.2
+2018-06-28 17:39:52,268 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test6999428544142141226.junit.dir/version-2/snapshot.0
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test6999428544142141226.junit.dir/version-2/snapshot.0
+2018-06-28 17:39:52,269 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 11372
+2018-06-28 17:39:52,269 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 10
+2018-06-28 17:39:52,269 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testSnapFilesGreaterThanToRetain
+2018-06-28 17:39:52,273 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testSnapFilesGreaterThanToRetain
+2018-06-28 17:39:52,273 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testSnapFilesGreaterThanToRetain
+2018-06-28 17:39:52,274 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testSnapFilesEqualsToRetainWithPrecedingLog
+2018-06-28 17:39:52,274 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testSnapFilesEqualsToRetainWithPrecedingLog
+2018-06-28 17:39:52,277 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 11372
+2018-06-28 17:39:52,277 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 10
+2018-06-28 17:39:52,277 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testSnapFilesEqualsToRetainWithPrecedingLog
+2018-06-28 17:39:52,280 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testSnapFilesEqualsToRetainWithPrecedingLog
+2018-06-28 17:39:52,280 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testSnapFilesEqualsToRetainWithPrecedingLog
+2018-06-28 17:39:52,281 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testPurgeWhenLogRollingInProgress
+2018-06-28 17:39:52,281 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testPurgeWhenLogRollingInProgress
+2018-06-28 17:39:52,283 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2
+2018-06-28 17:39:52,283 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:39:52,284 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11221
+2018-06-28 17:39:52,285 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11221
+2018-06-28 17:39:52,287 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50563
+2018-06-28 17:39:52,287 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:50563
+2018-06-28 17:39:52,288 [myid:] - INFO  [Thread-3:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:39:52,288 [myid:] - INFO  [Thread-3:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50563 (no session established for client)
+2018-06-28 17:39:52,289 [myid:] - INFO  [main:ZooKeeper@442] - Initiating client connection, connectString=127.0.0.1:11221 sessionTimeout=3000 watcher=org.apache.zookeeper.server.PurgeTxnTest@91161c7
+2018-06-28 17:39:52,291 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11221. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:39:52,292 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11221, initiating session
+2018-06-28 17:39:52,292 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50564
+2018-06-28 17:39:52,293 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:50564
+2018-06-28 17:39:52,293 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1
+2018-06-28 17:39:52,294 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100065370a20000 with negotiated timeout 6000 for client /127.0.0.1:50564
+2018-06-28 17:39:52,294 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11221, sessionid = 0x100065370a20000, negotiated timeout = 6000
+2018-06-28 17:39:52,301 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1f
+2018-06-28 17:39:52,301 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x1d to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.1d
+2018-06-28 17:39:52,309 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x37 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.37
+2018-06-28 17:39:52,309 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.39
+2018-06-28 17:39:52,315 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.52
+2018-06-28 17:39:52,315 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x50 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.50
+2018-06-28 17:39:52,323 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.6f
+2018-06-28 17:39:52,323 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x6d to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.6d
+2018-06-28 17:39:52,328 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.86
+2018-06-28 17:39:52,328 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x84 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.84
+2018-06-28 17:39:52,333 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.9d
+2018-06-28 17:39:52,333 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x9b to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.9b
+2018-06-28 17:39:52,339 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.b6
+2018-06-28 17:39:52,339 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0xb4 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.b4
+2018-06-28 17:39:52,346 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.cc
+2018-06-28 17:39:52,346 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0xca to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.ca
+2018-06-28 17:39:52,353 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.e2
+2018-06-28 17:39:52,353 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0xe0 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.e0
+2018-06-28 17:39:52,364 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.100
+2018-06-28 17:39:52,365 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0xfe to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.fe
+2018-06-28 17:39:52,370 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x111 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.111
+2018-06-28 17:39:52,370 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.113
+2018-06-28 17:39:52,377 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.12a
+2018-06-28 17:39:52,377 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x129 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.129
+2018-06-28 17:39:52,384 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.146
+2018-06-28 17:39:52,384 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x144 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.144
+2018-06-28 17:39:52,392 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.163
+2018-06-28 17:39:52,392 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x161 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.161
+2018-06-28 17:39:52,398 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.175
+2018-06-28 17:39:52,398 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x173 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.173
+2018-06-28 17:39:52,407 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x190 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.190
+2018-06-28 17:39:52,407 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.193
+2018-06-28 17:39:52,412 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1a5
+2018-06-28 17:39:52,412 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x1a3 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.1a3
+2018-06-28 17:39:52,420 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x1c0 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.1c0
+2018-06-28 17:39:52,420 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1c2
+2018-06-28 17:39:52,427 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1dc
+2018-06-28 17:39:52,427 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x1da to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.1da
+2018-06-28 17:39:52,432 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x1ee to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.1ee
+2018-06-28 17:39:52,432 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1f0
+2018-06-28 17:39:52,439 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.209
+2018-06-28 17:39:52,439 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x207 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.207
+2018-06-28 17:39:52,445 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.21f
+2018-06-28 17:39:52,445 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x21d to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.21d
+2018-06-28 17:39:52,449 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x22f to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.22f
+2018-06-28 17:39:52,450 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.232
+2018-06-28 17:39:52,457 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.24b
+2018-06-28 17:39:52,457 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x249 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.249
+2018-06-28 17:39:52,463 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.25f
+2018-06-28 17:39:52,464 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x25d to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.25d
+2018-06-28 17:39:52,465 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.1dc
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.1dc
+2018-06-28 17:39:52,466 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.6f
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.6f
+2018-06-28 17:39:52,467 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.163
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.163
+2018-06-28 17:39:52,467 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.100
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.100
+2018-06-28 17:39:52,468 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.9d
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.9d
+2018-06-28 17:39:52,469 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.1f
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.1f
+2018-06-28 17:39:52,470 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.113
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.113
+2018-06-28 17:39:52,470 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.146
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.146
+2018-06-28 17:39:52,471 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.86
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.86
+2018-06-28 17:39:52,471 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.e2
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.e2
+2018-06-28 17:39:52,472 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.1c2
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.1c2
+2018-06-28 17:39:52,472 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.1f0
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.1f0
+2018-06-28 17:39:52,473 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.279
+2018-06-28 17:39:52,473 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.1a5
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.1a5
+2018-06-28 17:39:52,473 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x277 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.277
+2018-06-28 17:39:52,474 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.b6
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.b6
+2018-06-28 17:39:52,474 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.1
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.1
+2018-06-28 17:39:52,475 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.193
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.193
+2018-06-28 17:39:52,476 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.39
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.39
+2018-06-28 17:39:52,476 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.52
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.52
+2018-06-28 17:39:52,477 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.12a
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.12a
+2018-06-28 17:39:52,478 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.175
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.175
+2018-06-28 17:39:52,478 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.cc
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/log.cc
+2018-06-28 17:39:52,479 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.84
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.84
+2018-06-28 17:39:52,479 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.28d
+2018-06-28 17:39:52,479 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x28b to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.28b
+2018-06-28 17:39:52,479 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.1da
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.1da
+2018-06-28 17:39:52,480 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.1a3
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.1a3
+2018-06-28 17:39:52,481 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.1d
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.1d
+2018-06-28 17:39:52,481 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.e0
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.e0
+2018-06-28 17:39:52,482 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.161
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.161
+2018-06-28 17:39:52,482 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.144
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.144
+2018-06-28 17:39:52,483 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.173
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.173
+2018-06-28 17:39:52,484 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.129
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.129
+2018-06-28 17:39:52,484 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.111
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.111
+2018-06-28 17:39:52,485 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.1ee
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.1ee
+2018-06-28 17:39:52,485 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.1c0
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.1c0
+2018-06-28 17:39:52,485 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.2a5
+2018-06-28 17:39:52,486 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x2a3 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.2a3
+2018-06-28 17:39:52,486 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.6d
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.6d
+2018-06-28 17:39:52,486 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.37
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.37
+2018-06-28 17:39:52,487 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.190
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.190
+2018-06-28 17:39:52,488 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.fe
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.fe
+2018-06-28 17:39:52,488 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.ca
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.ca
+2018-06-28 17:39:52,489 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.b4
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.b4
+2018-06-28 17:39:52,489 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.9b
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.9b
+2018-06-28 17:39:52,490 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.50
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.50
+2018-06-28 17:39:52,490 [myid:] - INFO  [Thread-4:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.207
+Removing file: Jun 28, 2018 5:39:52 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.207
+2018-06-28 17:39:52,494 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.2be
+2018-06-28 17:39:52,495 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x2bc to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.2bc
+2018-06-28 17:39:52,500 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x2cf to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.2cf
+2018-06-28 17:39:52,500 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.2d2
+2018-06-28 17:39:52,505 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.2e4
+2018-06-28 17:39:52,505 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x2e2 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.2e2
+2018-06-28 17:39:52,510 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x2f7 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.2f7
+2018-06-28 17:39:52,510 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.2fa
+2018-06-28 17:39:52,519 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.30e
+2018-06-28 17:39:52,519 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x30c to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.30c
+2018-06-28 17:39:52,525 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x31f to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.31f
+2018-06-28 17:39:52,525 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.322
+2018-06-28 17:39:52,529 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,529 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.332
+2018-06-28 17:39:52,535 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x345 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.345
+2018-06-28 17:39:52,535 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.348
+2018-06-28 17:39:52,539 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,540 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.35c
+2018-06-28 17:39:52,545 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.376
+2018-06-28 17:39:52,546 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x374 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.374
+2018-06-28 17:39:52,552 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.38f
+2018-06-28 17:39:52,552 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x38d to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.38d
+2018-06-28 17:39:52,557 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,558 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.39f
+2018-06-28 17:39:52,564 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x3b6 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.3b6
+2018-06-28 17:39:52,564 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.3b8
+2018-06-28 17:39:52,572 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.3d6
+2018-06-28 17:39:52,573 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x3d4 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.3d4
+2018-06-28 17:39:52,579 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x3e6 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.3e6
+2018-06-28 17:39:52,579 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.3e8
+2018-06-28 17:39:52,584 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.3f9
+2018-06-28 17:39:52,584 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x3f7 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.3f7
+2018-06-28 17:39:52,590 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.40d
+2018-06-28 17:39:52,590 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x40b to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.40b
+2018-06-28 17:39:52,595 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,596 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.41d
+2018-06-28 17:39:52,600 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.42f
+2018-06-28 17:39:52,600 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x42c to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.42c
+2018-06-28 17:39:52,606 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.440
+2018-06-28 17:39:52,606 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x43e to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.43e
+2018-06-28 17:39:52,612 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.452
+2018-06-28 17:39:52,612 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x450 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.450
+2018-06-28 17:39:52,619 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.468
+2018-06-28 17:39:52,619 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x465 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.465
+2018-06-28 17:39:52,630 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.481
+2018-06-28 17:39:52,630 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x47f to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.47f
+2018-06-28 17:39:52,642 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.49b
+2018-06-28 17:39:52,642 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x499 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.499
+2018-06-28 17:39:52,657 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.4b7
+2018-06-28 17:39:52,657 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x4b5 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.4b5
+2018-06-28 17:39:52,662 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,662 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.4c8
+2018-06-28 17:39:52,667 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x4d9 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.4d9
+2018-06-28 17:39:52,667 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.4dc
+2018-06-28 17:39:52,674 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,674 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.4f5
+2018-06-28 17:39:52,680 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x506 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.506
+2018-06-28 17:39:52,680 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.509
+2018-06-28 17:39:52,689 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x525 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.525
+2018-06-28 17:39:52,689 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.527
+2018-06-28 17:39:52,697 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x542 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.542
+2018-06-28 17:39:52,697 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.544
+2018-06-28 17:39:52,704 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,704 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.560
+2018-06-28 17:39:52,712 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.577
+2018-06-28 17:39:52,712 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x575 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.575
+2018-06-28 17:39:52,723 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.591
+2018-06-28 17:39:52,723 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x58f to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.58f
+2018-06-28 17:39:52,729 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,729 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.5a8
+2018-06-28 17:39:52,738 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x5bf to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.5bf
+2018-06-28 17:39:52,739 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.5c2
+2018-06-28 17:39:52,749 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.5e0
+2018-06-28 17:39:52,749 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x5dd to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.5dd
+2018-06-28 17:39:52,756 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,757 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.5f4
+2018-06-28 17:39:52,768 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.60e
+2018-06-28 17:39:52,768 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x60c to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.60c
+2018-06-28 17:39:52,777 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.62a
+2018-06-28 17:39:52,777 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x628 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.628
+2018-06-28 17:39:52,784 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,784 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.642
+2018-06-28 17:39:52,794 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.656
+2018-06-28 17:39:52,794 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x654 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.654
+2018-06-28 17:39:52,804 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.670
+2018-06-28 17:39:52,804 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x66e to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.66e
+2018-06-28 17:39:52,811 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,811 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.681
+2018-06-28 17:39:52,818 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.697
+2018-06-28 17:39:52,818 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x695 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.695
+2018-06-28 17:39:52,827 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,827 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.6b0
+2018-06-28 17:39:52,834 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x6c4 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.6c4
+2018-06-28 17:39:52,834 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.6c7
+2018-06-28 17:39:52,840 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,840 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.6db
+2018-06-28 17:39:52,849 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.6f3
+2018-06-28 17:39:52,849 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x6f1 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.6f1
+2018-06-28 17:39:52,859 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.711
+2018-06-28 17:39:52,859 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x70e to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.70e
+2018-06-28 17:39:52,867 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,867 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.725
+2018-06-28 17:39:52,874 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.735
+2018-06-28 17:39:52,874 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x732 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.732
+2018-06-28 17:39:52,880 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,880 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.748
+2018-06-28 17:39:52,886 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.761
+2018-06-28 17:39:52,886 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x75f to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.75f
+2018-06-28 17:39:52,894 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,894 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.777
+2018-06-28 17:39:52,901 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.78b
+2018-06-28 17:39:52,901 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x789 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.789
+2018-06-28 17:39:52,908 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,909 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.7a2
+2018-06-28 17:39:52,917 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.7b6
+2018-06-28 17:39:52,917 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x7b4 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.7b4
+2018-06-28 17:39:52,923 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,923 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.7ca
+2018-06-28 17:39:52,930 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.7e5
+2018-06-28 17:39:52,931 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x7e3 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.7e3
+2018-06-28 17:39:52,938 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,938 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.801
+2018-06-28 17:39:52,943 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.81a
+2018-06-28 17:39:52,943 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x818 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.818
+2018-06-28 17:39:52,948 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,948 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.82d
+2018-06-28 17:39:52,952 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x83f to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.83f
+2018-06-28 17:39:52,952 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.842
+2018-06-28 17:39:52,960 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,960 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.85d
+2018-06-28 17:39:52,965 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.874
+2018-06-28 17:39:52,966 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x871 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.871
+2018-06-28 17:39:52,970 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,970 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.88a
+2018-06-28 17:39:52,975 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.89a
+2018-06-28 17:39:52,975 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x898 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.898
+2018-06-28 17:39:52,981 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,981 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.8b5
+2018-06-28 17:39:52,986 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.8cb
+2018-06-28 17:39:52,986 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x8c9 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.8c9
+2018-06-28 17:39:52,993 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:52,993 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.8e8
+2018-06-28 17:39:52,998 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.8fa
+2018-06-28 17:39:52,999 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x8f7 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.8f7
+2018-06-28 17:39:53,006 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,006 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.914
+2018-06-28 17:39:53,013 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x92b to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.92b
+2018-06-28 17:39:53,013 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.92e
+2018-06-28 17:39:53,016 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,016 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.93e
+2018-06-28 17:39:53,023 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.95b
+2018-06-28 17:39:53,023 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x959 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.959
+2018-06-28 17:39:53,030 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,030 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.96f
+2018-06-28 17:39:53,037 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.98b
+2018-06-28 17:39:53,037 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x988 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.988
+2018-06-28 17:39:53,042 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,042 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.99f
+2018-06-28 17:39:53,047 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,047 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.9b5
+2018-06-28 17:39:53,053 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.9d1
+2018-06-28 17:39:53,053 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x9cf to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.9cf
+2018-06-28 17:39:53,059 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,059 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.9ea
+2018-06-28 17:39:53,065 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.a01
+2018-06-28 17:39:53,065 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0x9ff to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.9ff
+2018-06-28 17:39:53,071 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,071 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.a1c
+2018-06-28 17:39:53,077 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.a33
+2018-06-28 17:39:53,077 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0xa31 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.a31
+2018-06-28 17:39:53,084 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,084 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.a4c
+2018-06-28 17:39:53,089 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,089 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.a65
+2018-06-28 17:39:53,096 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0xa78 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.a78
+2018-06-28 17:39:53,096 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.a7b
+2018-06-28 17:39:53,106 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,107 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.a97
+2018-06-28 17:39:53,111 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,112 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.aae
+2018-06-28 17:39:53,116 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.ac6
+2018-06-28 17:39:53,116 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0xac4 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.ac4
+2018-06-28 17:39:53,121 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,121 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.adf
+2018-06-28 17:39:53,128 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.afc
+2018-06-28 17:39:53,128 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0xafa to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.afa
+2018-06-28 17:39:53,133 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,133 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.b0f
+2018-06-28 17:39:53,137 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,137 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.b21
+2018-06-28 17:39:53,142 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.b32
+2018-06-28 17:39:53,142 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0xb30 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.b30
+2018-06-28 17:39:53,147 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,147 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.b47
+2018-06-28 17:39:53,152 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,152 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.b5e
+2018-06-28 17:39:53,156 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.b6e
+2018-06-28 17:39:53,156 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0xb6c to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.b6c
+2018-06-28 17:39:53,161 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,161 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.b88
+2018-06-28 17:39:53,167 [myid:] - WARN  [SyncThread:0:SyncRequestProcessor@148] - Too busy to snap, skipping
+2018-06-28 17:39:53,168 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.ba6
+2018-06-28 17:39:53,173 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.bb9
+2018-06-28 17:39:53,173 [myid:] - INFO  [Snapshot Thread:FileTxnSnapLog@301] - Snapshotting: 0xbb7 to /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4647105335416102047.junit.dir/version-2/snapshot.bb7
+2018-06-28 17:39:53,385 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11221. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:39:53,385 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11221, initiating session
+2018-06-28 17:39:53,385 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50567
+2018-06-28 17:39:53,385 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@942] - Client attempting to renew session 0x1000653707a0000 at /127.0.0.1:50567
+2018-06-28 17:39:53,386 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@687] - Invalid session 0x1000653707a0000 for client /127.0.0.1:50567, probably expired
+2018-06-28 17:39:53,386 [myid:] - WARN  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1289] - Unable to reconnect to ZooKeeper service, session 0x1000653707a0000 has expired
+2018-06-28 17:39:53,386 [myid:] - INFO  [main-EventThread:ClientCnxn$EventThread@522] - EventThread shut down for session: 0x1000653707a0000
+2018-06-28 17:39:53,386 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1158] - Unable to reconnect to ZooKeeper service, session 0x1000653707a0000 has expired, closing socket connection
+2018-06-28 17:39:53,386 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50567 which had sessionid 0x1000653707a0000
+2018-06-28 17:39:53,694 [myid:] - INFO  [ProcessThread(sid:0 cport:11221)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100065370a20000
+2018-06-28 17:39:53,694 [myid:] - INFO  [main:ZooKeeper@693] - Session: 0x100065370a20000 closed
+2018-06-28 17:39:53,694 [myid:] - INFO  [main-EventThread:ClientCnxn$EventThread@522] - EventThread shut down for session: 0x100065370a20000
+2018-06-28 17:39:53,695 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50564 which had sessionid 0x100065370a20000
+2018-06-28 17:39:53,695 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:39:53,695 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:39:53,695 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:39:53,695 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:39:53,695 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:39:53,695 [myid:] - INFO  [ProcessThread(sid:0 cport:11221)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:39:53,695 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:39:53,695 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:39:53,697 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 32270
+2018-06-28 17:39:53,698 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 9
+2018-06-28 17:39:53,698 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testPurgeWhenLogRollingInProgress
+2018-06-28 17:39:53,730 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testPurgeWhenLogRollingInProgress
+2018-06-28 17:39:53,730 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testPurgeWhenLogRollingInProgress
+2018-06-28 17:39:53,731 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testSnapFilesLessThanToRetain
+2018-06-28 17:39:53,731 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testSnapFilesLessThanToRetain
+2018-06-28 17:39:53,733 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test8939660109875485557.junit.dir/version-2/log.1
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test8939660109875485557.junit.dir/version-2/log.1
+2018-06-28 17:39:53,733 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test8939660109875485557.junit.dir/version-2/snapshot.2
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test8939660109875485557.junit.dir/version-2/snapshot.2
+2018-06-28 17:39:53,734 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test8939660109875485557.junit.dir/version-2/snapshot.0
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test8939660109875485557.junit.dir/version-2/snapshot.0
+2018-06-28 17:39:53,734 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 32795
+2018-06-28 17:39:53,734 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 9
+2018-06-28 17:39:53,734 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testSnapFilesLessThanToRetain
+2018-06-28 17:39:53,736 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testSnapFilesLessThanToRetain
+2018-06-28 17:39:53,736 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testSnapFilesLessThanToRetain
+2018-06-28 17:39:53,737 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testPurgeTxnLogWithDataDir
+2018-06-28 17:39:53,737 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testPurgeTxnLogWithDataDir
+2018-06-28 17:39:53,744 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.3
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.3
+2018-06-28 17:39:53,744 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.4
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.4
+2018-06-28 17:39:53,745 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.5
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.5
+2018-06-28 17:39:53,745 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.2
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.2
+2018-06-28 17:39:53,745 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.9
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.9
+2018-06-28 17:39:53,746 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.7
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.7
+2018-06-28 17:39:53,746 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.0
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.0
+2018-06-28 17:39:53,746 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.1
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.1
+2018-06-28 17:39:53,747 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.6
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.6
+2018-06-28 17:39:53,747 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.8
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataLogDir/version-2/log.8
+2018-06-28 17:39:53,747 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.5
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.5
+2018-06-28 17:39:53,747 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.2
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.2
+2018-06-28 17:39:53,748 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.3
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.3
+2018-06-28 17:39:53,748 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.4
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.4
+2018-06-28 17:39:53,749 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.8
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.8
+2018-06-28 17:39:53,749 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.1
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.1
+2018-06-28 17:39:53,750 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.6
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.6
+2018-06-28 17:39:53,750 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.7
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.7
+2018-06-28 17:39:53,750 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.0
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.0
+2018-06-28 17:39:53,751 [myid:] - INFO  [main:PurgeTxnLog@156] - Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.9
+Removing file: Jun 28, 2018 5:39:53 PM	/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3346745031614114788.junit.dir/dataDir/version-2/snapshot.9
+2018-06-28 17:39:53,755 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 33937
+2018-06-28 17:39:53,755 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 9
+2018-06-28 17:39:53,755 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testPurgeTxnLogWithDataDir
+2018-06-28 17:39:53,755 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testPurgeTxnLogWithDataDir
+2018-06-28 17:39:53,755 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testPurgeTxnLogWithDataDir
+2018-06-28 17:39:53,755 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testFindNRecentSnapshots
+2018-06-28 17:39:53,756 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testFindNRecentSnapshots
+2018-06-28 17:39:53,762 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 34724
+2018-06-28 17:39:53,762 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 9
+2018-06-28 17:39:53,762 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testFindNRecentSnapshots
+2018-06-28 17:39:53,770 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testFindNRecentSnapshots
+2018-06-28 17:39:53,770 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testFindNRecentSnapshots
+------------- ---------------- ---------------
+
+Testcase: testPurge took 1.339 sec
+Testcase: testPurgeTxnLogWithoutDataDir took 0.027 sec
+Testcase: testSnapFilesEqualsToRetain took 0.005 sec
+Testcase: testPurgeDoesNotDeleteOverlappingLogFile took 0.244 sec
+Testcase: testSnapFilesGreaterThanToRetain took 0.011 sec
+Testcase: testSnapFilesEqualsToRetainWithPrecedingLog took 0.006 sec
+Testcase: testPurgeWhenLogRollingInProgress took 1.449 sec
+Testcase: testSnapFilesLessThanToRetain took 0.005 sec
+Testcase: testPurgeTxnLogWithDataDir took 0.018 sec
+Testcase: testFindNRecentSnapshots took 0.015 sec

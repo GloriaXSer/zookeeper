@@ -1,0 +1,132 @@
+Testsuite: org.apache.zookeeper.server.quorum.LeaderWithObserverTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.224 sec
+------------- Standard Output ---------------
+2018-06-28 17:42:45,479 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11221
+2018-06-28 17:42:45,486 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:45,487 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11222
+2018-06-28 17:42:45,487 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:45,487 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11223
+2018-06-28 17:42:45,487 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:45,502 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11224
+2018-06-28 17:42:45,525 [myid:] - INFO  [main:Environment@100] - Server environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT
+2018-06-28 17:42:45,525 [myid:] - INFO  [main:Environment@100] - Server environment:host.name=10.0.0.10
+2018-06-28 17:42:45,526 [myid:] - INFO  [main:Environment@100] - Server environment:java.version=1.8.0_172
+2018-06-28 17:42:45,526 [myid:] - INFO  [main:Environment@100] - Server environment:java.vendor=Oracle Corporation
+2018-06-28 17:42:45,526 [myid:] - INFO  [main:Environment@100] - Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre
+2018-06-28 17:42:45,526 [myid:] - INFO  [main:Environment@100] - Server environment:java.class.path=/Users/hanm/Desktop/projects/git/apache/zookeeper/build/classes:/Users/hanm/Desktop/projects/git/apache/zookeeper/src/java/lib/ant-eclipse-1.0-jvm1.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/src/java/lib/ivy-2.4.0.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/classes:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr-2.7.7.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr4-annotations-4.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr4-runtime-4.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-api-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-avl-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-constants-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-shared-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-i18n-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptor-kerberos-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-admin-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-authn-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-authz-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-changelog-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-collective-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-event-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-exception-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-journal-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-normalization-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-operational-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-referral-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-schema-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-subtree-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-trigger-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-jdbm-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-jdbm1-2.0.0-M2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-ldif-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-mavibot-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-kerberos-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-ldap-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-shared-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-xdbm-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-all-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-asn1-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-asn1-ber-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-i18n-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-client-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-codec-core-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-aci-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-codec-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-codec-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-sp-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-trigger-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-util-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-model-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-util-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/audience-annotations-0.5.0.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/bcprov-jdk15-140.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/checkstyle-6.1.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-beanutils-core-1.8.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-cli-1.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-collections-3.2.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-io-2.4.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-lang-2.6.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-logging-1.1.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-pool-1.6.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/ehcache-core-2.4.4.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/guava-18.0.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/hamcrest-all-1.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/hamcrest-core-1.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/jline-0.9.94.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/junit-4.12.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/log4j-1.2.17.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mavibot-1.0.0-M1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mina-core-2.0.7.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mockito-all-1.8.5.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/netty-3.10.6.Final.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/org.abego.treelayout.core-1.0.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/slf4j-api-1.7.25.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/slf4j-log4j12-1.7.25.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-junit4.jar
+2018-06-28 17:42:45,527 [myid:] - INFO  [main:Environment@100] - Server environment:java.library.path=/Users/hanm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2018-06-28 17:42:45,527 [myid:] - INFO  [main:Environment@100] - Server environment:java.io.tmpdir=/var/folders/wv/j6wmf1nj5h7c36qz9b81kmfw0000gn/T/
+2018-06-28 17:42:45,528 [myid:] - INFO  [main:Environment@100] - Server environment:java.compiler=<NA>
+2018-06-28 17:42:45,531 [myid:] - INFO  [main:Environment@100] - Server environment:os.name=Mac OS X
+2018-06-28 17:42:45,532 [myid:] - INFO  [main:Environment@100] - Server environment:os.arch=x86_64
+2018-06-28 17:42:45,532 [myid:] - INFO  [main:Environment@100] - Server environment:os.version=10.13.5
+2018-06-28 17:42:45,532 [myid:] - INFO  [main:Environment@100] - Server environment:user.name=hanm
+2018-06-28 17:42:45,533 [myid:] - INFO  [main:Environment@100] - Server environment:user.home=/Users/hanm
+2018-06-28 17:42:45,533 [myid:] - INFO  [main:Environment@100] - Server environment:user.dir=/Users/hanm/Desktop/projects/git/apache/zookeeper
+2018-06-28 17:42:45,536 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test8252773322408151780.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test8252773322408151780.junit.dir/version-2
+2018-06-28 17:42:45,538 [myid:] - INFO  [main:Leader@64] - TCP NoDelay set to: true
+2018-06-28 17:42:45,551 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11225
+2018-06-28 17:42:45,552 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:45,560 [myid:] - INFO  [main:Leader@520] - Shutting down
+2018-06-28 17:42:45,561 [myid:] - INFO  [main:Leader@526] - Shutdown called
+java.lang.Exception: shutdown Leader! reason: end of test
+	at org.apache.zookeeper.server.quorum.Leader.shutdown(Leader.java:526)
+	at org.apache.zookeeper.server.quorum.LeaderWithObserverTest.tearDown(LeaderWithObserverTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+2018-06-28 17:42:45,571 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11226
+2018-06-28 17:42:45,571 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:45,571 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11227
+2018-06-28 17:42:45,572 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:45,572 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11228
+2018-06-28 17:42:45,572 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:45,573 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11229
+2018-06-28 17:42:45,574 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test7234950929015088734.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test7234950929015088734.junit.dir/version-2
+2018-06-28 17:42:45,574 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11230
+2018-06-28 17:42:45,574 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:45,580 [myid:] - INFO  [main:Leader@520] - Shutting down
+2018-06-28 17:42:45,580 [myid:] - INFO  [main:Leader@526] - Shutdown called
+java.lang.Exception: shutdown Leader! reason: end of test
+	at org.apache.zookeeper.server.quorum.Leader.shutdown(Leader.java:526)
+	at org.apache.zookeeper.server.quorum.LeaderWithObserverTest.tearDown(LeaderWithObserverTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+2018-06-28 17:42:45,583 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11231
+2018-06-28 17:42:45,583 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:45,583 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11232
+2018-06-28 17:42:45,583 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:45,583 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11233
+2018-06-28 17:42:45,584 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:45,585 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11234
+2018-06-28 17:42:45,585 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 2000 minSessionTimeout 4000 maxSessionTimeout 40000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test45165378488101174.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test45165378488101174.junit.dir/version-2
+2018-06-28 17:42:45,585 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11235
+2018-06-28 17:42:45,586 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:45,591 [myid:] - INFO  [main:Leader@520] - Shutting down
+2018-06-28 17:42:45,592 [myid:] - INFO  [main:Leader@526] - Shutdown called
+java.lang.Exception: shutdown Leader! reason: end of test
+	at org.apache.zookeeper.server.quorum.Leader.shutdown(Leader.java:526)
+	at org.apache.zookeeper.server.quorum.LeaderWithObserverTest.tearDown(LeaderWithObserverTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:33)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at junit.framework.JUnit4TestAdapter.run(JUnit4TestAdapter.java:38)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.run(JUnitTestRunner.java:536)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.launch(JUnitTestRunner.java:1205)
+	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:1048)
+------------- ---------------- ---------------
+
+Testcase: testGetEpochToPropose took 0.184 sec
+Testcase: testWaitForNewLeaderAck took 0.01 sec
+Testcase: testWaitForEpochAck took 0.011 sec

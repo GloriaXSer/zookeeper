@@ -1,0 +1,31 @@
+Testsuite: org.apache.zookeeper.test.CreateModeTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.037 sec
+------------- Standard Output ---------------
+2018-06-28 17:56:48,937 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testBasicCreateMode
+2018-06-28 17:56:48,945 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testBasicCreateMode
+2018-06-28 17:56:48,946 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17321
+2018-06-28 17:56:48,946 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:56:48,946 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testBasicCreateMode
+2018-06-28 17:56:48,946 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testBasicCreateMode
+2018-06-28 17:56:48,946 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testBasicCreateMode
+2018-06-28 17:56:48,950 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testInvalidFlagConversion
+2018-06-28 17:56:48,950 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testInvalidFlagConversion
+2018-06-28 17:56:48,950 [myid:] - ERROR [main:CreateMode@90] - Received an invalid flag value: 99 to convert to a CreateMode
+2018-06-28 17:56:48,956 [myid:] - ERROR [main:CreateMode@90] - Received an invalid flag value: -1 to convert to a CreateMode
+2018-06-28 17:56:48,956 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17986
+2018-06-28 17:56:48,956 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:56:48,956 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testInvalidFlagConversion
+2018-06-28 17:56:48,956 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testInvalidFlagConversion
+2018-06-28 17:56:48,956 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testInvalidFlagConversion
+2018-06-28 17:56:48,959 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testFlagConversion
+2018-06-28 17:56:48,959 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testFlagConversion
+2018-06-28 17:56:48,959 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17986
+2018-06-28 17:56:48,959 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:56:48,959 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testFlagConversion
+2018-06-28 17:56:48,959 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testFlagConversion
+2018-06-28 17:56:48,959 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testFlagConversion
+------------- ---------------- ---------------
+
+Testcase: testBasicCreateMode took 0.01 sec
+Testcase: testInvalidFlagConversion took 0.008 sec
+Testcase: testFlagConversion took 0 sec

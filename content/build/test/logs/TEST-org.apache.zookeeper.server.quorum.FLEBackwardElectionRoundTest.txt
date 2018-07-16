@@ -1,0 +1,140 @@
+Testsuite: org.apache.zookeeper.server.quorum.FLEBackwardElectionRoundTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.199 sec
+------------- Standard Output ---------------
+2018-06-28 17:42:36,222 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testBackwardElectionRound
+2018-06-28 17:42:36,229 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testBackwardElectionRound
+2018-06-28 17:42:36,229 [myid:] - INFO  [main:FLEBackwardElectionRoundTest@92] - TestLE: testBackwardElectionRound, 3
+2018-06-28 17:42:36,230 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11221
+2018-06-28 17:42:36,230 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11222
+2018-06-28 17:42:36,240 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:42:36,256 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11223
+2018-06-28 17:42:36,256 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11224
+2018-06-28 17:42:36,257 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:42:36,257 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11225
+2018-06-28 17:42:36,257 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11226
+2018-06-28 17:42:36,257 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:42:36,270 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:42:36,282 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11221
+2018-06-28 17:42:36,303 [myid:] - INFO  [main:QuorumPeer@668] - currentEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2018-06-28 17:42:36,305 [myid:] - INFO  [main:QuorumPeer@683] - acceptedEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2018-06-28 17:42:36,311 [myid:] - INFO  [ListenerThread:QuorumCnxManager$Listener@736] - My election bind port: /0.0.0.0:11222
+2018-06-28 17:42:36,312 [myid:] - INFO  [main:FLETestUtils$LEThread@47] - Constructor: Thread-0
+2018-06-28 17:42:36,312 [myid:] - INFO  [Thread-0:FLETestUtils$LEThread@55] - Going to call leader election: 0
+2018-06-28 17:42:36,312 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:42:36,312 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11223
+2018-06-28 17:42:36,313 [myid:] - INFO  [ListenerThread:QuorumCnxManager$Listener@736] - My election bind port: /0.0.0.0:11224
+2018-06-28 17:42:36,322 [myid:] - INFO  [/0.0.0.0:11222:QuorumCnxManager$Listener@743] - Received connection request /10.0.0.10:51307
+2018-06-28 17:42:36,327 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:42:36,327 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11225
+2018-06-28 17:42:36,328 [myid:] - INFO  [WorkerReceiver[myid=0]:FastLeaderElection@595] - Notification: 1 (message format version), 0 (n.leader), 0x0 (n.zxid), 0x1 (n.round), FOLLOWING (n.state), 1 (n.sid), 0x1 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:42:36,328 [myid:] - INFO  [ListenerThread:QuorumCnxManager$Listener@736] - My election bind port: /0.0.0.0:11226
+2018-06-28 17:42:36,328 [myid:] - INFO  [/0.0.0.0:11222:QuorumCnxManager$Listener@743] - Received connection request /10.0.0.10:51308
+2018-06-28 17:42:36,329 [myid:] - INFO  [WorkerReceiver[myid=0]:FastLeaderElection@595] - Notification: 1 (message format version), 0 (n.leader), 0x0 (n.zxid), 0x1 (n.round), FOLLOWING (n.state), 2 (n.sid), 0x1 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:42:36,382 [myid:] - INFO  [Thread-0:FastLeaderElection@813] - New election. My id =  0, proposed zxid=0x0
+2018-06-28 17:42:36,383 [myid:] - INFO  [WorkerReceiver[myid=0]:FastLeaderElection@595] - Notification: 1 (message format version), 0 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:42:36,383 [myid:] - INFO  [Thread-0:FLETestUtils$LEThread@68] - Finished election: 0, 0
+2018-06-28 17:42:36,384 [myid:] - INFO  [Thread-0:FLETestUtils$LEThread@74] - Joining
+2018-06-28 17:42:36,384 [myid:] - INFO  [main:FLETestUtils$LEThread@47] - Constructor: Thread-2
+2018-06-28 17:42:36,384 [myid:] - INFO  [Thread-2:FLETestUtils$LEThread@55] - Going to call leader election: 0
+2018-06-28 17:42:36,384 [myid:] - INFO  [WorkerReceiver[myid=0]:FastLeaderElection@595] - Notification: 1 (message format version), 0 (n.leader), 0x0 (n.zxid), 0x1 (n.round), FOLLOWING (n.state), 1 (n.sid), 0x1 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:42:36,384 [myid:] - INFO  [WorkerReceiver[myid=0]:FastLeaderElection@595] - Notification: 1 (message format version), 0 (n.leader), 0x0 (n.zxid), 0x1 (n.round), FOLLOWING (n.state), 2 (n.sid), 0x1 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:42:36,384 [myid:] - INFO  [Thread-2:FastLeaderElection@813] - New election. My id =  0, proposed zxid=0x0
+2018-06-28 17:42:36,385 [myid:] - INFO  [WorkerReceiver[myid=0]:FastLeaderElection@595] - Notification: 1 (message format version), 0 (n.leader), 0x0 (n.zxid), 0x2 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:42:36,589 [myid:] - INFO  [Thread-2:FastLeaderElection@847] - Notification time out: 400
+2018-06-28 17:42:36,589 [myid:] - INFO  [WorkerReceiver[myid=0]:FastLeaderElection@595] - Notification: 1 (message format version), 0 (n.leader), 0x0 (n.zxid), 0x2 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:42:36,993 [myid:] - INFO  [Thread-2:FastLeaderElection@847] - Notification time out: 800
+2018-06-28 17:42:36,993 [myid:] - INFO  [WorkerReceiver[myid=0]:FastLeaderElection@595] - Notification: 1 (message format version), 0 (n.leader), 0x0 (n.zxid), 0x2 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:42:37,794 [myid:] - INFO  [Thread-2:FastLeaderElection@847] - Notification time out: 1600
+2018-06-28 17:42:37,795 [myid:] - INFO  [WorkerReceiver[myid=0]:FastLeaderElection@595] - Notification: 1 (message format version), 0 (n.leader), 0x0 (n.zxid), 0x2 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:42:39,400 [myid:] - INFO  [Thread-2:FastLeaderElection@847] - Notification time out: 3200
+2018-06-28 17:42:39,401 [myid:] - INFO  [WorkerReceiver[myid=0]:FastLeaderElection@595] - Notification: 1 (message format version), 0 (n.leader), 0x0 (n.zxid), 0x2 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:42:41,390 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 31305
+2018-06-28 17:42:41,391 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 18
+2018-06-28 17:42:41,391 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testBackwardElectionRound
+2018-06-28 17:42:41,393 [myid:] - WARN  [SendWorker:0:QuorumCnxManager$SendWorker@941] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:418)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.pollSendQueue(QuorumCnxManager.java:1094)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.access$700(QuorumCnxManager.java:74)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:929)
+2018-06-28 17:42:41,394 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testBackwardElectionRound
+2018-06-28 17:42:41,393 [myid:] - WARN  [SendWorker:0:QuorumCnxManager$SendWorker@941] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:418)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.pollSendQueue(QuorumCnxManager.java:1094)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.access$700(QuorumCnxManager.java:74)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:929)
+2018-06-28 17:42:41,393 [myid:] - WARN  [RecvWorker:1:QuorumCnxManager$RecvWorker@1025] - Connection broken for id 1, my id = 0, error = 
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:1010)
+2018-06-28 17:42:41,393 [myid:] - ERROR [/0.0.0.0:11226:QuorumCnxManager$Listener@760] - Exception while listening
+java.net.SocketException: Socket closed
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:409)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener.run(QuorumCnxManager.java:741)
+2018-06-28 17:42:41,393 [myid:] - WARN  [RecvWorker:0:QuorumCnxManager$RecvWorker@1025] - Connection broken for id 0, my id = 2, error = 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:1010)
+2018-06-28 17:42:41,393 [myid:] - ERROR [/0.0.0.0:11224:QuorumCnxManager$Listener@760] - Exception while listening
+java.net.SocketException: Socket closed
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:409)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener.run(QuorumCnxManager.java:741)
+2018-06-28 17:42:41,393 [myid:] - WARN  [RecvWorker:2:QuorumCnxManager$RecvWorker@1025] - Connection broken for id 2, my id = 0, error = 
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:1010)
+2018-06-28 17:42:41,400 [myid:] - WARN  [RecvWorker:2:QuorumCnxManager$RecvWorker@1028] - Interrupting SendWorker
+2018-06-28 17:42:41,393 [myid:] - WARN  [RecvWorker:0:QuorumCnxManager$RecvWorker@1025] - Connection broken for id 0, my id = 1, error = 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:1010)
+2018-06-28 17:42:41,400 [myid:] - WARN  [SendWorker:2:QuorumCnxManager$SendWorker@941] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:418)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.pollSendQueue(QuorumCnxManager.java:1094)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.access$700(QuorumCnxManager.java:74)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:929)
+2018-06-28 17:42:41,401 [myid:] - WARN  [SendWorker:2:QuorumCnxManager$SendWorker@951] - Send worker leaving thread
+2018-06-28 17:42:41,399 [myid:] - WARN  [RecvWorker:0:QuorumCnxManager$RecvWorker@1028] - Interrupting SendWorker
+2018-06-28 17:42:41,398 [myid:] - WARN  [RecvWorker:1:QuorumCnxManager$RecvWorker@1028] - Interrupting SendWorker
+2018-06-28 17:42:41,398 [myid:] - WARN  [SendWorker:0:QuorumCnxManager$SendWorker@951] - Send worker leaving thread
+2018-06-28 17:42:41,401 [myid:] - WARN  [SendWorker:1:QuorumCnxManager$SendWorker@941] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:418)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.pollSendQueue(QuorumCnxManager.java:1094)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.access$700(QuorumCnxManager.java:74)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:929)
+2018-06-28 17:42:41,401 [myid:] - WARN  [SendWorker:1:QuorumCnxManager$SendWorker@951] - Send worker leaving thread
+2018-06-28 17:42:41,397 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testBackwardElectionRound
+2018-06-28 17:42:41,397 [myid:] - WARN  [SendWorker:0:QuorumCnxManager$SendWorker@951] - Send worker leaving thread
+2018-06-28 17:42:41,400 [myid:] - WARN  [RecvWorker:0:QuorumCnxManager$RecvWorker@1028] - Interrupting SendWorker
+------------- ---------------- ---------------
+
+Testcase: testBackwardElectionRound took 5.182 sec

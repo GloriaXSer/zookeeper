@@ -1,0 +1,6 @@
+Testsuite: org.apache.zookeeper.ServerConfigTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.018 sec
+
+Testcase: testFewArguments took 0.001 sec
+Testcase: testValidArguments took 0 sec
+Testcase: testTooManyArguments took 0 sec

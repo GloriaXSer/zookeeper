@@ -1,0 +1,9 @@
+Testsuite: org.apache.zookeeper.server.persistence.TxnLogToolkitTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.435 sec
+
+Testcase: testDumpMode took 0.341 sec
+Testcase: testRecoveryFixBrokenFile took 0.026 sec
+Testcase: testRecoveryInteractiveMode took 0.018 sec
+Testcase: testInitMissingFile took 0.011 sec
+Testcase: testInitWithRecoveryFileExists took 0.008 sec
+Testcase: testDumpWithCrcError took 0.012 sec

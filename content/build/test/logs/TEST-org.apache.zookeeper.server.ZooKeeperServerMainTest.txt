@@ -1,0 +1,671 @@
+Testsuite: org.apache.zookeeper.server.ZooKeeperServerMainTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.46 sec
+------------- Standard Output ---------------
+2018-06-28 17:40:07,981 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testStandalone
+2018-06-28 17:40:07,990 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testStandalone
+2018-06-28 17:40:08,001 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11221
+2018-06-28 17:40:08,022 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11221
+2018-06-28 17:40:08,040 [myid:] - INFO  [main:ClientBase@290] - server 127.0.0.1:11221 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:08,118 [myid:] - INFO  [Standalone server with clientPort:11221:QuorumPeerConfig@136] - Reading configuration from: /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3352719429775601985.junit.dir/zoo.cfg
+2018-06-28 17:40:08,118 [myid:] - INFO  [Standalone server with clientPort:11221:ZooKeeperServerMain@98] - Starting server
+2018-06-28 17:40:08,134 [myid:] - INFO  [Standalone server with clientPort:11221:Environment@100] - Server environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT
+2018-06-28 17:40:08,135 [myid:] - INFO  [Standalone server with clientPort:11221:Environment@100] - Server environment:host.name=10.0.0.10
+2018-06-28 17:40:08,135 [myid:] - INFO  [Standalone server with clientPort:11221:Environment@100] - Server environment:java.version=1.8.0_172
+2018-06-28 17:40:08,135 [myid:] - INFO  [Standalone server with clientPort:11221:Environment@100] - Server environment:java.vendor=Oracle Corporation
+2018-06-28 17:40:08,135 [myid:] - INFO  [Standalone server with clientPort:11221:Environment@100] - Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre
+2018-06-28 17:40:08,135 [myid:] - INFO  [Standalone server with clientPort:11221:Environment@100] - Server environment:java.class.path=/Users/hanm/Desktop/projects/git/apache/zookeeper/build/classes:/Users/hanm/Desktop/projects/git/apache/zookeeper/src/java/lib/ant-eclipse-1.0-jvm1.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/src/java/lib/ivy-2.4.0.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/classes:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr-2.7.7.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr4-annotations-4.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr4-runtime-4.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-api-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-avl-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-constants-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-shared-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-i18n-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptor-kerberos-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-admin-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-authn-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-authz-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-changelog-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-collective-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-event-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-exception-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-journal-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-normalization-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-operational-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-referral-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-schema-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-subtree-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-trigger-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-jdbm-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-jdbm1-2.0.0-M2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-ldif-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-mavibot-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-kerberos-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-ldap-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-shared-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-xdbm-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-all-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-asn1-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-asn1-ber-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-i18n-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-client-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-codec-core-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-aci-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-codec-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-codec-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-sp-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-trigger-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-util-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-model-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-util-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/audience-annotations-0.5.0.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/bcprov-jdk15-140.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/checkstyle-6.1.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-beanutils-core-1.8.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-cli-1.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-collections-3.2.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-io-2.4.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-lang-2.6.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-logging-1.1.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-pool-1.6.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/ehcache-core-2.4.4.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/guava-18.0.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/hamcrest-all-1.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/hamcrest-core-1.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/jline-0.9.94.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/junit-4.12.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/log4j-1.2.17.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mavibot-1.0.0-M1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mina-core-2.0.7.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mockito-all-1.8.5.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/netty-3.10.6.Final.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/org.abego.treelayout.core-1.0.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/slf4j-api-1.7.25.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/slf4j-log4j12-1.7.25.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-junit4.jar
+2018-06-28 17:40:08,136 [myid:] - INFO  [Standalone server with clientPort:11221:Environment@100] - Server environment:java.library.path=/Users/hanm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2018-06-28 17:40:08,136 [myid:] - INFO  [Standalone server with clientPort:11221:Environment@100] - Server environment:java.io.tmpdir=/var/folders/wv/j6wmf1nj5h7c36qz9b81kmfw0000gn/T/
+2018-06-28 17:40:08,136 [myid:] - INFO  [Standalone server with clientPort:11221:Environment@100] - Server environment:java.compiler=<NA>
+2018-06-28 17:40:08,138 [myid:] - INFO  [Standalone server with clientPort:11221:Environment@100] - Server environment:os.name=Mac OS X
+2018-06-28 17:40:08,138 [myid:] - INFO  [Standalone server with clientPort:11221:Environment@100] - Server environment:os.arch=x86_64
+2018-06-28 17:40:08,139 [myid:] - INFO  [Standalone server with clientPort:11221:Environment@100] - Server environment:os.version=10.13.5
+2018-06-28 17:40:08,139 [myid:] - INFO  [Standalone server with clientPort:11221:Environment@100] - Server environment:user.name=hanm
+2018-06-28 17:40:08,139 [myid:] - INFO  [Standalone server with clientPort:11221:Environment@100] - Server environment:user.home=/Users/hanm
+2018-06-28 17:40:08,139 [myid:] - INFO  [Standalone server with clientPort:11221:Environment@100] - Server environment:user.dir=/Users/hanm/Desktop/projects/git/apache/zookeeper
+2018-06-28 17:40:08,148 [myid:] - INFO  [Standalone server with clientPort:11221:ZooKeeperServer@836] - tickTime set to 2000
+2018-06-28 17:40:08,148 [myid:] - INFO  [Standalone server with clientPort:11221:ZooKeeperServer@845] - minSessionTimeout set to -1
+2018-06-28 17:40:08,148 [myid:] - INFO  [Standalone server with clientPort:11221:ZooKeeperServer@854] - maxSessionTimeout set to -1
+2018-06-28 17:40:08,162 [myid:] - INFO  [Standalone server with clientPort:11221:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:40:08,175 [myid:] - INFO  [Standalone server with clientPort:11221:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11221
+2018-06-28 17:40:08,296 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11221
+2018-06-28 17:40:08,299 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50575
+2018-06-28 17:40:08,308 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ServerCnxn@324] - The list of known four letter word commands is : [{1936881266=srvr, 1937006964=stat, 2003003491=wchc, 1685417328=dump, 1668445044=crst, 1936880500=srst, 1701738089=envi, 1668247142=conf, 2003003507=wchs, 2003003504=wchp, 1668247155=cons, 1835955314=mntr, 1769173615=isro, 1920298859=ruok, 1735683435=gtmk, 1937010027=stmk}]
+2018-06-28 17:40:08,309 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ServerCnxn@325] - The list of enabled four letter word commands is : [[wchs, stat, wchp, stmk, conf, ruok, mntr, srvr, wchc, envi, srst, isro, dump, gtmk, crst, cons]]
+2018-06-28 17:40:08,309 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:50575
+2018-06-28 17:40:08,313 [myid:] - INFO  [Thread-1:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:40:08,314 [myid:] - INFO  [Thread-1:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50575 (no session established for client)
+2018-06-28 17:40:08,322 [myid:] - INFO  [main:Environment@100] - Client environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT
+2018-06-28 17:40:08,322 [myid:] - INFO  [main:Environment@100] - Client environment:host.name=10.0.0.10
+2018-06-28 17:40:08,323 [myid:] - INFO  [main:Environment@100] - Client environment:java.version=1.8.0_172
+2018-06-28 17:40:08,323 [myid:] - INFO  [main:Environment@100] - Client environment:java.vendor=Oracle Corporation
+2018-06-28 17:40:08,323 [myid:] - INFO  [main:Environment@100] - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre
+2018-06-28 17:40:08,327 [myid:] - INFO  [main:Environment@100] - Client environment:java.class.path=/Users/hanm/Desktop/projects/git/apache/zookeeper/build/classes:/Users/hanm/Desktop/projects/git/apache/zookeeper/src/java/lib/ant-eclipse-1.0-jvm1.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/src/java/lib/ivy-2.4.0.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/classes:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr-2.7.7.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr4-annotations-4.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr4-runtime-4.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-api-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-avl-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-constants-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-shared-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-i18n-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptor-kerberos-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-admin-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-authn-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-authz-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-changelog-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-collective-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-event-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-exception-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-journal-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-normalization-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-operational-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-referral-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-schema-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-subtree-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-trigger-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-jdbm-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-jdbm1-2.0.0-M2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-ldif-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-mavibot-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-kerberos-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-ldap-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-shared-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-xdbm-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-all-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-asn1-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-asn1-ber-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-i18n-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-client-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-codec-core-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-aci-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-codec-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-codec-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-sp-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-trigger-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-util-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-model-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-util-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/audience-annotations-0.5.0.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/bcprov-jdk15-140.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/checkstyle-6.1.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-beanutils-core-1.8.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-cli-1.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-collections-3.2.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-io-2.4.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-lang-2.6.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-logging-1.1.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-pool-1.6.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/ehcache-core-2.4.4.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/guava-18.0.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/hamcrest-all-1.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/hamcrest-core-1.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/jline-0.9.94.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/junit-4.12.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/log4j-1.2.17.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mavibot-1.0.0-M1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mina-core-2.0.7.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mockito-all-1.8.5.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/netty-3.10.6.Final.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/org.abego.treelayout.core-1.0.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/slf4j-api-1.7.25.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/slf4j-log4j12-1.7.25.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-junit4.jar
+2018-06-28 17:40:08,327 [myid:] - INFO  [main:Environment@100] - Client environment:java.library.path=/Users/hanm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2018-06-28 17:40:08,327 [myid:] - INFO  [main:Environment@100] - Client environment:java.io.tmpdir=/var/folders/wv/j6wmf1nj5h7c36qz9b81kmfw0000gn/T/
+2018-06-28 17:40:08,327 [myid:] - INFO  [main:Environment@100] - Client environment:java.compiler=<NA>
+2018-06-28 17:40:08,328 [myid:] - INFO  [main:Environment@100] - Client environment:os.name=Mac OS X
+2018-06-28 17:40:08,328 [myid:] - INFO  [main:Environment@100] - Client environment:os.arch=x86_64
+2018-06-28 17:40:08,328 [myid:] - INFO  [main:Environment@100] - Client environment:os.version=10.13.5
+2018-06-28 17:40:08,328 [myid:] - INFO  [main:Environment@100] - Client environment:user.name=hanm
+2018-06-28 17:40:08,328 [myid:] - INFO  [main:Environment@100] - Client environment:user.home=/Users/hanm
+2018-06-28 17:40:08,328 [myid:] - INFO  [main:Environment@100] - Client environment:user.dir=/Users/hanm/Desktop/projects/git/apache/zookeeper
+2018-06-28 17:40:08,330 [myid:] - INFO  [main:ZooKeeper@442] - Initiating client connection, connectString=127.0.0.1:11221 sessionTimeout=30000 watcher=org.apache.zookeeper.server.ZooKeeperServerMainTest@6537cf78
+2018-06-28 17:40:08,356 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11221. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:40:08,358 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50576
+2018-06-28 17:40:08,358 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11221, initiating session
+2018-06-28 17:40:08,362 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:50576
+2018-06-28 17:40:08,365 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1
+2018-06-28 17:40:08,379 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x1000653aece0000 with negotiated timeout 30000 for client /127.0.0.1:50576
+2018-06-28 17:40:08,379 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11221, sessionid = 0x1000653aece0000, negotiated timeout = 30000
+2018-06-28 17:40:08,393 [myid:] - INFO  [ProcessThread(sid:0 cport:11221)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x1000653aece0000
+2018-06-28 17:40:08,394 [myid:] - INFO  [main:ZooKeeper@693] - Session: 0x1000653aece0000 closed
+2018-06-28 17:40:08,394 [myid:] - INFO  [main-EventThread:ClientCnxn$EventThread@522] - EventThread shut down for session: 0x1000653aece0000
+2018-06-28 17:40:08,395 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50576 which had sessionid 0x1000653aece0000
+2018-06-28 17:40:08,395 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:40:08,395 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:40:08,395 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:40:08,395 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:40:08,395 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:40:08,395 [myid:] - INFO  [ProcessThread(sid:0 cport:11221)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:40:08,396 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:40:08,396 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:40:08,398 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11221
+2018-06-28 17:40:08,399 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 26674
+2018-06-28 17:40:08,399 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 6
+2018-06-28 17:40:08,399 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testStandalone
+2018-06-28 17:40:08,399 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testStandalone
+2018-06-28 17:40:08,399 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testStandalone
+2018-06-28 17:40:08,403 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testJMXRegistrationWithNIO
+2018-06-28 17:40:08,403 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testJMXRegistrationWithNIO
+2018-06-28 17:40:08,404 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11222
+2018-06-28 17:40:08,405 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test5543973762516451089.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test5543973762516451089.junit.dir/version-2
+2018-06-28 17:40:08,405 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:40:08,405 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11222
+2018-06-28 17:40:08,406 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11222
+2018-06-28 17:40:08,407 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50578
+2018-06-28 17:40:08,407 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:50578
+2018-06-28 17:40:08,408 [myid:] - INFO  [Thread-2:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:40:08,408 [myid:] - INFO  [Thread-2:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50578 (no session established for client)
+2018-06-28 17:40:08,409 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11223
+2018-06-28 17:40:08,409 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test8769270793810474101.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test8769270793810474101.junit.dir/version-2
+2018-06-28 17:40:08,409 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:40:08,410 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11223
+2018-06-28 17:40:08,411 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11223
+2018-06-28 17:40:08,411 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50579
+2018-06-28 17:40:08,412 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:50579
+2018-06-28 17:40:08,412 [myid:] - INFO  [Thread-3:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:40:08,412 [myid:] - INFO  [Thread-3:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50579 (no session established for client)
+2018-06-28 17:40:08,413 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:40:08,413 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:40:08,413 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:40:08,413 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:40:08,413 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:40:08,413 [myid:] - INFO  [ProcessThread(sid:0 cport:11222)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:40:08,413 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:40:08,413 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:40:08,414 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:40:08,414 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:40:08,414 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:40:08,414 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:40:08,414 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:40:08,414 [myid:] - INFO  [ProcessThread(sid:0 cport:11223)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:40:08,414 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:40:08,415 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:40:08,416 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 32000
+2018-06-28 17:40:08,416 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 8
+2018-06-28 17:40:08,416 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testJMXRegistrationWithNIO
+2018-06-28 17:40:08,416 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testJMXRegistrationWithNIO
+2018-06-28 17:40:08,416 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testJMXRegistrationWithNIO
+2018-06-28 17:40:08,419 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testReadOnlySnapshotDir
+2018-06-28 17:40:08,421 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testReadOnlySnapshotDir
+2018-06-28 17:40:08,421 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11224
+2018-06-28 17:40:08,422 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:08,429 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:08,429 [myid:] - WARN  [Standalone server with clientPort:11224:ZooKeeperServerMain@79] - Unable to register log4j JMX control
+javax.management.InstanceAlreadyExistsException: log4j:hiearchy=default
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.zookeeper.jmx.ManagedUtil.registerLog4jMBeans(ManagedUtil.java:54)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:77)
+	at org.apache.zookeeper.server.ZooKeeperServerMainTest$MainThread.run(ZooKeeperServerMainTest.java:115)
+2018-06-28 17:40:08,432 [myid:] - INFO  [Standalone server with clientPort:11224:QuorumPeerConfig@136] - Reading configuration from: /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4136447491427715695.junit.dir/zoo.cfg
+2018-06-28 17:40:08,432 [myid:] - INFO  [Standalone server with clientPort:11224:ZooKeeperServerMain@98] - Starting server
+2018-06-28 17:40:08,433 [myid:] - INFO  [Standalone server with clientPort:11224:ZooKeeperServer@836] - tickTime set to 2000
+2018-06-28 17:40:08,433 [myid:] - INFO  [Standalone server with clientPort:11224:ZooKeeperServer@845] - minSessionTimeout set to -1
+2018-06-28 17:40:08,433 [myid:] - INFO  [Standalone server with clientPort:11224:ZooKeeperServer@854] - maxSessionTimeout set to -1
+2018-06-28 17:40:08,433 [myid:] - INFO  [Standalone server with clientPort:11224:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:40:08,434 [myid:] - INFO  [Standalone server with clientPort:11224:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11224
+2018-06-28 17:40:08,670 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:40:08,680 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:08,681 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50581
+2018-06-28 17:40:08,681 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:50581
+2018-06-28 17:40:08,681 [myid:] - INFO  [Thread-4:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:40:08,682 [myid:] - INFO  [Thread-4:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50581 (no session established for client)
+2018-06-28 17:40:08,682 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:40:08,682 [myid:] - INFO  [Time-limited test:ZooKeeperServer@502] - shutting down
+2018-06-28 17:40:08,682 [myid:] - INFO  [Time-limited test:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:40:08,682 [myid:] - INFO  [Time-limited test:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:40:08,683 [myid:] - INFO  [Time-limited test:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:40:08,683 [myid:] - INFO  [ProcessThread(sid:0 cport:11224)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:40:08,683 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:40:08,683 [myid:] - INFO  [Time-limited test:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:40:08,684 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:08,684 [myid:] - WARN  [Standalone server with clientPort:11224:ZooKeeperServerMain@79] - Unable to register log4j JMX control
+javax.management.InstanceAlreadyExistsException: log4j:hiearchy=default
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.zookeeper.jmx.ManagedUtil.registerLog4jMBeans(ManagedUtil.java:54)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:77)
+	at org.apache.zookeeper.server.ZooKeeperServerMainTest$MainThread.run(ZooKeeperServerMainTest.java:115)
+2018-06-28 17:40:08,684 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:08,684 [myid:] - INFO  [Standalone server with clientPort:11224:QuorumPeerConfig@136] - Reading configuration from: /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4136447491427715695.junit.dir/zoo.cfg
+2018-06-28 17:40:08,685 [myid:] - INFO  [Standalone server with clientPort:11224:ZooKeeperServerMain@98] - Starting server
+2018-06-28 17:40:08,685 [myid:] - ERROR [Standalone server with clientPort:11224:ZooKeeperServerMainTest$MainThread@118] - unexpected exception in run
+java.io.IOException: Cannot write to snap directory /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4136447491427715695.junit.dir/data/version-2
+	at org.apache.zookeeper.server.persistence.FileTxnSnapLog.<init>(FileTxnSnapLog.java:102)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:112)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:89)
+	at org.apache.zookeeper.server.ZooKeeperServerMainTest$MainThread.run(ZooKeeperServerMainTest.java:115)
+2018-06-28 17:40:08,938 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:08,939 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:09,191 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:09,191 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:09,445 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:09,446 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:09,670 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:40:09,670 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:40:09,701 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:09,701 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:09,956 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:09,956 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:10,212 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:10,212 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:10,466 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:10,467 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:10,670 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:40:10,720 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:10,721 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:10,971 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:10,972 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:11,222 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:11,223 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:11,474 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:11,475 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:11,726 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:11,726 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:11,976 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:11,977 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:12,232 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:12,232 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:12,487 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:12,488 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:12,742 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:12,743 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:12,998 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:12,999 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:13,254 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:13,254 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:13,509 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:13,509 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:13,764 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:13,765 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:14,020 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:14,020 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:14,275 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:14,276 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:14,530 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:14,531 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:14,786 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:14,787 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:15,041 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:15,042 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:15,297 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:15,297 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:15,552 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:15,553 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:15,808 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:15,808 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:16,063 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:16,063 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:16,318 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:16,319 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:16,574 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:16,574 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:16,829 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:16,830 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:17,084 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:17,085 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:17,340 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:17,341 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:17,595 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:17,596 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:17,851 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:17,851 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:18,106 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:18,107 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:18,362 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:18,362 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:18,617 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:18,617 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:18,872 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:18,873 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:19,128 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:19,129 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:19,383 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:19,384 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:19,639 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:19,639 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:19,894 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:19,895 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:20,149 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:20,150 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:20,405 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:20,406 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:20,660 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:20,661 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:20,916 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:20,916 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:21,171 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:21,172 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:21,426 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:21,427 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:21,679 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:21,679 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:21,934 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:21,935 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:22,187 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:22,188 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:22,440 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:22,440 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:22,692 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:22,693 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:22,943 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:22,944 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:23,198 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:23,198 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:23,452 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:23,453 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:23,704 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:40:23,704 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11224 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:23,706 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 9536
+2018-06-28 17:40:23,706 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 5
+2018-06-28 17:40:23,707 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testReadOnlySnapshotDir
+2018-06-28 17:40:23,707 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testReadOnlySnapshotDir
+2018-06-28 17:40:23,707 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testReadOnlySnapshotDir
+2018-06-28 17:40:23,708 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testRaceBetweenSyncFlushAndZKShutdown
+2018-06-28 17:40:23,708 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testRaceBetweenSyncFlushAndZKShutdown
+2018-06-28 17:40:23,714 [myid:] - INFO  [Time-limited test:ZooKeeperServer@174] - Created server with tickTime 2000 minSessionTimeout 2000 maxSessionTimeout 4000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test8550802054444512408.junit.dir/test627282966047415347.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test8550802054444512408.junit.dir/test627282966047415347.dir/version-2
+2018-06-28 17:40:23,771 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.300000007
+2018-06-28 17:40:23,773 [myid:] - INFO  [Thread-5:ZooKeeperServer@502] - shutting down
+2018-06-28 17:40:23,773 [myid:] - INFO  [Thread-5:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:40:23,773 [myid:] - INFO  [Thread-5:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:40:23,773 [myid:] - INFO  [Thread-5:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:40:23,773 [myid:] - INFO  [ProcessThread(sid:0 cport:-1)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:40:23,774 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:40:23,774 [myid:] - INFO  [Thread-5:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:40:23,775 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 19258
+2018-06-28 17:40:23,775 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 23
+2018-06-28 17:40:23,775 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testRaceBetweenSyncFlushAndZKShutdown
+2018-06-28 17:40:23,775 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testRaceBetweenSyncFlushAndZKShutdown
+2018-06-28 17:40:23,776 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testRaceBetweenSyncFlushAndZKShutdown
+2018-06-28 17:40:23,776 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testAutoCreateDataLogDir
+2018-06-28 17:40:23,776 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testAutoCreateDataLogDir
+2018-06-28 17:40:23,777 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11225
+2018-06-28 17:40:23,778 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11225
+2018-06-28 17:40:23,778 [myid:] - WARN  [Standalone server with clientPort:11225:ZooKeeperServerMain@79] - Unable to register log4j JMX control
+javax.management.InstanceAlreadyExistsException: log4j:hiearchy=default
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.zookeeper.jmx.ManagedUtil.registerLog4jMBeans(ManagedUtil.java:54)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:77)
+	at org.apache.zookeeper.server.ZooKeeperServerMainTest$MainThread.run(ZooKeeperServerMainTest.java:115)
+2018-06-28 17:40:23,778 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11225 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:23,778 [myid:] - INFO  [Standalone server with clientPort:11225:QuorumPeerConfig@136] - Reading configuration from: /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test7717769350249118011.junit.dir/zoo.cfg
+2018-06-28 17:40:23,778 [myid:] - INFO  [Standalone server with clientPort:11225:ZooKeeperServerMain@98] - Starting server
+2018-06-28 17:40:23,779 [myid:] - INFO  [Standalone server with clientPort:11225:ZooKeeperServer@836] - tickTime set to 2000
+2018-06-28 17:40:23,779 [myid:] - INFO  [Standalone server with clientPort:11225:ZooKeeperServer@845] - minSessionTimeout set to -1
+2018-06-28 17:40:23,779 [myid:] - INFO  [Standalone server with clientPort:11225:ZooKeeperServer@854] - maxSessionTimeout set to -1
+2018-06-28 17:40:23,780 [myid:] - INFO  [Standalone server with clientPort:11225:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:40:23,780 [myid:] - INFO  [Standalone server with clientPort:11225:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11225
+2018-06-28 17:40:24,032 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11225
+2018-06-28 17:40:24,033 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11225:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50676
+2018-06-28 17:40:24,034 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11225:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:50676
+2018-06-28 17:40:24,034 [myid:] - INFO  [Thread-6:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:40:24,035 [myid:] - INFO  [Thread-6:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50676 (no session established for client)
+2018-06-28 17:40:24,035 [myid:] - INFO  [Time-limited test:ZooKeeper@442] - Initiating client connection, connectString=127.0.0.1:11225 sessionTimeout=30000 watcher=org.apache.zookeeper.server.ZooKeeperServerMainTest@582eb626
+2018-06-28 17:40:24,037 [myid:] - INFO  [Time-limited test-SendThread(localhost:11225):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11225. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:40:24,038 [myid:] - INFO  [Time-limited test-SendThread(localhost:11225):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11225, initiating session
+2018-06-28 17:40:24,038 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11225:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50677
+2018-06-28 17:40:24,039 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11225:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:50677
+2018-06-28 17:40:24,039 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1
+2018-06-28 17:40:24,043 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x1000653ebaa0000 with negotiated timeout 30000 for client /127.0.0.1:50677
+2018-06-28 17:40:24,043 [myid:] - INFO  [Time-limited test-SendThread(localhost:11225):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11225, sessionid = 0x1000653ebaa0000, negotiated timeout = 30000
+2018-06-28 17:40:24,047 [myid:] - INFO  [ProcessThread(sid:0 cport:11225)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x1000653ebaa0000
+2018-06-28 17:40:24,048 [myid:] - INFO  [Time-limited test:ZooKeeper@693] - Session: 0x1000653ebaa0000 closed
+2018-06-28 17:40:24,048 [myid:] - INFO  [Time-limited test-EventThread:ClientCnxn$EventThread@522] - EventThread shut down for session: 0x1000653ebaa0000
+2018-06-28 17:40:24,048 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11225:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50677 which had sessionid 0x1000653ebaa0000
+2018-06-28 17:40:24,049 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11225:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:40:24,049 [myid:] - INFO  [Time-limited test:ZooKeeperServer@502] - shutting down
+2018-06-28 17:40:24,049 [myid:] - INFO  [Time-limited test:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:40:24,049 [myid:] - INFO  [Time-limited test:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:40:24,049 [myid:] - INFO  [Time-limited test:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:40:24,049 [myid:] - INFO  [ProcessThread(sid:0 cport:11225)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:40:24,050 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:40:24,050 [myid:] - INFO  [Time-limited test:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:40:24,052 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11225
+2018-06-28 17:40:24,054 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 21034
+2018-06-28 17:40:24,054 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 25
+2018-06-28 17:40:24,054 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testAutoCreateDataLogDir
+2018-06-28 17:40:24,054 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testAutoCreateDataLogDir
+2018-06-28 17:40:24,055 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testAutoCreateDataLogDir
+2018-06-28 17:40:24,055 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testJMXRegistrationWithNetty
+2018-06-28 17:40:24,055 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testJMXRegistrationWithNetty
+2018-06-28 17:40:24,056 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11226
+2018-06-28 17:40:24,056 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4675076021462305221.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4675076021462305221.junit.dir/version-2
+2018-06-28 17:40:24,061 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NettyServerCnxnFactory as server connection factory
+2018-06-28 17:40:24,061 [myid:] - INFO  [main:NettyServerCnxnFactory@360] - binding to port 0.0.0.0/0.0.0.0:11226
+2018-06-28 17:40:24,078 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11226
+2018-06-28 17:40:24,096 [myid:] - INFO  [New I/O worker #18:NettyServerCnxn@672] - Processing stat command from /127.0.0.1:50679
+2018-06-28 17:40:24,098 [myid:] - INFO  [New I/O worker #18:NettyServerCnxn$StatCommand@470] - Stat command output
+2018-06-28 17:40:24,101 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11227
+2018-06-28 17:40:24,102 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test5094947847596761252.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test5094947847596761252.junit.dir/version-2
+2018-06-28 17:40:24,107 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NettyServerCnxnFactory as server connection factory
+2018-06-28 17:40:24,107 [myid:] - INFO  [main:NettyServerCnxnFactory@360] - binding to port 0.0.0.0/0.0.0.0:11227
+2018-06-28 17:40:24,108 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11227
+2018-06-28 17:40:24,109 [myid:] - INFO  [New I/O worker #35:NettyServerCnxn@672] - Processing stat command from /127.0.0.1:50680
+2018-06-28 17:40:24,110 [myid:] - INFO  [New I/O worker #35:NettyServerCnxn$StatCommand@470] - Stat command output
+2018-06-28 17:40:24,110 [myid:] - INFO  [main:NettyServerCnxnFactory@337] - shutdown called 0.0.0.0/0.0.0.0:11226
+2018-06-28 17:40:24,118 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:40:24,118 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:40:24,118 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:40:24,118 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:40:24,118 [myid:] - INFO  [ProcessThread(sid:0 cport:11226)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:40:24,118 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:40:24,119 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:40:24,119 [myid:] - INFO  [main:NettyServerCnxnFactory@337] - shutdown called 0.0.0.0/0.0.0.0:11227
+2018-06-28 17:40:24,122 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:40:24,122 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:40:24,122 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:40:24,122 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:40:24,122 [myid:] - INFO  [ProcessThread(sid:0 cport:11227)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:40:24,123 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:40:24,123 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:40:24,124 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 32389
+2018-06-28 17:40:24,124 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 26
+2018-06-28 17:40:24,124 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testJMXRegistrationWithNetty
+2018-06-28 17:40:24,124 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testJMXRegistrationWithNetty
+2018-06-28 17:40:24,124 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testJMXRegistrationWithNetty
+2018-06-28 17:40:24,125 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testNonRecoverableError
+2018-06-28 17:40:24,125 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testNonRecoverableError
+2018-06-28 17:40:24,126 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11228
+2018-06-28 17:40:24,127 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11228
+2018-06-28 17:40:24,127 [myid:] - WARN  [Standalone server with clientPort:11228:ZooKeeperServerMain@79] - Unable to register log4j JMX control
+javax.management.InstanceAlreadyExistsException: log4j:hiearchy=default
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.zookeeper.jmx.ManagedUtil.registerLog4jMBeans(ManagedUtil.java:54)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:77)
+	at org.apache.zookeeper.server.ZooKeeperServerMainTest$MainThread.run(ZooKeeperServerMainTest.java:115)
+2018-06-28 17:40:24,127 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11228 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:24,127 [myid:] - INFO  [Standalone server with clientPort:11228:QuorumPeerConfig@136] - Reading configuration from: /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test4176714804456365392.junit.dir/zoo.cfg
+2018-06-28 17:40:24,128 [myid:] - INFO  [Standalone server with clientPort:11228:ZooKeeperServerMain@98] - Starting server
+2018-06-28 17:40:24,128 [myid:] - INFO  [Standalone server with clientPort:11228:ZooKeeperServer@836] - tickTime set to 2000
+2018-06-28 17:40:24,128 [myid:] - INFO  [Standalone server with clientPort:11228:ZooKeeperServer@845] - minSessionTimeout set to -1
+2018-06-28 17:40:24,128 [myid:] - INFO  [Standalone server with clientPort:11228:ZooKeeperServer@854] - maxSessionTimeout set to -1
+2018-06-28 17:40:24,128 [myid:] - INFO  [Standalone server with clientPort:11228:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:40:24,129 [myid:] - INFO  [Standalone server with clientPort:11228:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11228
+2018-06-28 17:40:24,383 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11228
+2018-06-28 17:40:24,384 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11228:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50682
+2018-06-28 17:40:24,384 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11228:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:50682
+2018-06-28 17:40:24,385 [myid:] - INFO  [Thread-7:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:40:24,386 [myid:] - INFO  [Thread-7:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50682 (no session established for client)
+2018-06-28 17:40:24,386 [myid:] - INFO  [Time-limited test:ZooKeeper@442] - Initiating client connection, connectString=127.0.0.1:11228 sessionTimeout=30000 watcher=org.apache.zookeeper.server.ZooKeeperServerMainTest@3eeb468f
+2018-06-28 17:40:24,388 [myid:] - INFO  [Time-limited test-SendThread(localhost:11228):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11228. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:40:24,388 [myid:] - INFO  [Time-limited test-SendThread(localhost:11228):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11228, initiating session
+2018-06-28 17:40:24,389 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11228:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50683
+2018-06-28 17:40:24,389 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11228:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:50683
+2018-06-28 17:40:24,390 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1
+2018-06-28 17:40:24,391 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x1000653ed070000 with negotiated timeout 30000 for client /127.0.0.1:50683
+2018-06-28 17:40:24,392 [myid:] - INFO  [Time-limited test-SendThread(localhost:11228):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11228, sessionid = 0x1000653ed070000, negotiated timeout = 30000
+2018-06-28 17:40:24,395 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.3
+2018-06-28 17:40:24,396 [myid:] - ERROR [SyncThread:0:ZooKeeperCriticalThread@49] - Severe unrecoverable error, from thread : SyncThread:0
+java.io.IOException: Input/output error
+	at org.apache.zookeeper.server.ZooKeeperServerMainTest$1.commit(ZooKeeperServerMainTest.java:187)
+	at org.apache.zookeeper.server.ZKDatabase.commit(ZKDatabase.java:488)
+	at org.apache.zookeeper.server.SyncRequestProcessor.flush(SyncRequestProcessor.java:195)
+	at org.apache.zookeeper.server.SyncRequestProcessor.run(SyncRequestProcessor.java:131)
+2018-06-28 17:40:24,396 [myid:] - INFO  [SyncThread:0:ZooKeeperServerListenerImpl@42] - Thread SyncThread:0 exits, error code 1
+2018-06-28 17:40:24,396 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:40:24,396 [myid:] - INFO  [Standalone server with clientPort:11228:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50683 which had sessionid 0x1000653ed070000
+2018-06-28 17:40:24,397 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11228:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:40:24,397 [myid:] - INFO  [Time-limited test-SendThread(localhost:11228):ClientCnxn$SendThread@1162] - Unable to read additional data from server sessionid 0x1000653ed070000, likely server has closed socket, closing socket connection and attempting reconnect
+2018-06-28 17:40:24,397 [myid:] - INFO  [Standalone server with clientPort:11228:ZooKeeperServer@502] - shutting down
+2018-06-28 17:40:24,397 [myid:] - INFO  [Standalone server with clientPort:11228:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:40:24,397 [myid:] - INFO  [Standalone server with clientPort:11228:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:40:24,397 [myid:] - INFO  [Standalone server with clientPort:11228:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:40:24,397 [myid:] - INFO  [ProcessThread(sid:0 cport:11228)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:40:24,397 [myid:] - WARN  [Standalone server with clientPort:11228:SyncRequestProcessor@220] - Got IO exception during shutdown
+2018-06-28 17:40:24,398 [myid:] - INFO  [Standalone server with clientPort:11228:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:40:24,669 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:40:24,669 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:40:24,669 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:40:24,671 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:40:24,671 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:40:24,954 [myid:] - INFO  [Time-limited test:ZooKeeper@693] - Session: 0x1000653ed070000 closed
+2018-06-28 17:40:24,954 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11228
+2018-06-28 17:40:24,954 [myid:] - INFO  [Time-limited test-EventThread:ClientCnxn$EventThread@522] - EventThread shut down for session: 0x1000653ed070000
+2018-06-28 17:40:24,958 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 35274
+2018-06-28 17:40:24,958 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 22
+2018-06-28 17:40:24,958 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testNonRecoverableError
+2018-06-28 17:40:24,958 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testNonRecoverableError
+2018-06-28 17:40:24,958 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testNonRecoverableError
+2018-06-28 17:40:24,959 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testReadOnlyTxnLogDir
+2018-06-28 17:40:24,959 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testReadOnlyTxnLogDir
+2018-06-28 17:40:24,960 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11229
+2018-06-28 17:40:24,961 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:24,962 [myid:] - WARN  [Standalone server with clientPort:11229:ZooKeeperServerMain@79] - Unable to register log4j JMX control
+javax.management.InstanceAlreadyExistsException: log4j:hiearchy=default
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.zookeeper.jmx.ManagedUtil.registerLog4jMBeans(ManagedUtil.java:54)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:77)
+	at org.apache.zookeeper.server.ZooKeeperServerMainTest$MainThread.run(ZooKeeperServerMainTest.java:115)
+2018-06-28 17:40:24,962 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:24,962 [myid:] - INFO  [Standalone server with clientPort:11229:QuorumPeerConfig@136] - Reading configuration from: /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test5532217270022625659.junit.dir/zoo.cfg
+2018-06-28 17:40:24,962 [myid:] - INFO  [Standalone server with clientPort:11229:ZooKeeperServerMain@98] - Starting server
+2018-06-28 17:40:24,963 [myid:] - INFO  [Standalone server with clientPort:11229:ZooKeeperServer@836] - tickTime set to 2000
+2018-06-28 17:40:24,963 [myid:] - INFO  [Standalone server with clientPort:11229:ZooKeeperServer@845] - minSessionTimeout set to -1
+2018-06-28 17:40:24,963 [myid:] - INFO  [Standalone server with clientPort:11229:ZooKeeperServer@854] - maxSessionTimeout set to -1
+2018-06-28 17:40:24,963 [myid:] - INFO  [Standalone server with clientPort:11229:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:40:24,963 [myid:] - INFO  [Standalone server with clientPort:11229:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11229
+2018-06-28 17:40:25,213 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:25,214 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11229:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:50686
+2018-06-28 17:40:25,214 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11229:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:50686
+2018-06-28 17:40:25,215 [myid:] - INFO  [Thread-8:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:40:25,216 [myid:] - INFO  [Thread-8:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:50686 (no session established for client)
+2018-06-28 17:40:25,216 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11229:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:40:25,217 [myid:] - INFO  [Time-limited test:ZooKeeperServer@502] - shutting down
+2018-06-28 17:40:25,217 [myid:] - INFO  [Time-limited test:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:40:25,217 [myid:] - INFO  [Time-limited test:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:40:25,217 [myid:] - INFO  [Time-limited test:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:40:25,217 [myid:] - INFO  [ProcessThread(sid:0 cport:11229)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:40:25,217 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:40:25,218 [myid:] - INFO  [Time-limited test:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:40:25,219 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:25,219 [myid:] - WARN  [Standalone server with clientPort:11229:ZooKeeperServerMain@79] - Unable to register log4j JMX control
+javax.management.InstanceAlreadyExistsException: log4j:hiearchy=default
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.zookeeper.jmx.ManagedUtil.registerLog4jMBeans(ManagedUtil.java:54)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:77)
+	at org.apache.zookeeper.server.ZooKeeperServerMainTest$MainThread.run(ZooKeeperServerMainTest.java:115)
+2018-06-28 17:40:25,219 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:25,220 [myid:] - INFO  [Standalone server with clientPort:11229:QuorumPeerConfig@136] - Reading configuration from: /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test5532217270022625659.junit.dir/zoo.cfg
+2018-06-28 17:40:25,220 [myid:] - INFO  [Standalone server with clientPort:11229:ZooKeeperServerMain@98] - Starting server
+2018-06-28 17:40:25,220 [myid:] - ERROR [Standalone server with clientPort:11229:ZooKeeperServerMainTest$MainThread@118] - unexpected exception in run
+java.io.IOException: Cannot write to data directory /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test5532217270022625659.junit.dir/data_txnlog/version-2
+	at org.apache.zookeeper.server.persistence.FileTxnSnapLog.<init>(FileTxnSnapLog.java:92)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:112)
+	at org.apache.zookeeper.server.ZooKeeperServerMain.initializeAndRun(ZooKeeperServerMain.java:89)
+	at org.apache.zookeeper.server.ZooKeeperServerMainTest$MainThread.run(ZooKeeperServerMainTest.java:115)
+2018-06-28 17:40:25,472 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:25,473 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:25,723 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:25,724 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:25,975 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:25,976 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:26,227 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:26,229 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:26,483 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:26,484 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:26,670 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:40:26,736 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:26,737 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:26,988 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:26,989 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:27,241 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:27,242 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:27,494 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:27,494 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:27,746 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:27,747 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:27,997 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:27,997 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:28,251 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:28,252 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:28,505 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:28,507 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:28,761 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:28,761 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:29,013 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:29,014 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:29,269 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:29,270 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:29,523 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:29,524 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:29,775 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:29,785 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:30,035 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:30,036 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:30,287 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:30,288 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:30,539 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:30,540 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:30,795 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:30,796 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:31,049 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:31,050 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:31,302 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:31,303 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:31,555 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:31,556 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:31,809 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:31,810 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:32,061 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:32,062 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:32,312 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:32,313 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:32,565 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:32,566 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:32,819 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:32,819 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:33,070 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:33,070 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:33,323 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:33,324 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:33,574 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:33,575 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:33,829 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:33,830 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:34,085 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:34,086 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:34,336 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:34,336 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:34,589 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:34,590 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:34,843 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:34,844 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:35,099 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:35,100 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:35,354 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:35,354 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:35,605 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:35,605 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:35,855 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:35,856 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:36,111 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:36,112 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:36,363 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:36,363 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:36,617 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:36,618 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:36,869 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:36,870 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:37,120 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:37,121 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:37,371 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:37,372 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:37,622 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:37,623 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:37,879 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:37,880 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:38,134 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:38,135 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:38,388 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:38,389 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:38,642 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:38,643 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:38,899 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:38,899 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:39,151 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:39,152 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:39,402 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:39,403 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:39,654 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:39,654 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:39,910 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:39,911 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:40,161 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:40,162 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:40,415 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11229
+2018-06-28 17:40:40,416 [myid:] - INFO  [Time-limited test:ClientBase@290] - server 127.0.0.1:11229 not up java.net.ConnectException: Connection refused (Connection refused)
+2018-06-28 17:40:40,418 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 4779
+2018-06-28 17:40:40,418 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 22
+2018-06-28 17:40:40,418 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testReadOnlyTxnLogDir
+2018-06-28 17:40:40,418 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testReadOnlyTxnLogDir
+2018-06-28 17:40:40,419 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testReadOnlyTxnLogDir
+------------- ---------------- ---------------
+
+Testcase: testStandalone took 0.42 sec
+Testcase: testJMXRegistrationWithNIO took 0.013 sec
+Testcase: testReadOnlySnapshotDir took 15.288 sec
+Testcase: testRaceBetweenSyncFlushAndZKShutdown took 0.068 sec
+Testcase: testAutoCreateDataLogDir took 0.279 sec
+Testcase: testJMXRegistrationWithNetty took 0.07 sec
+Testcase: testNonRecoverableError took 0.834 sec
+Testcase: testReadOnlyTxnLogDir took 15.46 sec

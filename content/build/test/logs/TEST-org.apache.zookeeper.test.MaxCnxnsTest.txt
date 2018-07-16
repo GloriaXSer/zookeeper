@@ -1,0 +1,245 @@
+Testsuite: org.apache.zookeeper.test.MaxCnxnsTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.312 sec
+------------- Standard Output ---------------
+2018-06-28 17:59:27,739 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11221
+2018-06-28 17:59:27,749 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testMaxCnxns
+2018-06-28 17:59:27,756 [myid:] - INFO  [main:ClientBase@489] - Initial fdcount is: 84
+2018-06-28 17:59:27,918 [myid:] - INFO  [main:ClientBase@507] - STARTING server
+2018-06-28 17:59:27,921 [myid:] - INFO  [main:ClientBase@428] - CREATING server instance 127.0.0.1:11221
+2018-06-28 17:59:27,929 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:59:27,938 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11221
+2018-06-28 17:59:27,941 [myid:] - INFO  [main:ClientBase@403] - STARTING server instance 127.0.0.1:11221
+2018-06-28 17:59:27,947 [myid:] - INFO  [main:Environment@100] - Server environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT
+2018-06-28 17:59:27,947 [myid:] - INFO  [main:Environment@100] - Server environment:host.name=10.0.0.10
+2018-06-28 17:59:27,947 [myid:] - INFO  [main:Environment@100] - Server environment:java.version=1.8.0_172
+2018-06-28 17:59:27,947 [myid:] - INFO  [main:Environment@100] - Server environment:java.vendor=Oracle Corporation
+2018-06-28 17:59:27,947 [myid:] - INFO  [main:Environment@100] - Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre
+2018-06-28 17:59:27,947 [myid:] - INFO  [main:Environment@100] - Server environment:java.class.path=/Users/hanm/Desktop/projects/git/apache/zookeeper/build/classes:/Users/hanm/Desktop/projects/git/apache/zookeeper/src/java/lib/ant-eclipse-1.0-jvm1.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/src/java/lib/ivy-2.4.0.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/classes:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr-2.7.7.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr4-annotations-4.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr4-runtime-4.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-api-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-avl-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-constants-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-shared-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-i18n-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptor-kerberos-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-admin-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-authn-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-authz-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-changelog-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-collective-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-event-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-exception-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-journal-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-normalization-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-operational-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-referral-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-schema-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-subtree-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-trigger-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-jdbm-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-jdbm1-2.0.0-M2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-ldif-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-mavibot-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-kerberos-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-ldap-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-shared-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-xdbm-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-all-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-asn1-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-asn1-ber-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-i18n-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-client-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-codec-core-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-aci-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-codec-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-codec-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-sp-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-trigger-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-util-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-model-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-util-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/audience-annotations-0.5.0.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/bcprov-jdk15-140.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/checkstyle-6.1.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-beanutils-core-1.8.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-cli-1.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-collections-3.2.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-io-2.4.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-lang-2.6.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-logging-1.1.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-pool-1.6.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/ehcache-core-2.4.4.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/guava-18.0.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/hamcrest-all-1.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/hamcrest-core-1.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/jline-0.9.94.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/junit-4.12.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/log4j-1.2.17.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mavibot-1.0.0-M1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mina-core-2.0.7.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mockito-all-1.8.5.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/netty-3.10.6.Final.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/org.abego.treelayout.core-1.0.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/slf4j-api-1.7.25.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/slf4j-log4j12-1.7.25.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-junit4.jar
+2018-06-28 17:59:27,948 [myid:] - INFO  [main:Environment@100] - Server environment:java.library.path=/Users/hanm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2018-06-28 17:59:27,948 [myid:] - INFO  [main:Environment@100] - Server environment:java.io.tmpdir=/var/folders/wv/j6wmf1nj5h7c36qz9b81kmfw0000gn/T/
+2018-06-28 17:59:27,949 [myid:] - INFO  [main:Environment@100] - Server environment:java.compiler=<NA>
+2018-06-28 17:59:27,949 [myid:] - INFO  [main:Environment@100] - Server environment:os.name=Mac OS X
+2018-06-28 17:59:27,949 [myid:] - INFO  [main:Environment@100] - Server environment:os.arch=x86_64
+2018-06-28 17:59:27,949 [myid:] - INFO  [main:Environment@100] - Server environment:os.version=10.13.5
+2018-06-28 17:59:27,949 [myid:] - INFO  [main:Environment@100] - Server environment:user.name=hanm
+2018-06-28 17:59:27,949 [myid:] - INFO  [main:Environment@100] - Server environment:user.home=/Users/hanm
+2018-06-28 17:59:27,949 [myid:] - INFO  [main:Environment@100] - Server environment:user.dir=/Users/hanm/Desktop/projects/git/apache/zookeeper
+2018-06-28 17:59:27,959 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test798355363324900350.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test798355363324900350.junit.dir/version-2
+2018-06-28 17:59:27,973 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11221
+2018-06-28 17:59:27,975 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56006
+2018-06-28 17:59:27,980 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ServerCnxn@324] - The list of known four letter word commands is : [{1936881266=srvr, 1937006964=stat, 2003003491=wchc, 1685417328=dump, 1668445044=crst, 1936880500=srst, 1701738089=envi, 1668247142=conf, 2003003507=wchs, 2003003504=wchp, 1668247155=cons, 1835955314=mntr, 1769173615=isro, 1920298859=ruok, 1735683435=gtmk, 1937010027=stmk}]
+2018-06-28 17:59:27,980 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ServerCnxn@325] - The list of enabled four letter word commands is : [[wchs, stat, wchp, stmk, conf, ruok, mntr, srvr, wchc, envi, srst, isro, dump, gtmk, crst, cons]]
+2018-06-28 17:59:27,982 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:56006
+2018-06-28 17:59:27,984 [myid:] - INFO  [Thread-2:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:59:27,984 [myid:] - INFO  [Thread-2:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56006 (no session established for client)
+2018-06-28 17:59:27,986 [myid:] - INFO  [main:JMXEnv@230] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2018-06-28 17:59:27,990 [myid:] - INFO  [main:JMXEnv@247] - expect:InMemoryDataTree
+2018-06-28 17:59:27,990 [myid:] - INFO  [main:JMXEnv@251] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port11221,name1=InMemoryDataTree
+2018-06-28 17:59:27,990 [myid:] - INFO  [main:JMXEnv@247] - expect:StandaloneServer_port
+2018-06-28 17:59:27,990 [myid:] - INFO  [main:JMXEnv@251] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port11221
+2018-06-28 17:59:27,991 [myid:] - INFO  [main:ClientBase@503] - Client test setup finished
+2018-06-28 17:59:27,991 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testMaxCnxns
+2018-06-28 17:59:27,998 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56007
+2018-06-28 17:59:28,000 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56007; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,000 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56007
+2018-06-28 17:59:28,001 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56008
+2018-06-28 17:59:28,001 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56009
+2018-06-28 17:59:28,001 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56008; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,001 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56008
+2018-06-28 17:59:28,002 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56010
+2018-06-28 17:59:28,002 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56009; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,002 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1
+2018-06-28 17:59:28,002 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56009
+2018-06-28 17:59:28,002 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56011
+2018-06-28 17:59:28,003 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56010; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,003 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56010
+2018-06-28 17:59:28,003 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56012
+2018-06-28 17:59:28,003 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56011; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,004 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56011
+2018-06-28 17:59:28,004 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56012; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,004 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56012
+2018-06-28 17:59:28,004 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56013
+2018-06-28 17:59:28,004 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56013; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,004 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56013
+2018-06-28 17:59:28,005 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56014
+2018-06-28 17:59:28,005 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56014; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,005 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56014
+2018-06-28 17:59:28,005 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56015
+2018-06-28 17:59:28,005 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56016
+2018-06-28 17:59:28,005 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56015; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,006 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56015
+2018-06-28 17:59:28,006 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56017
+2018-06-28 17:59:28,006 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56016; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,006 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56016
+2018-06-28 17:59:28,006 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56018
+2018-06-28 17:59:28,006 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56017; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,007 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56017
+2018-06-28 17:59:28,007 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56018; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,007 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56018
+2018-06-28 17:59:28,007 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56019
+2018-06-28 17:59:28,007 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56019; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,007 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56019
+2018-06-28 17:59:28,007 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56020
+2018-06-28 17:59:28,008 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56020; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,008 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56020
+2018-06-28 17:59:28,008 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56021
+2018-06-28 17:59:28,008 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56022
+2018-06-28 17:59:28,008 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56021; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,008 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56021
+2018-06-28 17:59:28,009 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56023
+2018-06-28 17:59:28,009 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56022; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,009 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56022
+2018-06-28 17:59:28,009 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56023; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,009 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56023
+2018-06-28 17:59:28,009 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56024
+2018-06-28 17:59:28,009 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56024; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,010 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56024
+2018-06-28 17:59:28,010 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56025
+2018-06-28 17:59:28,010 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56026
+2018-06-28 17:59:28,010 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56025; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,010 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56025
+2018-06-28 17:59:28,010 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56027
+2018-06-28 17:59:28,011 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56026; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,011 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56026
+2018-06-28 17:59:28,011 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56027; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,011 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56027
+2018-06-28 17:59:28,011 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56028
+2018-06-28 17:59:28,011 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56029
+2018-06-28 17:59:28,011 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56028; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,012 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56028
+2018-06-28 17:59:28,012 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56029; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,012 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56029
+2018-06-28 17:59:28,012 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56030
+2018-06-28 17:59:28,012 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56030; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,012 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56030
+2018-06-28 17:59:28,012 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56031
+2018-06-28 17:59:28,013 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56031; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,013 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56031
+2018-06-28 17:59:28,013 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56032
+2018-06-28 17:59:28,013 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56032; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,013 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56032
+2018-06-28 17:59:28,013 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56033
+2018-06-28 17:59:28,014 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56033; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,014 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56033
+2018-06-28 17:59:28,014 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56034
+2018-06-28 17:59:28,014 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56034; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,014 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56034
+2018-06-28 17:59:28,014 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56035
+2018-06-28 17:59:28,014 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:56036
+2018-06-28 17:59:28,015 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56035; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,015 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56035
+2018-06-28 17:59:28,015 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@903] - Connection request from old client /127.0.0.1:56036; will be dropped if server is in r-o mode
+2018-06-28 17:59:28,015 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:56036
+2018-06-28 17:59:28,017 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480000 with negotiated timeout 10000 for client /127.0.0.1:56007
+2018-06-28 17:59:28,018 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480001 with negotiated timeout 10000 for client /127.0.0.1:56008
+2018-06-28 17:59:28,018 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480000: Connection reset by peer
+2018-06-28 17:59:28,018 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480002 with negotiated timeout 10000 for client /127.0.0.1:56009
+2018-06-28 17:59:28,019 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56007 which had sessionid 0x100066561480000
+2018-06-28 17:59:28,019 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480003 with negotiated timeout 10000 for client /127.0.0.1:56010
+2018-06-28 17:59:28,019 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480001: Connection reset by peer
+2018-06-28 17:59:28,019 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56008 which had sessionid 0x100066561480001
+2018-06-28 17:59:28,019 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480004 with negotiated timeout 10000 for client /127.0.0.1:56011
+2018-06-28 17:59:28,019 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480003: Connection reset by peer
+2018-06-28 17:59:28,019 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480005 with negotiated timeout 10000 for client /127.0.0.1:56012
+2018-06-28 17:59:28,019 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56010 which had sessionid 0x100066561480003
+2018-06-28 17:59:28,020 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480002: Connection reset by peer
+2018-06-28 17:59:28,020 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480006 with negotiated timeout 10000 for client /127.0.0.1:56013
+2018-06-28 17:59:28,020 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56009 which had sessionid 0x100066561480002
+2018-06-28 17:59:28,020 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480007 with negotiated timeout 10000 for client /127.0.0.1:56014
+2018-06-28 17:59:28,020 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480006: Connection reset by peer
+2018-06-28 17:59:28,020 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56013 which had sessionid 0x100066561480006
+2018-06-28 17:59:28,020 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480008 with negotiated timeout 10000 for client /127.0.0.1:56015
+2018-06-28 17:59:28,020 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480005: Connection reset by peer
+2018-06-28 17:59:28,021 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56012 which had sessionid 0x100066561480005
+2018-06-28 17:59:28,021 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480009 with negotiated timeout 10000 for client /127.0.0.1:56016
+2018-06-28 17:59:28,021 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480004: Connection reset by peer
+2018-06-28 17:59:28,021 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56011 which had sessionid 0x100066561480004
+2018-06-28 17:59:28,021 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x10006656148000a with negotiated timeout 10000 for client /127.0.0.1:56017
+2018-06-28 17:59:28,021 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480007: Connection reset by peer
+2018-06-28 17:59:28,021 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x10006656148000b with negotiated timeout 10000 for client /127.0.0.1:56018
+2018-06-28 17:59:28,022 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56014 which had sessionid 0x100066561480007
+2018-06-28 17:59:28,022 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480009: Connection reset by peer
+2018-06-28 17:59:28,022 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x10006656148000c with negotiated timeout 10000 for client /127.0.0.1:56019
+2018-06-28 17:59:28,022 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56016 which had sessionid 0x100066561480009
+2018-06-28 17:59:28,022 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480008: Connection reset by peer
+2018-06-28 17:59:28,022 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x10006656148000d with negotiated timeout 10000 for client /127.0.0.1:56020
+2018-06-28 17:59:28,022 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56015 which had sessionid 0x100066561480008
+2018-06-28 17:59:28,023 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x10006656148000e with negotiated timeout 10000 for client /127.0.0.1:56021
+2018-06-28 17:59:28,023 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x10006656148000b: Connection reset by peer
+2018-06-28 17:59:28,023 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56018 which had sessionid 0x10006656148000b
+2018-06-28 17:59:28,023 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x10006656148000f with negotiated timeout 10000 for client /127.0.0.1:56022
+2018-06-28 17:59:28,023 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x10006656148000c: Connection reset by peer
+2018-06-28 17:59:28,023 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56019 which had sessionid 0x10006656148000c
+2018-06-28 17:59:28,023 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480010 with negotiated timeout 10000 for client /127.0.0.1:56023
+2018-06-28 17:59:28,023 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x10006656148000a: Connection reset by peer
+2018-06-28 17:59:28,023 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56017 which had sessionid 0x10006656148000a
+2018-06-28 17:59:28,023 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480011 with negotiated timeout 10000 for client /127.0.0.1:56024
+2018-06-28 17:59:28,024 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x10006656148000d: Connection reset by peer
+2018-06-28 17:59:28,024 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56020 which had sessionid 0x10006656148000d
+2018-06-28 17:59:28,024 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480012 with negotiated timeout 10000 for client /127.0.0.1:56025
+2018-06-28 17:59:28,024 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480011: Connection reset by peer
+2018-06-28 17:59:28,024 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56024 which had sessionid 0x100066561480011
+2018-06-28 17:59:28,024 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480012: Connection reset by peer
+2018-06-28 17:59:28,024 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56025 which had sessionid 0x100066561480012
+2018-06-28 17:59:28,025 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480010: Connection reset by peer
+2018-06-28 17:59:28,025 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480013 with negotiated timeout 10000 for client /127.0.0.1:56026
+2018-06-28 17:59:28,025 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56023 which had sessionid 0x100066561480010
+2018-06-28 17:59:28,025 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x10006656148000f: Connection reset by peer
+2018-06-28 17:59:28,025 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480014 with negotiated timeout 10000 for client /127.0.0.1:56027
+2018-06-28 17:59:28,025 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56022 which had sessionid 0x10006656148000f
+2018-06-28 17:59:28,025 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x10006656148000e: Connection reset by peer
+2018-06-28 17:59:28,025 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480015 with negotiated timeout 10000 for client /127.0.0.1:56028
+2018-06-28 17:59:28,026 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56021 which had sessionid 0x10006656148000e
+2018-06-28 17:59:28,026 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480016 with negotiated timeout 10000 for client /127.0.0.1:56029
+2018-06-28 17:59:28,026 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480015: Connection reset by peer
+2018-06-28 17:59:28,026 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480017 with negotiated timeout 10000 for client /127.0.0.1:56030
+2018-06-28 17:59:28,026 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56028 which had sessionid 0x100066561480015
+2018-06-28 17:59:28,026 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480013: Connection reset by peer
+2018-06-28 17:59:28,026 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480018 with negotiated timeout 10000 for client /127.0.0.1:56031
+2018-06-28 17:59:28,026 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56026 which had sessionid 0x100066561480013
+2018-06-28 17:59:28,027 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480014: Connection reset by peer
+2018-06-28 17:59:28,027 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066561480019 with negotiated timeout 10000 for client /127.0.0.1:56032
+2018-06-28 17:59:28,027 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56027 which had sessionid 0x100066561480014
+2018-06-28 17:59:28,027 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x10006656148001a with negotiated timeout 10000 for client /127.0.0.1:56033
+2018-06-28 17:59:28,027 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480016: Connection reset by peer
+2018-06-28 17:59:28,027 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56029 which had sessionid 0x100066561480016
+2018-06-28 17:59:28,027 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x10006656148001b with negotiated timeout 10000 for client /127.0.0.1:56034
+2018-06-28 17:59:28,028 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480017: Connection reset by peer
+2018-06-28 17:59:28,028 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x10006656148001c with negotiated timeout 10000 for client /127.0.0.1:56035
+2018-06-28 17:59:28,028 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56030 which had sessionid 0x100066561480017
+2018-06-28 17:59:28,028 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480018: Connection reset by peer
+2018-06-28 17:59:28,028 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x10006656148001d with negotiated timeout 10000 for client /127.0.0.1:56036
+2018-06-28 17:59:28,028 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56031 which had sessionid 0x100066561480018
+2018-06-28 17:59:28,028 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 16857
+2018-06-28 17:59:28,028 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x100066561480019: Connection reset by peer
+2018-06-28 17:59:28,029 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 16
+2018-06-28 17:59:28,029 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56032 which had sessionid 0x100066561480019
+2018-06-28 17:59:28,029 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testMaxCnxns
+2018-06-28 17:59:28,029 [myid:] - INFO  [main:ClientBase@584] - tearDown starting
+2018-06-28 17:59:28,029 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x10006656148001c: Connection reset by peer
+2018-06-28 17:59:28,029 [myid:] - INFO  [main:ClientBase@554] - STOPPING server
+2018-06-28 17:59:28,029 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56035 which had sessionid 0x10006656148001c
+2018-06-28 17:59:28,029 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x10006656148001b: Connection reset by peer
+2018-06-28 17:59:28,030 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56034 which had sessionid 0x10006656148001b
+2018-06-28 17:59:28,030 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x10006656148001a: Connection reset by peer
+2018-06-28 17:59:28,030 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56033 which had sessionid 0x10006656148001a
+2018-06-28 17:59:28,030 [myid:] - WARN  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@383] - Exception causing close of session 0x10006656148001d: Connection reset by peer
+2018-06-28 17:59:28,030 [myid:] - INFO  [main:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56036 which had sessionid 0x10006656148001d
+2018-06-28 17:59:28,030 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:56036 which had sessionid 0x10006656148001d
+2018-06-28 17:59:28,030 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:59:28,030 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:59:28,031 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:59:28,031 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:59:28,031 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:59:28,031 [myid:] - INFO  [ProcessThread(sid:0 cport:11221)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:59:28,031 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:59:28,031 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:59:28,032 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11221
+2018-06-28 17:59:28,033 [myid:] - INFO  [main:JMXEnv@147] - ensureOnly:[]
+2018-06-28 17:59:28,036 [myid:] - INFO  [main:ClientBase@609] - fdcount after test is: 99 at start it was 84
+2018-06-28 17:59:28,036 [myid:] - INFO  [main:ClientBase@611] - sleeping for 20 secs
+2018-06-28 17:59:28,037 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testMaxCnxns
+2018-06-28 17:59:28,037 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testMaxCnxns
+------------- ---------------- ---------------
+
+Testcase: testMaxCnxns took 0.288 sec

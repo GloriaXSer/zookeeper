@@ -1,0 +1,142 @@
+Testsuite: org.apache.zookeeper.test.LENonTerminateTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.898 sec
+------------- Standard Output ---------------
+2018-06-28 17:59:15,763 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testNonTermination
+2018-06-28 17:59:15,772 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testNonTermination
+2018-06-28 17:59:15,772 [myid:] - INFO  [main:LENonTerminateTest@299] - TestNonTermination: testNonTermination, 3
+2018-06-28 17:59:15,773 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11221
+2018-06-28 17:59:15,774 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11222
+2018-06-28 17:59:15,779 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:59:15,792 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11223
+2018-06-28 17:59:15,792 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11224
+2018-06-28 17:59:15,792 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:59:15,794 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11225
+2018-06-28 17:59:15,794 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11226
+2018-06-28 17:59:15,794 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:59:15,802 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:59:15,816 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11221
+2018-06-28 17:59:15,836 [myid:] - INFO  [main:QuorumPeer@668] - currentEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2018-06-28 17:59:15,838 [myid:] - INFO  [main:QuorumPeer@683] - acceptedEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2018-06-28 17:59:15,849 [myid:] - INFO  [main:LENonTerminateTest$MockQuorumPeer@226] - Returning mocked leader election
+2018-06-28 17:59:15,855 [myid:] - INFO  [main:LENonTerminateTest$LEThread@259] - Constructor: Thread-0
+2018-06-28 17:59:15,856 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:59:15,856 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11223
+2018-06-28 17:59:15,856 [myid:] - INFO  [main:QuorumPeer@668] - currentEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2018-06-28 17:59:15,857 [myid:] - INFO  [main:QuorumPeer@683] - acceptedEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2018-06-28 17:59:15,874 [myid:] - INFO  [main:LENonTerminateTest$MockQuorumPeer@226] - Returning mocked leader election
+2018-06-28 17:59:15,874 [myid:] - INFO  [main:LENonTerminateTest$LEThread@259] - Constructor: Thread-1
+2018-06-28 17:59:15,875 [myid:] - INFO  [Thread-2:LENonTerminateTest@360] - In MockServer
+2018-06-28 17:59:15,876 [myid:] - INFO  [Thread-0:LENonTerminateTest$LEThread@267] - Going to call leader election: 0
+2018-06-28 17:59:15,876 [myid:] - INFO  [Thread-1:LENonTerminateTest$LEThread@267] - Going to call leader election: 1
+2018-06-28 17:59:15,876 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11221
+2018-06-28 17:59:15,876 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11221
+2018-06-28 17:59:15,878 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11223
+2018-06-28 17:59:15,878 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11223
+2018-06-28 17:59:15,878 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11225
+2018-06-28 17:59:15,878 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11225
+2018-06-28 17:59:15,878 [myid:] - INFO  [Thread-2:LENonTerminateTest@366] - Received -1451573184 0 0
+2018-06-28 17:59:15,878 [myid:] - INFO  [Thread-2:LENonTerminateTest@367] - From /127.0.0.1:51904
+2018-06-28 17:59:15,878 [myid:] - INFO  [Thread-2:LENonTerminateTest@366] - Received 1021387173 2 2
+2018-06-28 17:59:15,878 [myid:] - INFO  [Thread-2:LENonTerminateTest@367] - From /127.0.0.1:51903
+2018-06-28 17:59:15,879 [myid:] - INFO  [Thread-0:LeaderElection@124] - Election tally: 
+2018-06-28 17:59:15,879 [myid:] - INFO  [Thread-0:LeaderElection@130] - 0	-> 1
+2018-06-28 17:59:15,879 [myid:] - INFO  [Thread-0:LeaderElection@130] - 1	-> 1
+2018-06-28 17:59:15,879 [myid:] - INFO  [Thread-0:LeaderElection@130] - 2	-> 1
+2018-06-28 17:59:15,879 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@157] - Waiting for first round of voting to complete
+2018-06-28 17:59:15,879 [myid:] - INFO  [Thread-1:LeaderElection@124] - Election tally: 
+2018-06-28 17:59:15,880 [myid:] - INFO  [Thread-1:LeaderElection@130] - 0	-> 1
+2018-06-28 17:59:15,880 [myid:] - INFO  [Thread-1:LeaderElection@130] - 1	-> 1
+2018-06-28 17:59:15,880 [myid:] - INFO  [Thread-1:LeaderElection@130] - 2	-> 1
+2018-06-28 17:59:15,880 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@157] - Waiting for first round of voting to complete
+2018-06-28 17:59:16,885 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11221
+2018-06-28 17:59:16,885 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11221
+2018-06-28 17:59:16,886 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11223
+2018-06-28 17:59:16,886 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11223
+2018-06-28 17:59:16,886 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11225
+2018-06-28 17:59:16,886 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11225
+2018-06-28 17:59:17,097 [myid:] - WARN  [Thread-1:LENonTerminateTest$MockLeaderElection@142] - Ignoring exception while looking for leader
+java.net.SocketTimeoutException: Receive timed out
+	at java.net.PlainDatagramSocketImpl.receive0(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at org.apache.zookeeper.test.LENonTerminateTest$MockLeaderElection.lookForLeader(LENonTerminateTest.java:118)
+	at org.apache.zookeeper.test.LENonTerminateTest$LEThread.run(LENonTerminateTest.java:268)
+2018-06-28 17:59:17,099 [myid:] - INFO  [Thread-1:LeaderElection@124] - Election tally: 
+2018-06-28 17:59:17,099 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@157] - Waiting for first round of voting to complete
+2018-06-28 17:59:17,097 [myid:] - WARN  [Thread-0:LENonTerminateTest$MockLeaderElection@142] - Ignoring exception while looking for leader
+java.net.SocketTimeoutException: Receive timed out
+	at java.net.PlainDatagramSocketImpl.receive0(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at org.apache.zookeeper.test.LENonTerminateTest$MockLeaderElection.lookForLeader(LENonTerminateTest.java:118)
+	at org.apache.zookeeper.test.LENonTerminateTest$LEThread.run(LENonTerminateTest.java:268)
+2018-06-28 17:59:17,100 [myid:] - INFO  [Thread-0:LeaderElection@124] - Election tally: 
+2018-06-28 17:59:17,100 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@157] - Waiting for first round of voting to complete
+2018-06-28 17:59:18,108 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11221
+2018-06-28 17:59:18,108 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11221
+2018-06-28 17:59:18,108 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11223
+2018-06-28 17:59:18,108 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11223
+2018-06-28 17:59:18,108 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11225
+2018-06-28 17:59:18,108 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11225
+2018-06-28 17:59:18,318 [myid:] - WARN  [Thread-1:LENonTerminateTest$MockLeaderElection@142] - Ignoring exception while looking for leader
+java.net.SocketTimeoutException: Receive timed out
+	at java.net.PlainDatagramSocketImpl.receive0(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at org.apache.zookeeper.test.LENonTerminateTest$MockLeaderElection.lookForLeader(LENonTerminateTest.java:118)
+	at org.apache.zookeeper.test.LENonTerminateTest$LEThread.run(LENonTerminateTest.java:268)
+2018-06-28 17:59:18,318 [myid:] - WARN  [Thread-0:LENonTerminateTest$MockLeaderElection@142] - Ignoring exception while looking for leader
+java.net.SocketTimeoutException: Receive timed out
+	at java.net.PlainDatagramSocketImpl.receive0(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at org.apache.zookeeper.test.LENonTerminateTest$MockLeaderElection.lookForLeader(LENonTerminateTest.java:118)
+	at org.apache.zookeeper.test.LENonTerminateTest$LEThread.run(LENonTerminateTest.java:268)
+2018-06-28 17:59:18,318 [myid:] - INFO  [Thread-1:LeaderElection@124] - Election tally: 
+2018-06-28 17:59:18,319 [myid:] - INFO  [Thread-0:LeaderElection@124] - Election tally: 
+2018-06-28 17:59:18,319 [myid:] - INFO  [Thread-0:LeaderElection@130] - 0	-> 1
+2018-06-28 17:59:18,319 [myid:] - INFO  [Thread-1:LeaderElection@130] - 0	-> 1
+2018-06-28 17:59:18,319 [myid:] - INFO  [Thread-0:LeaderElection@130] - 1	-> 1
+2018-06-28 17:59:18,319 [myid:] - INFO  [Thread-1:LeaderElection@130] - 1	-> 1
+2018-06-28 17:59:18,319 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@157] - Waiting for first round of voting to complete
+2018-06-28 17:59:18,319 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@157] - Waiting for first round of voting to complete
+2018-06-28 17:59:19,330 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11221
+2018-06-28 17:59:19,330 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11221
+2018-06-28 17:59:19,330 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11223
+2018-06-28 17:59:19,330 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11223
+2018-06-28 17:59:19,331 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11225
+2018-06-28 17:59:19,331 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@102] - Server address: /127.0.0.1:11225
+2018-06-28 17:59:19,532 [myid:] - WARN  [Thread-0:LENonTerminateTest$MockLeaderElection@142] - Ignoring exception while looking for leader
+java.net.SocketTimeoutException: Receive timed out
+	at java.net.PlainDatagramSocketImpl.receive0(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at org.apache.zookeeper.test.LENonTerminateTest$MockLeaderElection.lookForLeader(LENonTerminateTest.java:118)
+	at org.apache.zookeeper.test.LENonTerminateTest$LEThread.run(LENonTerminateTest.java:268)
+2018-06-28 17:59:19,532 [myid:] - WARN  [Thread-1:LENonTerminateTest$MockLeaderElection@142] - Ignoring exception while looking for leader
+java.net.SocketTimeoutException: Receive timed out
+	at java.net.PlainDatagramSocketImpl.receive0(Native Method)
+	at java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+	at java.net.DatagramSocket.receive(DatagramSocket.java:812)
+	at org.apache.zookeeper.test.LENonTerminateTest$MockLeaderElection.lookForLeader(LENonTerminateTest.java:118)
+	at org.apache.zookeeper.test.LENonTerminateTest$LEThread.run(LENonTerminateTest.java:268)
+2018-06-28 17:59:19,532 [myid:] - INFO  [Thread-0:LeaderElection@124] - Election tally: 
+2018-06-28 17:59:19,533 [myid:] - INFO  [Thread-1:LeaderElection@124] - Election tally: 
+2018-06-28 17:59:19,533 [myid:] - INFO  [Thread-1:LeaderElection@130] - 1	-> 2
+2018-06-28 17:59:19,533 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@157] - Waiting for first round of voting to complete
+2018-06-28 17:59:19,533 [myid:] - INFO  [Thread-0:LeaderElection@130] - 1	-> 2
+2018-06-28 17:59:19,533 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@157] - Waiting for first round of voting to complete
+2018-06-28 17:59:19,534 [myid:] - INFO  [Thread-1:LENonTerminateTest$MockLeaderElection@177] - Found leader: my type is: PARTICIPANT
+2018-06-28 17:59:19,535 [myid:] - INFO  [Thread-1:LENonTerminateTest$LEThread@280] - Finished election: 1, 1
+2018-06-28 17:59:19,535 [myid:] - INFO  [Thread-0:LENonTerminateTest$MockLeaderElection@177] - Found leader: my type is: PARTICIPANT
+2018-06-28 17:59:19,535 [myid:] - INFO  [Thread-1:LENonTerminateTest$LEThread@284] - Joining
+2018-06-28 17:59:19,638 [myid:] - INFO  [Thread-0:LENonTerminateTest$LEThread@280] - Finished election: 0, 1
+2018-06-28 17:59:19,641 [myid:] - INFO  [Thread-0:LENonTerminateTest$LEThread@284] - Joining
+2018-06-28 17:59:19,641 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 23344
+2018-06-28 17:59:19,642 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 6
+2018-06-28 17:59:19,642 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testNonTermination
+2018-06-28 17:59:19,642 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testNonTermination
+2018-06-28 17:59:19,642 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testNonTermination
+------------- ---------------- ---------------
+
+Testcase: testNonTermination took 3.88 sec

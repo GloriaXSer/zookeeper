@@ -1,0 +1,11 @@
+Testsuite: org.apache.zookeeper.test.OSMXBeanTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.034 sec
+------------- Standard Output ---------------
+2018-06-28 18:01:43,072 [myid:] - INFO  [main:OSMXBeanTest@48] - Running in a Unix or Linux system!
+2018-06-28 18:01:43,085 [myid:] - INFO  [main:OSMXBeanTest@65] - max fdcount is: 10240
+2018-06-28 18:01:43,086 [myid:] - INFO  [main:OSMXBeanTest@56] - open fdcount is: 84
+------------- ---------------- ---------------
+
+Testcase: testGetUnix took 0.013 sec
+Testcase: testGetMaxFileDescriptorCount took 0.002 sec
+Testcase: testGetOpenFileDescriptorCount took 0.002 sec

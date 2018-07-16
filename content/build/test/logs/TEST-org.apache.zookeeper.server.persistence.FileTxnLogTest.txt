@@ -1,0 +1,112 @@
+Testsuite: org.apache.zookeeper.server.persistence.FileTxnLogTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.242 sec
+------------- Standard Output ---------------
+2018-06-28 17:41:57,316 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testSetPreallocSize
+2018-06-28 17:41:57,323 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testSetPreallocSize
+2018-06-28 17:41:57,331 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17992
+2018-06-28 17:41:57,331 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:41:57,331 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testSetPreallocSize
+2018-06-28 17:41:57,331 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testSetPreallocSize
+2018-06-28 17:41:57,332 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testSetPreallocSize
+2018-06-28 17:41:57,335 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testSyncThresholdExceedCount
+2018-06-28 17:41:57,335 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testSyncThresholdExceedCount
+2018-06-28 17:41:57,474 [myid:] - INFO  [main:FileTxnLog@213] - Creating new log file: log.1
+2018-06-28 17:41:57,480 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,481 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,481 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,481 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,482 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,482 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,484 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,484 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,484 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,485 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,485 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,485 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,486 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,486 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,486 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,487 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,487 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,487 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,488 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,488 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,488 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,488 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,489 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,489 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,489 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,490 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,490 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,490 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,491 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,491 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,491 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,491 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,492 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,492 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,492 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,493 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,493 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,493 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,493 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,494 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,494 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,494 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,494 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,495 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,495 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,495 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,496 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,496 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,496 [myid:] - WARN  [main:FileTxnLog@204] - Current zxid 1 is <= 1 for 1
+2018-06-28 17:41:57,496 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 28651
+2018-06-28 17:41:57,497 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:41:57,497 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testSyncThresholdExceedCount
+2018-06-28 17:41:57,497 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testSyncThresholdExceedCount
+2018-06-28 17:41:57,497 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testSyncThresholdExceedCount
+2018-06-28 17:41:57,497 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testCalculateFileSizeWithPaddingWhenNotToCurrentSize
+2018-06-28 17:41:57,497 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testCalculateFileSizeWithPaddingWhenNotToCurrentSize
+2018-06-28 17:41:57,498 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 28651
+2018-06-28 17:41:57,498 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:41:57,498 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testCalculateFileSizeWithPaddingWhenNotToCurrentSize
+2018-06-28 17:41:57,498 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testCalculateFileSizeWithPaddingWhenNotToCurrentSize
+2018-06-28 17:41:57,498 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testCalculateFileSizeWithPaddingWhenNotToCurrentSize
+2018-06-28 17:41:57,498 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testInvalidPreallocSize
+2018-06-28 17:41:57,499 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testInvalidPreallocSize
+2018-06-28 17:41:57,499 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 28651
+2018-06-28 17:41:57,499 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:41:57,499 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testInvalidPreallocSize
+2018-06-28 17:41:57,499 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testInvalidPreallocSize
+2018-06-28 17:41:57,499 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testInvalidPreallocSize
+2018-06-28 17:41:57,500 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testFileSizeGreaterThanPosition
+2018-06-28 17:41:57,500 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testFileSizeGreaterThanPosition
+2018-06-28 17:41:57,500 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 28651
+2018-06-28 17:41:57,500 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:41:57,500 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testFileSizeGreaterThanPosition
+2018-06-28 17:41:57,500 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testFileSizeGreaterThanPosition
+2018-06-28 17:41:57,500 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testFileSizeGreaterThanPosition
+2018-06-28 17:41:57,500 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testCalculateFileSizeWithPaddingWhenCloseToCurrentSize
+2018-06-28 17:41:57,501 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testCalculateFileSizeWithPaddingWhenCloseToCurrentSize
+2018-06-28 17:41:57,501 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 28651
+2018-06-28 17:41:57,501 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:41:57,501 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testCalculateFileSizeWithPaddingWhenCloseToCurrentSize
+2018-06-28 17:41:57,501 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testCalculateFileSizeWithPaddingWhenCloseToCurrentSize
+2018-06-28 17:41:57,501 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testCalculateFileSizeWithPaddingWhenCloseToCurrentSize
+2018-06-28 17:41:57,504 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testPreAllocSizeSmallerThanTxnData
+2018-06-28 17:41:57,504 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testPreAllocSizeSmallerThanTxnData
+2018-06-28 17:41:57,510 [myid:] - INFO  [main:FileTxnLog@213] - Creating new log file: log.1
+2018-06-28 17:41:57,540 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 13338
+2018-06-28 17:41:57,540 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:41:57,540 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testPreAllocSizeSmallerThanTxnData
+2018-06-28 17:41:57,540 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testPreAllocSizeSmallerThanTxnData
+2018-06-28 17:41:57,540 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testPreAllocSizeSmallerThanTxnData
+------------- ---------------- ---------------
+
+Testcase: testSetPreallocSize took 0.017 sec
+Testcase: testSyncThresholdExceedCount took 0.162 sec
+Testcase: testCalculateFileSizeWithPaddingWhenNotToCurrentSize took 0.001 sec
+Testcase: testInvalidPreallocSize took 0.001 sec
+Testcase: testFileSizeGreaterThanPosition took 0.001 sec
+Testcase: testCalculateFileSizeWithPaddingWhenCloseToCurrentSize took 0.003 sec
+Testcase: testPreAllocSizeSmallerThanTxnData took 0.036 sec

@@ -1,0 +1,107 @@
+Testsuite: org.apache.zookeeper.test.StaticHostProviderTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.813 sec
+------------- Standard Output ---------------
+2018-06-28 18:43:13,824 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testOnConnectDoesNotReset
+2018-06-28 18:43:13,831 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testOnConnectDoesNotReset
+2018-06-28 18:43:13,833 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17986
+2018-06-28 18:43:13,833 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:43:13,833 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testOnConnectDoesNotReset
+2018-06-28 18:43:13,833 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testOnConnectDoesNotReset
+2018-06-28 18:43:13,833 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testOnConnectDoesNotReset
+2018-06-28 18:43:13,837 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testNextGoesRoundAndSleeps
+2018-06-28 18:43:13,837 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testNextGoesRoundAndSleeps
+2018-06-28 18:43:14,844 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17986
+2018-06-28 18:43:14,844 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:43:14,844 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testNextGoesRoundAndSleeps
+2018-06-28 18:43:14,844 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testNextGoesRoundAndSleeps
+2018-06-28 18:43:14,845 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testNextGoesRoundAndSleeps
+2018-06-28 18:43:14,845 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testLiteralIPNoReverseNS
+2018-06-28 18:43:14,846 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testLiteralIPNoReverseNS
+2018-06-28 18:43:15,402 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17986
+2018-06-28 18:43:15,402 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:43:15,402 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testLiteralIPNoReverseNS
+2018-06-28 18:43:15,402 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testLiteralIPNoReverseNS
+2018-06-28 18:43:15,402 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testLiteralIPNoReverseNS
+2018-06-28 18:43:15,403 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testReResolvingLocalhost
+2018-06-28 18:43:15,403 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testReResolvingLocalhost
+2018-06-28 18:43:15,406 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17986
+2018-06-28 18:43:15,407 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:43:15,407 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testReResolvingLocalhost
+2018-06-28 18:43:15,407 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testReResolvingLocalhost
+2018-06-28 18:43:15,407 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testReResolvingLocalhost
+2018-06-28 18:43:15,410 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testEmptyResolution
+2018-06-28 18:43:15,410 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testEmptyResolution
+2018-06-28 18:43:15,559 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 32006
+2018-06-28 18:43:15,559 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:43:15,560 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testEmptyResolution
+2018-06-28 18:43:15,560 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testEmptyResolution
+2018-06-28 18:43:15,560 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testEmptyResolution
+2018-06-28 18:43:15,560 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testReResolvingMultiple
+2018-06-28 18:43:15,560 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testReResolvingMultiple
+2018-06-28 18:43:15,579 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 32671
+2018-06-28 18:43:15,579 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:43:15,579 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testReResolvingMultiple
+2018-06-28 18:43:15,580 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testReResolvingMultiple
+2018-06-28 18:43:15,580 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testReResolvingMultiple
+2018-06-28 18:43:15,580 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testNextDoesNotSleepForZero
+2018-06-28 18:43:15,580 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testNextDoesNotSleepForZero
+2018-06-28 18:43:15,580 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 32671
+2018-06-28 18:43:15,580 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:43:15,581 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testNextDoesNotSleepForZero
+2018-06-28 18:43:15,581 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testNextDoesNotSleepForZero
+2018-06-28 18:43:15,581 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testNextDoesNotSleepForZero
+2018-06-28 18:43:15,581 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testInvalidHostAddresses
+2018-06-28 18:43:15,581 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testInvalidHostAddresses
+2018-06-28 18:43:15,582 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 32671
+2018-06-28 18:43:15,582 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:43:15,582 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testInvalidHostAddresses
+2018-06-28 18:43:15,582 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testInvalidHostAddresses
+2018-06-28 18:43:15,582 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testInvalidHostAddresses
+2018-06-28 18:43:15,583 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testReResolveMultipleOneFailing
+2018-06-28 18:43:15,583 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testReResolveMultipleOneFailing
+2018-06-28 18:43:15,605 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 5959
+2018-06-28 18:43:15,605 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:43:15,605 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testReResolveMultipleOneFailing
+2018-06-28 18:43:15,605 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testReResolveMultipleOneFailing
+2018-06-28 18:43:15,605 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testReResolveMultipleOneFailing
+2018-06-28 18:43:15,606 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testNextGoesRound
+2018-06-28 18:43:15,606 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testNextGoesRound
+2018-06-28 18:43:15,606 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 5959
+2018-06-28 18:43:15,606 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:43:15,606 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testNextGoesRound
+2018-06-28 18:43:15,606 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testNextGoesRound
+2018-06-28 18:43:15,606 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testNextGoesRound
+2018-06-28 18:43:15,607 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testEmptyServerAddressesList
+2018-06-28 18:43:15,607 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testEmptyServerAddressesList
+2018-06-28 18:43:15,607 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@71] - TEST METHOD testEmptyServerAddressesList THREW EXPECTED EXCEPTION class java.lang.IllegalArgumentException
+2018-06-28 18:43:15,607 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testEmptyServerAddressesList
+2018-06-28 18:43:15,607 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testEmptyServerAddressesList
+2018-06-28 18:43:15,608 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testTwoConsequitiveCallsToNextReturnDifferentElement
+2018-06-28 18:43:15,608 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testTwoConsequitiveCallsToNextReturnDifferentElement
+2018-06-28 18:43:15,610 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 5959
+2018-06-28 18:43:15,611 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:43:15,611 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testTwoConsequitiveCallsToNextReturnDifferentElement
+2018-06-28 18:43:15,611 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testTwoConsequitiveCallsToNextReturnDifferentElement
+2018-06-28 18:43:15,611 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testTwoConsequitiveCallsToNextReturnDifferentElement
+2018-06-28 18:43:15,611 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testReResolvingSingle
+2018-06-28 18:43:15,612 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testReResolvingSingle
+2018-06-28 18:43:15,622 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 6624
+2018-06-28 18:43:15,622 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:43:15,622 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testReResolvingSingle
+2018-06-28 18:43:15,622 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testReResolvingSingle
+2018-06-28 18:43:15,623 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testReResolvingSingle
+------------- ---------------- ---------------
+
+Testcase: testOnConnectDoesNotReset took 0.01 sec
+Testcase: testNextGoesRoundAndSleeps took 1.008 sec
+Testcase: testLiteralIPNoReverseNS took 0.557 sec
+Testcase: testReResolvingLocalhost took 0.004 sec
+Testcase: testEmptyResolution took 0.15 sec
+Testcase: testReResolvingMultiple took 0.02 sec
+Testcase: testNextDoesNotSleepForZero took 0.001 sec
+Testcase: testInvalidHostAddresses took 0.001 sec
+Testcase: testReResolveMultipleOneFailing took 0.022 sec
+Testcase: testNextGoesRound took 0 sec
+Testcase: testEmptyServerAddressesList took 0.001 sec
+Testcase: testTwoConsequitiveCallsToNextReturnDifferentElement took 0.003 sec
+Testcase: testReResolvingSingle took 0.012 sec

@@ -1,0 +1,13 @@
+Testsuite: org.apache.zookeeper.server.ToStringTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.033 sec
+------------- Standard Output ---------------
+2018-06-28 17:40:07,320 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testJuteToString
+2018-06-28 17:40:07,329 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testJuteToString
+2018-06-28 17:40:07,334 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17322
+2018-06-28 17:40:07,334 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:40:07,334 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testJuteToString
+2018-06-28 17:40:07,334 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testJuteToString
+2018-06-28 17:40:07,334 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testJuteToString
+------------- ---------------- ---------------
+
+Testcase: testJuteToString took 0.015 sec

@@ -1,0 +1,16 @@
+Testsuite: org.apache.zookeeper.server.persistence.TxnLogToolkitCliParserTest
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.031 sec
+
+Testcase: testParseWithInvalidLongSwitch took 0.001 sec
+Testcase: testParseRecoveryModeSwitchShort took 0.008 sec
+Testcase: testParseVerboseModeSwitchLong took 0.001 sec
+Testcase: testParseDumpModeSwitchShort took 0 sec
+Testcase: testParseForceModeSwitchShort took 0 sec
+Testcase: testParseForceModeSwitchLong took 0 sec
+Testcase: testParseVerboseModeSwitchShort took 0 sec
+Testcase: testParseRecoveryModeSwitchLong took 0 sec
+Testcase: testParseWithEmptyArgs took 0 sec
+Testcase: testParseDumpModeSwitchLong took 0 sec
+Testcase: testParseWith2Filenames took 0 sec
+Testcase: testParseWithInvalidShortSwitch took 0 sec
+Testcase: testParseWithNoArguments took 0 sec

@@ -1,0 +1,50 @@
+Testsuite: org.apache.zookeeper.server.quorum.FLECompatibilityTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.13 sec
+------------- Standard Output ---------------
+2018-06-28 17:42:42,343 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testForwardCompatibility
+2018-06-28 17:42:42,355 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testForwardCompatibility
+2018-06-28 17:42:42,357 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11221
+2018-06-28 17:42:42,358 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11222
+2018-06-28 17:42:42,368 [myid:] - INFO  [Time-limited test:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:42:42,385 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11223
+2018-06-28 17:42:42,386 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11224
+2018-06-28 17:42:42,386 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11225
+2018-06-28 17:42:42,386 [myid:] - INFO  [Time-limited test:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:42:42,386 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11226
+2018-06-28 17:42:42,386 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11227
+2018-06-28 17:42:42,387 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11228
+2018-06-28 17:42:42,387 [myid:] - INFO  [Time-limited test:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:42:42,387 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11229
+2018-06-28 17:42:42,398 [myid:] - INFO  [Time-limited test:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:42:42,411 [myid:] - INFO  [Time-limited test:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11223
+2018-06-28 17:42:42,438 [myid:] - INFO  [WorkerReceiver[myid=0]:FastLeaderElection@595] - Notification: 1 (message format version), 2 (n.leader), 0x1 (n.zxid), 0x1 (n.round), LOOKING (n.state), 2 (n.sid), 0x1 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:42:42,438 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 21379
+2018-06-28 17:42:42,438 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 7
+2018-06-28 17:42:42,439 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testForwardCompatibility
+2018-06-28 17:42:42,439 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testForwardCompatibility
+2018-06-28 17:42:42,440 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testForwardCompatibility
+2018-06-28 17:42:42,443 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testBackwardCompatibility
+2018-06-28 17:42:42,444 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testBackwardCompatibility
+2018-06-28 17:42:42,444 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11230
+2018-06-28 17:42:42,444 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11231
+2018-06-28 17:42:42,444 [myid:] - INFO  [Time-limited test:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:42:42,445 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11232
+2018-06-28 17:42:42,445 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11233
+2018-06-28 17:42:42,445 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11234
+2018-06-28 17:42:42,445 [myid:] - INFO  [Time-limited test:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:42:42,446 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11235
+2018-06-28 17:42:42,446 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11236
+2018-06-28 17:42:42,446 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11237
+2018-06-28 17:42:42,446 [myid:] - INFO  [Time-limited test:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:42:42,446 [myid:] - INFO  [Time-limited test:PortAssignment@32] - assigning port 11238
+2018-06-28 17:42:42,446 [myid:] - INFO  [Time-limited test:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:42:42,447 [myid:] - INFO  [Time-limited test:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11232
+2018-06-28 17:42:42,450 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 22711
+2018-06-28 17:42:42,450 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 8
+2018-06-28 17:42:42,451 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testBackwardCompatibility
+2018-06-28 17:42:42,451 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testBackwardCompatibility
+2018-06-28 17:42:42,451 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testBackwardCompatibility
+------------- ---------------- ---------------
+
+Testcase: testForwardCompatibility took 0.098 sec
+Testcase: testBackwardCompatibility took 0.008 sec

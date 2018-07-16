@@ -1,0 +1,61 @@
+Testsuite: org.apache.zookeeper.test.AtomicFileOutputStreamTest
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.061 sec
+------------- Standard Output ---------------
+2018-06-28 17:55:45,223 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testOverwriteFile
+2018-06-28 17:55:45,242 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testOverwriteFile
+2018-06-28 17:55:45,245 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17986
+2018-06-28 17:55:45,246 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:55:45,246 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testOverwriteFile
+2018-06-28 17:55:45,248 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testOverwriteFile
+2018-06-28 17:55:45,248 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testOverwriteFile
+2018-06-28 17:55:45,253 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testAbortNewFileAfterFlush
+2018-06-28 17:55:45,253 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testAbortNewFileAfterFlush
+2018-06-28 17:55:45,254 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17986
+2018-06-28 17:55:45,254 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:55:45,254 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testAbortNewFileAfterFlush
+2018-06-28 17:55:45,255 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testAbortNewFileAfterFlush
+2018-06-28 17:55:45,255 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testAbortNewFileAfterFlush
+2018-06-28 17:55:45,256 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testAbortNewFile
+2018-06-28 17:55:45,256 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testAbortNewFile
+2018-06-28 17:55:45,258 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 18659
+2018-06-28 17:55:45,259 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:55:45,259 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testAbortNewFile
+2018-06-28 17:55:45,259 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testAbortNewFile
+2018-06-28 17:55:45,259 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testAbortNewFile
+2018-06-28 17:55:45,260 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testAbortExistingFileAfterFlush
+2018-06-28 17:55:45,260 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testAbortExistingFileAfterFlush
+2018-06-28 17:55:45,261 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 18659
+2018-06-28 17:55:45,261 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:55:45,261 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testAbortExistingFileAfterFlush
+2018-06-28 17:55:45,262 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testAbortExistingFileAfterFlush
+2018-06-28 17:55:45,262 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testAbortExistingFileAfterFlush
+2018-06-28 17:55:45,262 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testAbortExistingFile
+2018-06-28 17:55:45,263 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testAbortExistingFile
+2018-06-28 17:55:45,263 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 18659
+2018-06-28 17:55:45,264 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:55:45,264 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testAbortExistingFile
+2018-06-28 17:55:45,264 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testAbortExistingFile
+2018-06-28 17:55:45,264 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testAbortExistingFile
+2018-06-28 17:55:45,265 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testWriteNewFile
+2018-06-28 17:55:45,265 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testWriteNewFile
+2018-06-28 17:55:45,266 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 18659
+2018-06-28 17:55:45,266 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:55:45,266 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testWriteNewFile
+2018-06-28 17:55:45,267 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testWriteNewFile
+2018-06-28 17:55:45,267 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testWriteNewFile
+2018-06-28 17:55:45,267 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testFailToFlush
+2018-06-28 17:55:45,268 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testFailToFlush
+2018-06-28 17:55:45,268 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 18659
+2018-06-28 17:55:45,269 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:55:45,269 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testFailToFlush
+2018-06-28 17:55:45,269 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testFailToFlush
+2018-06-28 17:55:45,269 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testFailToFlush
+------------- ---------------- ---------------
+
+Testcase: testOverwriteFile took 0.026 sec
+Testcase: testAbortNewFileAfterFlush took 0.002 sec
+Testcase: testAbortNewFile took 0.003 sec
+Testcase: testAbortExistingFileAfterFlush took 0.002 sec
+Testcase: testAbortExistingFile took 0.003 sec
+Testcase: testWriteNewFile took 0.002 sec
+Testcase: testFailToFlush took 0.002 sec

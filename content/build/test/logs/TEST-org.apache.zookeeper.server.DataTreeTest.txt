@@ -1,0 +1,46 @@
+Testsuite: org.apache.zookeeper.server.DataTreeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.085 sec
+------------- Standard Output ---------------
+2018-06-28 17:39:36,697 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testDumpEphemerals
+2018-06-28 17:39:36,711 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testDumpEphemerals
+2018-06-28 17:39:36,711 [myid:] - INFO  [Time-limited test:DataTreeTest@77] - Create 1000 zkclient sessions and its ephemeral nodes
+2018-06-28 17:39:36,742 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 21313
+2018-06-28 17:39:36,743 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 5
+2018-06-28 17:39:36,743 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testDumpEphemerals
+2018-06-28 17:39:36,744 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testDumpEphemerals
+2018-06-28 17:39:36,744 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testDumpEphemerals
+2018-06-28 17:39:36,748 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testIncrementCversion
+2018-06-28 17:39:36,749 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testIncrementCversion
+2018-06-28 17:39:36,749 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 21979
+2018-06-28 17:39:36,749 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 5
+2018-06-28 17:39:36,749 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testIncrementCversion
+2018-06-28 17:39:36,750 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testIncrementCversion
+2018-06-28 17:39:36,750 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testIncrementCversion
+2018-06-28 17:39:36,750 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testRootWatchTriggered
+2018-06-28 17:39:36,752 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testRootWatchTriggered
+2018-06-28 17:39:36,754 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 22644
+2018-06-28 17:39:36,754 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 5
+2018-06-28 17:39:36,754 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testRootWatchTriggered
+2018-06-28 17:39:36,754 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testRootWatchTriggered
+2018-06-28 17:39:36,754 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testRootWatchTriggered
+2018-06-28 17:39:36,755 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testPathTrieClearOnDeserialize
+2018-06-28 17:39:36,755 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testPathTrieClearOnDeserialize
+2018-06-28 17:39:36,759 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 23310
+2018-06-28 17:39:36,759 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 5
+2018-06-28 17:39:36,759 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testPathTrieClearOnDeserialize
+2018-06-28 17:39:36,759 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testPathTrieClearOnDeserialize
+2018-06-28 17:39:36,759 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testPathTrieClearOnDeserialize
+2018-06-28 17:39:36,760 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testSerializeDoesntLockDataNodeWhileWriting
+2018-06-28 17:39:36,760 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testSerializeDoesntLockDataNodeWhileWriting
+2018-06-28 17:39:36,763 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 23975
+2018-06-28 17:39:36,763 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 5
+2018-06-28 17:39:36,763 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testSerializeDoesntLockDataNodeWhileWriting
+2018-06-28 17:39:36,763 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testSerializeDoesntLockDataNodeWhileWriting
+2018-06-28 17:39:36,763 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testSerializeDoesntLockDataNodeWhileWriting
+------------- ---------------- ---------------
+
+Testcase: testDumpEphemerals took 0.048 sec
+Testcase: testIncrementCversion took 0.002 sec
+Testcase: testRootWatchTriggered took 0.004 sec
+Testcase: testPathTrieClearOnDeserialize took 0.005 sec
+Testcase: testSerializeDoesntLockDataNodeWhileWriting took 0.003 sec

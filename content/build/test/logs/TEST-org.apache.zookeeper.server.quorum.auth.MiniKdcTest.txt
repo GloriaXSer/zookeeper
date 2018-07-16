@@ -1,0 +1,428 @@
+Testsuite: org.apache.zookeeper.server.quorum.auth.MiniKdcTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.928 sec
+------------- Standard Output ---------------
+2018-06-28 17:52:44,776 [myid:] - INFO  [main:MiniKdc@270] - Configuration:
+2018-06-28 17:52:44,782 [myid:] - INFO  [main:MiniKdc@271] - ---------------------------------------------------------------
+2018-06-28 17:52:44,784 [myid:] - INFO  [main:MiniKdc@273] -   debug: true
+2018-06-28 17:52:44,784 [myid:] - INFO  [main:MiniKdc@273] -   transport: TCP
+2018-06-28 17:52:44,784 [myid:] - INFO  [main:MiniKdc@273] -   max.ticket.lifetime: 86400000
+2018-06-28 17:52:44,784 [myid:] - INFO  [main:MiniKdc@273] -   org.name: EXAMPLE
+2018-06-28 17:52:44,784 [myid:] - INFO  [main:MiniKdc@273] -   kdc.port: 0
+2018-06-28 17:52:44,784 [myid:] - INFO  [main:MiniKdc@273] -   org.domain: COM
+2018-06-28 17:52:44,785 [myid:] - INFO  [main:MiniKdc@273] -   max.renewable.lifetime: 604800000
+2018-06-28 17:52:44,785 [myid:] - INFO  [main:MiniKdc@273] -   instance: DefaultKrbServer
+2018-06-28 17:52:44,785 [myid:] - INFO  [main:MiniKdc@273] -   kdc.bind.address: localhost
+2018-06-28 17:52:44,785 [myid:] - INFO  [main:MiniKdc@275] - ---------------------------------------------------------------
+2018-06-28 17:52:44,941 [myid:] - INFO  [main:DefaultSchemaLdifExtractor@106] - Schema directory '/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test5616343590816382563.junit.dir/1530233564775/partitions/schema' does NOT exist: extracted state set to false.
+2018-06-28 17:52:46,096 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:46,140 [myid:] - INFO  [main:DefaultSchemaManager@703] - Loading system enabled schema: 
+	Schema Name: system
+		Disabled: false
+		Owner: uid=admin,ou=system
+		Dependencies: []
+2018-06-28 17:52:46,383 [myid:] - INFO  [main:DefaultSchemaManager@703] - Loading core enabled schema: 
+	Schema Name: core
+		Disabled: false
+		Owner: uid=admin,ou=system
+		Dependencies: [system]
+2018-06-28 17:52:46,410 [myid:] - INFO  [main:DefaultSchemaManager@1153] - system schema has already been loaded
+2018-06-28 17:52:46,411 [myid:] - INFO  [main:DefaultSchemaManager@1153] - core schema has already been loaded
+2018-06-28 17:52:46,411 [myid:] - INFO  [main:DefaultSchemaManager@1153] - system schema has already been loaded
+2018-06-28 17:52:46,411 [myid:] - INFO  [main:DefaultSchemaManager@703] - Loading apache enabled schema: 
+	Schema Name: apache
+		Disabled: false
+		Owner: uid=admin,ou=system
+		Dependencies: [core, system]
+2018-06-28 17:52:46,490 [myid:] - INFO  [main:DefaultSchemaManager@1153] - system schema has already been loaded
+2018-06-28 17:52:46,490 [myid:] - INFO  [main:DefaultSchemaManager@703] - Loading apachemeta enabled schema: 
+	Schema Name: apachemeta
+		Disabled: false
+		Owner: uid=admin,ou=system
+		Dependencies: [system]
+2018-06-28 17:52:46,513 [myid:] - INFO  [main:DefaultSchemaManager@703] - Loading other enabled schema: 
+	Schema Name: other
+		Disabled: false
+		Owner: uid=admin,ou=system
+		Dependencies: [core, system, apache, apachemeta]
+2018-06-28 17:52:46,514 [myid:] - INFO  [main:DefaultSchemaManager@1153] - core schema has already been loaded
+2018-06-28 17:52:46,514 [myid:] - INFO  [main:DefaultSchemaManager@1153] - system schema has already been loaded
+2018-06-28 17:52:46,514 [myid:] - INFO  [main:DefaultSchemaManager@1153] - core schema has already been loaded
+2018-06-28 17:52:46,514 [myid:] - INFO  [main:DefaultSchemaManager@1153] - system schema has already been loaded
+2018-06-28 17:52:46,514 [myid:] - INFO  [main:DefaultSchemaManager@703] - Loading cosine enabled schema: 
+	Schema Name: cosine
+		Disabled: false
+		Owner: uid=admin,ou=system
+		Dependencies: [core, system]
+2018-06-28 17:52:46,529 [myid:] - INFO  [main:DefaultSchemaManager@703] - Loading inetorgperson enabled schema: 
+	Schema Name: inetorgperson
+		Disabled: false
+		Owner: uid=admin,ou=system
+		Dependencies: [core, system, cosine]
+2018-06-28 17:52:46,532 [myid:] - INFO  [main:DefaultSchemaManager@1153] - apachemeta schema has already been loaded
+2018-06-28 17:52:46,533 [myid:] - INFO  [main:DefaultSchemaManager@1153] - core schema has already been loaded
+2018-06-28 17:52:46,533 [myid:] - INFO  [main:DefaultSchemaManager@1153] - core schema has already been loaded
+2018-06-28 17:52:46,533 [myid:] - INFO  [main:DefaultSchemaManager@1153] - system schema has already been loaded
+2018-06-28 17:52:46,533 [myid:] - INFO  [main:DefaultSchemaManager@703] - Loading krb5kdc enabled schema: 
+	Schema Name: krb5kdc
+		Disabled: false
+		Owner: uid=admin,ou=system
+		Dependencies: [core, system]
+2018-06-28 17:52:46,539 [myid:] - INFO  [main:DefaultSchemaManager@1153] - system schema has already been loaded
+2018-06-28 17:52:46,539 [myid:] - INFO  [main:DefaultSchemaManager@1153] - apache schema has already been loaded
+2018-06-28 17:52:46,539 [myid:] - INFO  [main:DefaultSchemaManager@1153] - core schema has already been loaded
+2018-06-28 17:52:46,539 [myid:] - INFO  [main:DefaultSchemaManager@1153] - system schema has already been loaded
+2018-06-28 17:52:46,540 [myid:] - INFO  [main:DefaultSchemaManager@703] - Loading java enabled schema: 
+	Schema Name: java
+		Disabled: false
+		Owner: uid=admin,ou=system
+		Dependencies: [core, system]
+2018-06-28 17:52:46,543 [myid:] - INFO  [main:DefaultSchemaManager@1153] - system schema has already been loaded
+2018-06-28 17:52:46,543 [myid:] - INFO  [main:DefaultSchemaManager@703] - Loading pwdpolicy enabled schema: 
+	Schema Name: pwdpolicy
+		Disabled: false
+		Owner: uid=admin,ou=system
+		Dependencies: [system]
+2018-06-28 17:52:46,552 [myid:] - INFO  [main:DefaultSchemaManager@1153] - cosine schema has already been loaded
+2018-06-28 17:52:46,553 [myid:] - INFO  [main:DefaultSchemaManager@1153] - core schema has already been loaded
+2018-06-28 17:52:46,553 [myid:] - INFO  [main:DefaultSchemaManager@1153] - system schema has already been loaded
+2018-06-28 17:52:46,553 [myid:] - INFO  [main:DefaultSchemaManager@703] - Loading collective enabled schema: 
+	Schema Name: collective
+		Disabled: false
+		Owner: uid=admin,ou=system
+		Dependencies: [core, system]
+2018-06-28 17:52:46,557 [myid:] - INFO  [main:DefaultSchemaManager@1153] - core schema has already been loaded
+2018-06-28 17:52:46,557 [myid:] - INFO  [main:DefaultSchemaManager@1153] - apache schema has already been loaded
+2018-06-28 17:52:46,557 [myid:] - INFO  [main:DefaultSchemaManager@1153] - system schema has already been loaded
+2018-06-28 17:52:46,557 [myid:] - INFO  [main:DefaultSchemaManager@703] - Loading adsconfig enabled schema: 
+	Schema Name: adsconfig
+		Disabled: false
+		Owner: uid=admin,ou=system
+		Dependencies: [core, apache, system]
+2018-06-28 17:52:46,570 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:46,571 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:46,575 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:46,579 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:46,580 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:46,582 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:46,588 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:46,590 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:46,592 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:46,689 [myid:] - INFO  [main:KeyDerivationInterceptor@115] - KeyDerivation Interceptor initialized
+2018-06-28 17:52:46,699 [myid:] - INFO  [main:DefaultDirectoryService@1240] - ApacheDS shutdown hook has been registered with the runtime.
+2018-06-28 17:52:46,699 [myid:] - INFO  [main:CacheService@99] - no custom cache configuration was set, loading the default cache configuration
+2018-06-28 17:52:46,929 [myid:] - INFO  [main:CacheService@139] - fetching the cache named dnCache
+2018-06-28 17:52:46,964 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,081 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: automountInformation
+2018-06-28 17:52:47,145 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpHostDN
+2018-06-28 17:52:47,145 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpOptionsDN
+2018-06-28 17:52:47,146 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpStatements
+2018-06-28 17:52:47,147 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpOption
+2018-06-28 17:52:47,148 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpClassData
+2018-06-28 17:52:47,148 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpOptionsDN
+2018-06-28 17:52:47,149 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpStatements
+2018-06-28 17:52:47,150 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpClassesDN
+2018-06-28 17:52:47,150 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpPermitList
+2018-06-28 17:52:47,150 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpLeasesDN
+2018-06-28 17:52:47,151 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpOptionsDN
+2018-06-28 17:52:47,151 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpStatements
+2018-06-28 17:52:47,151 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpRange
+2018-06-28 17:52:47,153 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpAddressState
+2018-06-28 17:52:47,153 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpExpirationTime
+2018-06-28 17:52:47,154 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpStartTimeOfState
+2018-06-28 17:52:47,154 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpLastTransactionTime
+2018-06-28 17:52:47,154 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpBootpFlag
+2018-06-28 17:52:47,154 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpDomainName
+2018-06-28 17:52:47,155 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpDnsStatus
+2018-06-28 17:52:47,155 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpRequestedHostName
+2018-06-28 17:52:47,155 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpAssignedHostName
+2018-06-28 17:52:47,155 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpReservedForClient
+2018-06-28 17:52:47,156 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpAssignedToClient
+2018-06-28 17:52:47,156 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpRelayAgentInfo
+2018-06-28 17:52:47,156 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpHWAddress
+2018-06-28 17:52:47,156 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpErrorLog
+2018-06-28 17:52:47,157 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpRange
+2018-06-28 17:52:47,157 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpPoolDN
+2018-06-28 17:52:47,158 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpGroupDN
+2018-06-28 17:52:47,158 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpHostDN
+2018-06-28 17:52:47,158 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpClassesDN
+2018-06-28 17:52:47,158 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpLeasesDN
+2018-06-28 17:52:47,158 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpOptionsDN
+2018-06-28 17:52:47,158 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpStatements
+2018-06-28 17:52:47,159 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpNetMask
+2018-06-28 17:52:47,160 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpSubnetDN
+2018-06-28 17:52:47,160 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpPoolDN
+2018-06-28 17:52:47,160 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpOptionsDN
+2018-06-28 17:52:47,160 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpStatements
+2018-06-28 17:52:47,161 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpExpirationTime
+2018-06-28 17:52:47,162 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpStartTimeOfState
+2018-06-28 17:52:47,162 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpLastTransactionTime
+2018-06-28 17:52:47,162 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpBootpFlag
+2018-06-28 17:52:47,162 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpDomainName
+2018-06-28 17:52:47,162 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpDnsStatus
+2018-06-28 17:52:47,163 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpRequestedHostName
+2018-06-28 17:52:47,163 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpAssignedHostName
+2018-06-28 17:52:47,163 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpReservedForClient
+2018-06-28 17:52:47,163 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpAssignedToClient
+2018-06-28 17:52:47,163 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpRelayAgentInfo
+2018-06-28 17:52:47,164 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpHWAddress
+2018-06-28 17:52:47,164 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpAddressState
+2018-06-28 17:52:47,165 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpSecondaryDN
+2018-06-28 17:52:47,166 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpSharedNetworkDN
+2018-06-28 17:52:47,166 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpSubnetDN
+2018-06-28 17:52:47,166 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpGroupDN
+2018-06-28 17:52:47,166 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpHostDN
+2018-06-28 17:52:47,166 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpClassesDN
+2018-06-28 17:52:47,167 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpOptionsDN
+2018-06-28 17:52:47,167 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpStatements
+2018-06-28 17:52:47,167 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpPrimaryDN
+2018-06-28 17:52:47,168 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpVersion
+2018-06-28 17:52:47,169 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpImplementation
+2018-06-28 17:52:47,169 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpHashBucketAssignment
+2018-06-28 17:52:47,170 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpDelayedServiceParameter
+2018-06-28 17:52:47,170 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpMaxClientLeadTime
+2018-06-28 17:52:47,170 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpFailOverEndpointState
+2018-06-28 17:52:47,170 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpStatements
+2018-06-28 17:52:47,171 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpServiceDN
+2018-06-28 17:52:47,172 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpSubclassesDN
+2018-06-28 17:52:47,172 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpOptionsDN
+2018-06-28 17:52:47,172 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpStatements
+2018-06-28 17:52:47,174 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpLeaseDN
+2018-06-28 17:52:47,174 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpHWAddress
+2018-06-28 17:52:47,174 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpOptionsDN
+2018-06-28 17:52:47,174 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: dhcpStatements
+2018-06-28 17:52:47,239 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: xmozillanickname
+2018-06-28 17:52:47,240 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: xmozillausehtmlmail
+2018-06-28 17:52:47,240 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: mozillaSecondEmail
+2018-06-28 17:52:47,240 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: mozillaPostalAddress2
+2018-06-28 17:52:47,240 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: mozillaHomePostalAddress2
+2018-06-28 17:52:47,240 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: mozillaHomeLocalityName
+2018-06-28 17:52:47,241 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: mozillaHomeState
+2018-06-28 17:52:47,241 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: mozillaHomePostalCode
+2018-06-28 17:52:47,241 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: mozillaHomeCountryName
+2018-06-28 17:52:47,241 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: mozillaHomeFriendlyCountryName
+2018-06-28 17:52:47,242 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: homeurl
+2018-06-28 17:52:47,242 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: workurl
+2018-06-28 17:52:47,242 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: custom1
+2018-06-28 17:52:47,242 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: custom2
+2018-06-28 17:52:47,243 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: custom3
+2018-06-28 17:52:47,243 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: custom4
+2018-06-28 17:52:47,243 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: nsAIMid
+2018-06-28 17:52:47,416 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,417 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: nisDomain
+2018-06-28 17:52:47,417 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,417 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: uidNumber
+2018-06-28 17:52:47,418 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: nisPublicKey
+2018-06-28 17:52:47,418 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: nisSecretKey
+2018-06-28 17:52:47,418 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,420 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,421 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,421 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: caseExactIA5SubstringsMatch
+2018-06-28 17:52:47,422 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,422 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: caseExactIA5SubstringsMatch
+2018-06-28 17:52:47,422 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,442 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsServicePriority
+2018-06-28 17:52:47,442 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsServiceWeight
+2018-06-28 17:52:47,442 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsServicePort
+2018-06-28 17:52:47,442 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsDomainName
+2018-06-28 17:52:47,442 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsAbstractRecord
+2018-06-28 17:52:47,443 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsClass
+2018-06-28 17:52:47,443 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsSoaSerial
+2018-06-28 17:52:47,443 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsSoaRefresh
+2018-06-28 17:52:47,443 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsSoaRetry
+2018-06-28 17:52:47,444 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsSoaExpire
+2018-06-28 17:52:47,444 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsSoaMName
+2018-06-28 17:52:47,444 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsSoaRName
+2018-06-28 17:52:47,444 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsSoaMinimum
+2018-06-28 17:52:47,444 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsAbstractRecord
+2018-06-28 17:52:47,445 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsDomainName
+2018-06-28 17:52:47,445 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsAbstractRecord
+2018-06-28 17:52:47,445 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsCharacterString
+2018-06-28 17:52:47,446 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsAbstractRecord
+2018-06-28 17:52:47,446 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsDomainName
+2018-06-28 17:52:47,446 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsAbstractRecord
+2018-06-28 17:52:47,447 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsIpAddress
+2018-06-28 17:52:47,447 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsAbstractRecord
+2018-06-28 17:52:47,448 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsDomainName
+2018-06-28 17:52:47,448 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsIpAddress
+2018-06-28 17:52:47,448 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsAbstractRecord
+2018-06-28 17:52:47,449 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsTtl
+2018-06-28 17:52:47,449 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsDomainName
+2018-06-28 17:52:47,449 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsAbstractRecord
+2018-06-28 17:52:47,450 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsMxPreference
+2018-06-28 17:52:47,450 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsDomainName
+2018-06-28 17:52:47,450 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsAbstractRecord
+2018-06-28 17:52:47,451 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsDomainName
+2018-06-28 17:52:47,451 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsAbstractRecord
+2018-06-28 17:52:47,454 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsDomainName
+2018-06-28 17:52:47,456 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: apacheDnsDomainName
+2018-06-28 17:52:47,484 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,484 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,492 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,500 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,503 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,505 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,519 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,525 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,531 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:47,555 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: ipHostNumber
+2018-06-28 17:52:47,556 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: ipNetmaskNumber
+2018-06-28 17:52:47,556 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: ipNetworkNumber
+2018-06-28 17:52:47,557 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: bootFile
+2018-06-28 17:52:47,557 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: bootParameter
+2018-06-28 17:52:47,557 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: loginShell
+2018-06-28 17:52:47,558 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: gecos
+2018-06-28 17:52:47,558 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: uidNumber
+2018-06-28 17:52:47,558 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: gidNumber
+2018-06-28 17:52:47,558 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: homeDirectory
+2018-06-28 17:52:47,559 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: shadowLastChange
+2018-06-28 17:52:47,559 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: shadowMin
+2018-06-28 17:52:47,560 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: shadowMax
+2018-06-28 17:52:47,560 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: shadowWarning
+2018-06-28 17:52:47,560 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: shadowInactive
+2018-06-28 17:52:47,560 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: shadowExpire
+2018-06-28 17:52:47,560 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: shadowFlag
+2018-06-28 17:52:47,561 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: memberUid
+2018-06-28 17:52:47,561 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: gidNumber
+2018-06-28 17:52:47,562 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: ipServicePort
+2018-06-28 17:52:47,562 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: ipServiceProtocol
+2018-06-28 17:52:47,563 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: nisNetgroupTriple
+2018-06-28 17:52:47,564 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: memberNisNetgroup
+2018-06-28 17:52:47,564 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: ipProtocolNumber
+2018-06-28 17:52:47,565 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: macAddress
+2018-06-28 17:52:47,566 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: nisMapEntry
+2018-06-28 17:52:47,566 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: nisMapName
+2018-06-28 17:52:47,567 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: oncRpcNumber
+2018-06-28 17:52:47,568 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: nisMapName
+2018-06-28 17:52:47,576 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: caseExactIA5SubstringsMatch
+2018-06-28 17:52:47,579 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: caseExactIA5SubstringsMatch
+2018-06-28 17:52:47,581 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: caseExactIA5SubstringsMatch
+2018-06-28 17:52:47,712 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: corbaIor
+2018-06-28 17:52:47,712 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: corbaObject
+2018-06-28 17:52:47,713 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: corbaRepositoryId
+2018-06-28 17:52:47,718 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaSID
+2018-06-28 17:52:47,719 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaBoolOption
+2018-06-28 17:52:47,719 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaIntegerOption
+2018-06-28 17:52:47,719 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaStringListOption
+2018-06-28 17:52:47,719 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaStringOption
+2018-06-28 17:52:47,719 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaOptionName
+2018-06-28 17:52:47,720 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaAlgorithmicRidBase
+2018-06-28 17:52:47,720 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaForceLogoff
+2018-06-28 17:52:47,720 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaLockoutDuration
+2018-06-28 17:52:47,720 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaLockoutObservationWindow
+2018-06-28 17:52:47,721 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaLockoutThreshold
+2018-06-28 17:52:47,721 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaLogonToChgPwd
+2018-06-28 17:52:47,721 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaMaxPwdAge
+2018-06-28 17:52:47,721 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaMinPwdAge
+2018-06-28 17:52:47,721 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaMinPwdLength
+2018-06-28 17:52:47,721 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaNextGroupRid
+2018-06-28 17:52:47,722 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaNextRid
+2018-06-28 17:52:47,722 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaNextUserRid
+2018-06-28 17:52:47,722 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaPwdHistoryLength
+2018-06-28 17:52:47,722 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaRefuseMachinePwdChange
+2018-06-28 17:52:47,722 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaDomainName
+2018-06-28 17:52:47,722 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaSID
+2018-06-28 17:52:47,724 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaPrivilegeList
+2018-06-28 17:52:47,724 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaSID
+2018-06-28 17:52:47,725 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaSIDList
+2018-06-28 17:52:47,725 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: gidNumber
+2018-06-28 17:52:47,725 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaGroupType
+2018-06-28 17:52:47,725 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaSID
+2018-06-28 17:52:47,726 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: gidNumber
+2018-06-28 17:52:47,726 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: uidNumber
+2018-06-28 17:52:47,727 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaSID
+2018-06-28 17:52:47,727 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaPwdLastSet
+2018-06-28 17:52:47,727 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaSID
+2018-06-28 17:52:47,728 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaDomainName
+2018-06-28 17:52:47,728 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaNTPassword
+2018-06-28 17:52:47,728 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaTrustFlags
+2018-06-28 17:52:47,729 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: gidNumber
+2018-06-28 17:52:47,729 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: uidNumber
+2018-06-28 17:52:47,730 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaAcctFlags
+2018-06-28 17:52:47,730 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaBadPasswordCount
+2018-06-28 17:52:47,730 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaBadPasswordTime
+2018-06-28 17:52:47,730 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaDomainName
+2018-06-28 17:52:47,730 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaHomeDrive
+2018-06-28 17:52:47,730 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaHomePath
+2018-06-28 17:52:47,731 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaKickoffTime
+2018-06-28 17:52:47,731 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaLMPassword
+2018-06-28 17:52:47,731 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaLogoffTime
+2018-06-28 17:52:47,731 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaLogonHours
+2018-06-28 17:52:47,731 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaLogonScript
+2018-06-28 17:52:47,731 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaLogonTime
+2018-06-28 17:52:47,731 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaMungedDial
+2018-06-28 17:52:47,732 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaNTPassword
+2018-06-28 17:52:47,732 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaPasswordHistory
+2018-06-28 17:52:47,732 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaPrimaryGroupSID
+2018-06-28 17:52:47,732 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaProfilePath
+2018-06-28 17:52:47,732 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaPwdCanChange
+2018-06-28 17:52:47,732 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaPwdLastSet
+2018-06-28 17:52:47,732 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaPwdMustChange
+2018-06-28 17:52:47,733 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaUserWorkstations
+2018-06-28 17:52:47,733 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaSID
+2018-06-28 17:52:47,735 [myid:] - INFO  [main:AbstractValue@175] - ERR_04447_CANNOT_NORMALIZE_VALUE Cannot normalize the wrapped value ERR_04226 I do not know how to handle NameAndOptionalUID normalization with objects of class: sambaShareName
+2018-06-28 17:52:47,913 [myid:] - INFO  [main:CacheService@139] - fetching the cache named system
+2018-06-28 17:52:47,969 [myid:] - INFO  [main:CacheService@139] - fetching the cache named example
+2018-06-28 17:52:48,223 [myid:] - INFO  [main:TlsKeyGenerator@296] - Keys and self signed certificate successfully generated.
+2018-06-28 17:52:48,331 [myid:] - INFO  [main:CacheService@139] - fetching the cache named groupCache
+2018-06-28 17:52:48,369 [myid:] - INFO  [main:EventInterceptor@92] - Initializing ...
+2018-06-28 17:52:48,370 [myid:] - INFO  [main:EventInterceptor@99] - Initialization complete.
+2018-06-28 17:52:48,378 [myid:] - INFO  [main:KeyDerivationInterceptor@115] - KeyDerivation Interceptor initialized
+2018-06-28 17:52:48,378 [myid:] - WARN  [main:DefaultDirectoryService@1700] - You didn't change the admin password of directory service instance 'DefaultKrbServer'.  Please update the admin password as soon as possible to prevent a possible security breach.
+2018-06-28 17:52:48,431 [myid:] - INFO  [main:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:48,771 [myid:] - INFO  [main:CacheService@139] - fetching the cache named kdcReplayCache
+2018-06-28 17:52:48,811 [myid:] - INFO  [main:KdcServer@153] - Kerberos service started.
+2018-06-28 17:52:48,818 [myid:] - INFO  [main:MiniKdc@481] - MiniKdc listening at port: 53359
+2018-06-28 17:52:48,818 [myid:] - INFO  [main:MiniKdc@482] - MiniKdc setting JVM krb5.conf to: /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test5616343590816382563.junit.dir/1530233564775/krb5.conf
+2018-06-28 17:52:48,825 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testKeytabGen
+2018-06-28 17:52:48,826 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testKeytabGen
+2018-06-28 17:52:48,827 [myid:] - INFO  [Time-limited test:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:48,876 [myid:] - INFO  [Time-limited test:LdifReader@1497] - No version information : assuming version: 1
+2018-06-28 17:52:48,926 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 95009
+2018-06-28 17:52:48,926 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 11
+2018-06-28 17:52:48,926 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testKeytabGen
+2018-06-28 17:52:48,926 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testKeytabGen
+2018-06-28 17:52:48,927 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testKeytabGen
+2018-06-28 17:52:48,930 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testMiniKdcStart
+2018-06-28 17:52:48,930 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testMiniKdcStart
+2018-06-28 17:52:48,930 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 96304
+2018-06-28 17:52:48,931 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 11
+2018-06-28 17:52:48,931 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testMiniKdcStart
+2018-06-28 17:52:48,931 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testMiniKdcStart
+2018-06-28 17:52:48,931 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testMiniKdcStart
+2018-06-28 17:52:48,931 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testKerberosLogin
+2018-06-28 17:52:48,932 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testKerberosLogin
+2018-06-28 17:52:48,932 [myid:] - INFO  [Time-limited test:LdifReader@1497] - No version information : assuming version: 1
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator true KeyTab is /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test5616343590816382563.junit.dir/foo.keytab refreshKrb5Config is true principal is foo tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is foo@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is foo@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+Debug is  true storeKey true useTicketCache true useKeyTab true doNotPrompt true ticketCache is null isInitiator false KeyTab is /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test5616343590816382563.junit.dir/foo.keytab refreshKrb5Config is true principal is foo tryFirstPass is false useFirstPass is false storePass is false clearPass is false
+Refreshing Kerberos configuration
+Acquire TGT from Cache
+Principal is foo@EXAMPLE.COM
+null credentials from Ticket Cache
+principal is foo@EXAMPLE.COM
+Will use keytab
+Commit Succeeded 
+
+		[Krb5LoginModule]: Entering logout
+		[Krb5LoginModule]: logged out Subject
+2018-06-28 17:52:49,371 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 31763
+2018-06-28 17:52:49,371 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 12
+2018-06-28 17:52:49,371 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testKerberosLogin
+2018-06-28 17:52:49,371 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testKerberosLogin
+2018-06-28 17:52:49,371 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testKerberosLogin
+2018-06-28 17:52:49,372 [myid:] - INFO  [main:KdcServer@180] - Kerberos service stopped.
+2018-06-28 17:52:49,422 [myid:] - INFO  [main:CacheService@123] - clearing all the caches
+------------- ---------------- ---------------
+
+Testcase: testKeytabGen took 0.102 sec
+Testcase: testMiniKdcStart took 0.001 sec
+Testcase: testKerberosLogin took 0.44 sec

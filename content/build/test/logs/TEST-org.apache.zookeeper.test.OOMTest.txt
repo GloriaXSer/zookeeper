@@ -1,0 +1,13 @@
+Testsuite: org.apache.zookeeper.test.OOMTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.025 sec
+------------- Standard Output ---------------
+2018-06-28 18:01:42,568 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testOOM
+2018-06-28 18:01:42,575 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testOOM
+2018-06-28 18:01:42,575 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17319
+2018-06-28 18:01:42,575 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 18:01:42,575 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testOOM
+2018-06-28 18:01:42,575 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testOOM
+2018-06-28 18:01:42,576 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testOOM
+------------- ---------------- ---------------
+
+Testcase: testOOM took 0.008 sec

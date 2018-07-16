@@ -1,0 +1,13 @@
+Testsuite: org.apache.zookeeper.server.DataTreeUnitTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+------------- Standard Output ---------------
+2018-06-28 17:39:37,259 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testRootWatchTriggered
+2018-06-28 17:39:37,272 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testRootWatchTriggered
+2018-06-28 17:39:37,275 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17988
+2018-06-28 17:39:37,276 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:39:37,276 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testRootWatchTriggered
+2018-06-28 17:39:37,277 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testRootWatchTriggered
+2018-06-28 17:39:37,277 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testRootWatchTriggered
+------------- ---------------- ---------------
+
+Testcase: testRootWatchTriggered took 0.019 sec

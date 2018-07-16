@@ -1,0 +1,37 @@
+Testsuite: org.apache.zookeeper.test.KeeperStateTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.035 sec
+------------- Standard Output ---------------
+2018-06-28 17:59:15,226 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testDeprecatedCodeOkInSwitch
+2018-06-28 17:59:15,233 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testDeprecatedCodeOkInSwitch
+2018-06-28 17:59:15,233 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17321
+2018-06-28 17:59:15,234 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:59:15,234 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testDeprecatedCodeOkInSwitch
+2018-06-28 17:59:15,234 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testDeprecatedCodeOkInSwitch
+2018-06-28 17:59:15,234 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testDeprecatedCodeOkInSwitch
+2018-06-28 17:59:15,237 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testCodeOKInSwitch
+2018-06-28 17:59:15,237 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testCodeOKInSwitch
+2018-06-28 17:59:15,240 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17986
+2018-06-28 17:59:15,240 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:59:15,240 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testCodeOKInSwitch
+2018-06-28 17:59:15,240 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testCodeOKInSwitch
+2018-06-28 17:59:15,240 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testCodeOKInSwitch
+2018-06-28 17:59:15,241 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testIntConversion
+2018-06-28 17:59:15,241 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testIntConversion
+2018-06-28 17:59:15,243 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17986
+2018-06-28 17:59:15,243 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:59:15,243 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testIntConversion
+2018-06-28 17:59:15,243 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testIntConversion
+2018-06-28 17:59:15,243 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testIntConversion
+2018-06-28 17:59:15,244 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testInvalidIntConversion
+2018-06-28 17:59:15,244 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testInvalidIntConversion
+2018-06-28 17:59:15,244 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17986
+2018-06-28 17:59:15,244 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:59:15,244 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testInvalidIntConversion
+2018-06-28 17:59:15,244 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testInvalidIntConversion
+2018-06-28 17:59:15,244 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testInvalidIntConversion
+------------- ---------------- ---------------
+
+Testcase: testDeprecatedCodeOkInSwitch took 0.009 sec
+Testcase: testCodeOKInSwitch took 0.003 sec
+Testcase: testIntConversion took 0.002 sec
+Testcase: testInvalidIntConversion took 0.001 sec

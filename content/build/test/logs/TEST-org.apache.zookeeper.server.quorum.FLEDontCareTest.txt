@@ -1,0 +1,75 @@
+Testsuite: org.apache.zookeeper.server.quorum.FLEDontCareTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.111 sec
+------------- Standard Output ---------------
+2018-06-28 17:42:43,058 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11221
+2018-06-28 17:42:43,073 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,073 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11222
+2018-06-28 17:42:43,074 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,074 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11223
+2018-06-28 17:42:43,074 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,074 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11224
+2018-06-28 17:42:43,074 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,075 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11225
+2018-06-28 17:42:43,075 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,075 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11226
+2018-06-28 17:42:43,084 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:42:43,096 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11226
+2018-06-28 17:42:43,124 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11227
+2018-06-28 17:42:43,125 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,125 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11228
+2018-06-28 17:42:43,126 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,127 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11229
+2018-06-28 17:42:43,127 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,127 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11230
+2018-06-28 17:42:43,127 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,127 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11231
+2018-06-28 17:42:43,127 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,127 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11232
+2018-06-28 17:42:43,127 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:42:43,128 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11232
+2018-06-28 17:42:43,129 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11233
+2018-06-28 17:42:43,129 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,130 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11234
+2018-06-28 17:42:43,130 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,130 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11235
+2018-06-28 17:42:43,130 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,130 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11236
+2018-06-28 17:42:43,130 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,130 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11237
+2018-06-28 17:42:43,130 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,130 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11238
+2018-06-28 17:42:43,131 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:42:43,131 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11238
+2018-06-28 17:42:43,132 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11239
+2018-06-28 17:42:43,133 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,133 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11240
+2018-06-28 17:42:43,133 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,133 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11241
+2018-06-28 17:42:43,133 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,133 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11242
+2018-06-28 17:42:43,133 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,134 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11243
+2018-06-28 17:42:43,134 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,134 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11244
+2018-06-28 17:42:43,134 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:42:43,134 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11244
+2018-06-28 17:42:43,136 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11245
+2018-06-28 17:42:43,136 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,136 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11246
+2018-06-28 17:42:43,137 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,137 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11247
+2018-06-28 17:42:43,137 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,137 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11248
+2018-06-28 17:42:43,137 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,137 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11249
+2018-06-28 17:42:43,137 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 127.0.0.1 to address: /127.0.0.1
+2018-06-28 17:42:43,137 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11250
+2018-06-28 17:42:43,137 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:42:43,138 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11250
+------------- ---------------- ---------------
+
+Testcase: testOutofElection took 0.079 sec
+Testcase: testDontCareVersion took 0.005 sec
+Testcase: testLookingNormal took 0.003 sec
+Testcase: testDontCare took 0.003 sec
+Testcase: testLookingDiffRounds took 0.003 sec

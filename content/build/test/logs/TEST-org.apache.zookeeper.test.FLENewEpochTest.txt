@@ -1,0 +1,298 @@
+Testsuite: org.apache.zookeeper.test.FLENewEpochTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.633 sec
+------------- Standard Output ---------------
+2018-06-28 17:57:06,976 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testLENewEpoch
+2018-06-28 17:57:06,984 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testLENewEpoch
+2018-06-28 17:57:06,987 [myid:] - INFO  [main:FLENewEpochTest@157] - TestLE: testLENewEpoch, 3
+2018-06-28 17:57:06,989 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11221
+2018-06-28 17:57:06,989 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11222
+2018-06-28 17:57:06,999 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:57:07,012 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11223
+2018-06-28 17:57:07,012 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11224
+2018-06-28 17:57:07,012 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11225
+2018-06-28 17:57:07,013 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:57:07,013 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11226
+2018-06-28 17:57:07,013 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11227
+2018-06-28 17:57:07,013 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11228
+2018-06-28 17:57:07,013 [myid:] - INFO  [main:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:57:07,014 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11229
+2018-06-28 17:57:07,021 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:57:07,033 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11226
+2018-06-28 17:57:07,055 [myid:] - INFO  [main:QuorumPeer@668] - currentEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2018-06-28 17:57:07,057 [myid:] - INFO  [main:QuorumPeer@683] - acceptedEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2018-06-28 17:57:07,062 [myid:] - INFO  [ListenerThread:QuorumCnxManager$Listener@736] - My election bind port: /0.0.0.0:11225
+2018-06-28 17:57:07,065 [myid:] - INFO  [main:FLENewEpochTest$LEThread@88] - Constructor: Thread-0
+2018-06-28 17:57:07,065 [myid:] - INFO  [Thread-0:FLENewEpochTest$LEThread@98] - Going to call leader election again: 1
+2018-06-28 17:57:07,066 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:57:07,066 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11229
+2018-06-28 17:57:07,067 [myid:] - INFO  [main:QuorumPeer@668] - currentEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2018-06-28 17:57:07,067 [myid:] - INFO  [main:QuorumPeer@683] - acceptedEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2018-06-28 17:57:07,069 [myid:] - INFO  [ListenerThread:QuorumCnxManager$Listener@736] - My election bind port: /0.0.0.0:11228
+2018-06-28 17:57:07,069 [myid:] - INFO  [main:FLENewEpochTest$LEThread@88] - Constructor: Thread-1
+2018-06-28 17:57:07,069 [myid:] - INFO  [Thread-1:FLENewEpochTest$LEThread@98] - Going to call leader election again: 2
+2018-06-28 17:57:07,135 [myid:] - WARN  [Thread-0:MBeanRegistry@104] - Failed to register MBean LeaderElection
+2018-06-28 17:57:07,136 [myid:] - INFO  [Thread-1:FastLeaderElection@813] - New election. My id =  2, proposed zxid=0x0
+2018-06-28 17:57:07,136 [myid:] - WARN  [Thread-0:FastLeaderElection@795] - Failed to register with JMX
+javax.management.InstanceAlreadyExistsException: org.apache.ZooKeeperService:name0=LeaderElection
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.zookeeper.jmx.MBeanRegistry.register(MBeanRegistry.java:100)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection.lookForLeader(FastLeaderElection.java:792)
+	at org.apache.zookeeper.test.FLENewEpochTest$LEThread.run(FLENewEpochTest.java:99)
+2018-06-28 17:57:07,138 [myid:] - INFO  [Thread-0:FastLeaderElection@813] - New election. My id =  1, proposed zxid=0x0
+2018-06-28 17:57:07,144 [myid:] - WARN  [WorkerSender[myid=1]:QuorumCnxManager@584] - Cannot open channel to 0 at election address /0.0.0.0:11222
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:558)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:534)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:454)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:435)
+	at java.lang.Thread.run(Thread.java:748)
+2018-06-28 17:57:07,145 [myid:] - WARN  [WorkerSender[myid=2]:QuorumCnxManager@584] - Cannot open channel to 0 at election address /0.0.0.0:11222
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:558)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:534)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:454)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:435)
+	at java.lang.Thread.run(Thread.java:748)
+2018-06-28 17:57:07,145 [myid:] - INFO  [WorkerSender[myid=1]:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:57:07,145 [myid:] - INFO  [WorkerSender[myid=2]:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:57:07,146 [myid:] - INFO  [/0.0.0.0:11225:QuorumCnxManager$Listener@743] - Received connection request /10.0.0.10:54849
+2018-06-28 17:57:07,146 [myid:] - INFO  [/0.0.0.0:11228:QuorumCnxManager$Listener@743] - Received connection request /10.0.0.10:54850
+2018-06-28 17:57:07,147 [myid:] - INFO  [WorkerReceiver[myid=1]:FastLeaderElection@595] - Notification: 1 (message format version), 1 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:57:07,148 [myid:] - INFO  [WorkerSender[myid=1]:QuorumCnxManager@347] - Have smaller server identifier, so dropping the connection: (2, 1)
+2018-06-28 17:57:07,151 [myid:] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@595] - Notification: 1 (message format version), 2 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 2 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:57:07,151 [myid:] - INFO  [WorkerReceiver[myid=1]:FastLeaderElection@595] - Notification: 1 (message format version), 2 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 2 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:57:07,151 [myid:] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@595] - Notification: 1 (message format version), 1 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:57:07,154 [myid:] - WARN  [WorkerSender[myid=1]:QuorumCnxManager@584] - Cannot open channel to 0 at election address /0.0.0.0:11222
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:558)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:534)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:454)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:435)
+	at java.lang.Thread.run(Thread.java:748)
+2018-06-28 17:57:07,155 [myid:] - INFO  [WorkerSender[myid=1]:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:57:07,155 [myid:] - INFO  [WorkerReceiver[myid=1]:FastLeaderElection@595] - Notification: 1 (message format version), 2 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:57:07,155 [myid:] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@595] - Notification: 1 (message format version), 2 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:57:07,361 [myid:] - INFO  [Thread-0:FLENewEpochTest$LEThread@111] - Finished election: 1, 2
+2018-06-28 17:57:07,361 [myid:] - INFO  [Thread-0:FLENewEpochTest$LEThread@124] - Second entering case
+2018-06-28 17:57:07,361 [myid:] - INFO  [Thread-1:FLENewEpochTest$LEThread@111] - Finished election: 2, 2
+2018-06-28 17:57:07,361 [myid:] - INFO  [Thread-1:FLENewEpochTest$LEThread@136] - Third peer, shutting it down
+2018-06-28 17:57:07,364 [myid:] - INFO  [Thread-1:QuorumBase@306] - Shutting down quorum peer QuorumPeer
+2018-06-28 17:57:07,366 [myid:] - ERROR [/0.0.0.0:11228:QuorumCnxManager$Listener@760] - Exception while listening
+java.net.SocketException: Socket closed
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:409)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener.run(QuorumCnxManager.java:741)
+2018-06-28 17:57:07,366 [myid:] - WARN  [SendWorker:1:QuorumCnxManager$SendWorker@941] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:418)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.pollSendQueue(QuorumCnxManager.java:1094)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.access$700(QuorumCnxManager.java:74)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:929)
+2018-06-28 17:57:07,366 [myid:] - WARN  [RecvWorker:1:QuorumCnxManager$RecvWorker@1025] - Connection broken for id 1, my id = 2, error = 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:1010)
+2018-06-28 17:57:07,366 [myid:] - WARN  [RecvWorker:2:QuorumCnxManager$RecvWorker@1025] - Connection broken for id 2, my id = 1, error = 
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:1010)
+2018-06-28 17:57:07,366 [myid:] - INFO  [Thread-1:QuorumBase@310] - Shutting down leader election QuorumPeer
+2018-06-28 17:57:07,367 [myid:] - WARN  [RecvWorker:2:QuorumCnxManager$RecvWorker@1028] - Interrupting SendWorker
+2018-06-28 17:57:07,367 [myid:] - WARN  [RecvWorker:1:QuorumCnxManager$RecvWorker@1028] - Interrupting SendWorker
+2018-06-28 17:57:07,367 [myid:] - WARN  [SendWorker:2:QuorumCnxManager$SendWorker@941] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:418)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.pollSendQueue(QuorumCnxManager.java:1094)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.access$700(QuorumCnxManager.java:74)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:929)
+2018-06-28 17:57:07,367 [myid:] - WARN  [SendWorker:1:QuorumCnxManager$SendWorker@951] - Send worker leaving thread
+2018-06-28 17:57:07,368 [myid:] - WARN  [SendWorker:2:QuorumCnxManager$SendWorker@951] - Send worker leaving thread
+2018-06-28 17:57:07,367 [myid:] - INFO  [Thread-1:QuorumBase@315] - Waiting for QuorumPeer to exit thread
+2018-06-28 17:57:07,368 [myid:] - INFO  [Thread-1:FLENewEpochTest$LEThread@141] - Third leaving
+2018-06-28 17:57:07,368 [myid:] - INFO  [Thread-0:FLENewEpochTest$LEThread@132] - Second is going to start second round
+2018-06-28 17:57:07,369 [myid:] - INFO  [Thread-0:FLENewEpochTest$LEThread@98] - Going to call leader election again: 1
+2018-06-28 17:57:07,369 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:57:07,369 [myid:] - INFO  [Thread-0:FastLeaderElection@813] - New election. My id =  1, proposed zxid=0x0
+2018-06-28 17:57:07,369 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11223
+2018-06-28 17:57:07,369 [myid:] - WARN  [WorkerSender[myid=1]:QuorumCnxManager@584] - Cannot open channel to 0 at election address /0.0.0.0:11222
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:558)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:534)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:454)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:435)
+	at java.lang.Thread.run(Thread.java:748)
+2018-06-28 17:57:07,370 [myid:] - INFO  [main:QuorumPeer@668] - currentEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2018-06-28 17:57:07,370 [myid:] - INFO  [WorkerSender[myid=1]:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:57:07,370 [myid:] - INFO  [WorkerReceiver[myid=1]:FastLeaderElection@595] - Notification: 1 (message format version), 1 (n.leader), 0x0 (n.zxid), 0x2 (n.round), LOOKING (n.state), 1 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:57:07,371 [myid:] - WARN  [WorkerSender[myid=1]:QuorumCnxManager@584] - Cannot open channel to 2 at election address /0.0.0.0:11228
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:558)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:534)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:454)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:435)
+	at java.lang.Thread.run(Thread.java:748)
+2018-06-28 17:57:07,371 [myid:] - INFO  [main:QuorumPeer@683] - acceptedEpoch not found! Creating with a reasonable default of 0. This should only happen when you are upgrading your installation
+2018-06-28 17:57:07,371 [myid:] - INFO  [WorkerSender[myid=1]:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:57:07,372 [myid:] - INFO  [ListenerThread:QuorumCnxManager$Listener@736] - My election bind port: /0.0.0.0:11222
+2018-06-28 17:57:07,373 [myid:] - INFO  [main:FLENewEpochTest$LEThread@88] - Constructor: Thread-3
+2018-06-28 17:57:07,373 [myid:] - INFO  [main:FLENewEpochTest@182] - Started threads testLENewEpoch
+2018-06-28 17:57:07,373 [myid:] - INFO  [Thread-3:FLENewEpochTest$LEThread@98] - Going to call leader election again: 0
+2018-06-28 17:57:07,373 [myid:] - WARN  [Thread-3:MBeanRegistry@104] - Failed to register MBean LeaderElection
+2018-06-28 17:57:07,373 [myid:] - WARN  [Thread-3:FastLeaderElection@795] - Failed to register with JMX
+javax.management.InstanceAlreadyExistsException: org.apache.ZooKeeperService:name0=LeaderElection
+	at com.sun.jmx.mbeanserver.Repository.addMBean(Repository.java:437)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerWithRepository(DefaultMBeanServerInterceptor.java:1898)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerDynamicMBean(DefaultMBeanServerInterceptor.java:966)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerObject(DefaultMBeanServerInterceptor.java:900)
+	at com.sun.jmx.interceptor.DefaultMBeanServerInterceptor.registerMBean(DefaultMBeanServerInterceptor.java:324)
+	at com.sun.jmx.mbeanserver.JmxMBeanServer.registerMBean(JmxMBeanServer.java:522)
+	at org.apache.zookeeper.jmx.MBeanRegistry.register(MBeanRegistry.java:100)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection.lookForLeader(FastLeaderElection.java:792)
+	at org.apache.zookeeper.test.FLENewEpochTest$LEThread.run(FLENewEpochTest.java:99)
+2018-06-28 17:57:07,374 [myid:] - INFO  [Thread-3:FastLeaderElection@813] - New election. My id =  0, proposed zxid=0x0
+2018-06-28 17:57:07,374 [myid:] - INFO  [WorkerReceiver[myid=0]:FastLeaderElection@595] - Notification: 1 (message format version), 0 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:57:07,374 [myid:] - INFO  [/0.0.0.0:11225:QuorumCnxManager$Listener@743] - Received connection request /10.0.0.10:54854
+2018-06-28 17:57:07,374 [myid:] - INFO  [WorkerSender[myid=0]:QuorumCnxManager@347] - Have smaller server identifier, so dropping the connection: (1, 0)
+2018-06-28 17:57:07,375 [myid:] - INFO  [/0.0.0.0:11222:QuorumCnxManager$Listener@743] - Received connection request /10.0.0.10:54855
+2018-06-28 17:57:07,375 [myid:] - WARN  [WorkerSender[myid=0]:QuorumCnxManager@584] - Cannot open channel to 2 at election address /0.0.0.0:11228
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:558)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:534)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:454)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:435)
+	at java.lang.Thread.run(Thread.java:748)
+2018-06-28 17:57:07,375 [myid:] - INFO  [WorkerSender[myid=0]:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:57:07,380 [myid:] - INFO  [WorkerReceiver[myid=0]:FastLeaderElection@595] - Notification: 1 (message format version), 1 (n.leader), 0x0 (n.zxid), 0x2 (n.round), LOOKING (n.state), 1 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:57:07,380 [myid:] - INFO  [WorkerReceiver[myid=1]:FastLeaderElection@595] - Notification: 1 (message format version), 0 (n.leader), 0x0 (n.zxid), 0x1 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:57:07,381 [myid:] - INFO  [WorkerReceiver[myid=0]:FastLeaderElection@595] - Notification: 1 (message format version), 1 (n.leader), 0x0 (n.zxid), 0x2 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:57:07,381 [myid:] - INFO  [WorkerReceiver[myid=1]:FastLeaderElection@595] - Notification: 1 (message format version), 1 (n.leader), 0x0 (n.zxid), 0x2 (n.round), LOOKING (n.state), 0 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:57:07,381 [myid:] - WARN  [WorkerSender[myid=0]:QuorumCnxManager@584] - Cannot open channel to 2 at election address /0.0.0.0:11228
+java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:204)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.connectOne(QuorumCnxManager.java:558)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.toSend(QuorumCnxManager.java:534)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.process(FastLeaderElection.java:454)
+	at org.apache.zookeeper.server.quorum.FastLeaderElection$Messenger$WorkerSender.run(FastLeaderElection.java:435)
+	at java.lang.Thread.run(Thread.java:748)
+2018-06-28 17:57:07,381 [myid:] - INFO  [WorkerReceiver[myid=0]:FastLeaderElection@595] - Notification: 1 (message format version), 1 (n.leader), 0x0 (n.zxid), 0x2 (n.round), LOOKING (n.state), 1 (n.sid), 0x0 (n.peerEpoch) LOOKING (my state)
+2018-06-28 17:57:07,382 [myid:] - INFO  [WorkerSender[myid=0]:QuorumPeer$QuorumServer@184] - Resolved hostname: 0.0.0.0 to address: /0.0.0.0
+2018-06-28 17:57:07,586 [myid:] - INFO  [Thread-3:FLENewEpochTest$LEThread@111] - Finished election: 0, 1
+2018-06-28 17:57:07,586 [myid:] - INFO  [Thread-0:FLENewEpochTest$LEThread@111] - Finished election: 1, 1
+2018-06-28 17:57:07,586 [myid:] - INFO  [Thread-0:FLENewEpochTest$LEThread@124] - Second entering case
+2018-06-28 17:57:07,586 [myid:] - INFO  [Thread-3:FLENewEpochTest$LEThread@116] - First peer, do nothing, just join
+2018-06-28 17:57:07,587 [myid:] - INFO  [Thread-0:FLENewEpochTest$LEThread@132] - Second is going to start second round
+2018-06-28 17:57:07,587 [myid:] - INFO  [Thread-3:FLENewEpochTest$LEThread@119] - Setting flag to false
+2018-06-28 17:57:07,587 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 7952
+2018-06-28 17:57:07,587 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 17
+2018-06-28 17:57:07,587 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testLENewEpoch
+2018-06-28 17:57:07,588 [myid:] - ERROR [/0.0.0.0:11225:QuorumCnxManager$Listener@760] - Exception while listening
+java.net.SocketException: Socket closed
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:409)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener.run(QuorumCnxManager.java:741)
+2018-06-28 17:57:07,588 [myid:] - ERROR [/0.0.0.0:11222:QuorumCnxManager$Listener@760] - Exception while listening
+java.net.SocketException: Socket closed
+	at java.net.PlainSocketImpl.socketAccept(Native Method)
+	at java.net.AbstractPlainSocketImpl.accept(AbstractPlainSocketImpl.java:409)
+	at java.net.ServerSocket.implAccept(ServerSocket.java:545)
+	at java.net.ServerSocket.accept(ServerSocket.java:513)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$Listener.run(QuorumCnxManager.java:741)
+2018-06-28 17:57:07,588 [myid:] - WARN  [SendWorker:1:QuorumCnxManager$SendWorker@941] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:418)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.pollSendQueue(QuorumCnxManager.java:1094)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.access$700(QuorumCnxManager.java:74)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:929)
+2018-06-28 17:57:07,588 [myid:] - WARN  [RecvWorker:0:QuorumCnxManager$RecvWorker@1025] - Connection broken for id 0, my id = 1, error = 
+java.net.SocketException: Socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:171)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:1010)
+2018-06-28 17:57:07,588 [myid:] - WARN  [SendWorker:0:QuorumCnxManager$SendWorker@941] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:418)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.pollSendQueue(QuorumCnxManager.java:1094)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.access$700(QuorumCnxManager.java:74)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:929)
+2018-06-28 17:57:07,588 [myid:] - WARN  [RecvWorker:1:QuorumCnxManager$RecvWorker@1025] - Connection broken for id 1, my id = 0, error = 
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:1010)
+2018-06-28 17:57:07,589 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testLENewEpoch
+2018-06-28 17:57:07,589 [myid:] - WARN  [SendWorker:0:QuorumCnxManager$SendWorker@951] - Send worker leaving thread
+2018-06-28 17:57:07,589 [myid:] - WARN  [RecvWorker:0:QuorumCnxManager$RecvWorker@1028] - Interrupting SendWorker
+2018-06-28 17:57:07,589 [myid:] - WARN  [SendWorker:1:QuorumCnxManager$SendWorker@951] - Send worker leaving thread
+2018-06-28 17:57:07,589 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testLENewEpoch
+2018-06-28 17:57:07,589 [myid:] - WARN  [RecvWorker:1:QuorumCnxManager$RecvWorker@1028] - Interrupting SendWorker
+------------- ---------------- ---------------
+
+Testcase: testLENewEpoch took 0.615 sec

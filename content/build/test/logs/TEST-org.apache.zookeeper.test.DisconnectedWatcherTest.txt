@@ -1,0 +1,490 @@
+Testsuite: org.apache.zookeeper.test.DisconnectedWatcherTest
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 16.073 sec
+------------- Standard Output ---------------
+2018-06-28 17:56:49,467 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11221
+2018-06-28 17:56:49,477 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testDeepChildWatcherAutoResetWithChroot
+2018-06-28 17:56:49,484 [myid:] - INFO  [main:ClientBase@489] - Initial fdcount is: 84
+2018-06-28 17:56:49,648 [myid:] - INFO  [main:ClientBase@507] - STARTING server
+2018-06-28 17:56:49,650 [myid:] - INFO  [main:ClientBase@428] - CREATING server instance 127.0.0.1:11221
+2018-06-28 17:56:49,657 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:56:49,667 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11221
+2018-06-28 17:56:49,669 [myid:] - INFO  [main:ClientBase@403] - STARTING server instance 127.0.0.1:11221
+2018-06-28 17:56:49,675 [myid:] - INFO  [main:Environment@100] - Server environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT
+2018-06-28 17:56:49,675 [myid:] - INFO  [main:Environment@100] - Server environment:host.name=10.0.0.10
+2018-06-28 17:56:49,675 [myid:] - INFO  [main:Environment@100] - Server environment:java.version=1.8.0_172
+2018-06-28 17:56:49,676 [myid:] - INFO  [main:Environment@100] - Server environment:java.vendor=Oracle Corporation
+2018-06-28 17:56:49,676 [myid:] - INFO  [main:Environment@100] - Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre
+2018-06-28 17:56:49,676 [myid:] - INFO  [main:Environment@100] - Server environment:java.class.path=/Users/hanm/Desktop/projects/git/apache/zookeeper/build/classes:/Users/hanm/Desktop/projects/git/apache/zookeeper/src/java/lib/ant-eclipse-1.0-jvm1.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/src/java/lib/ivy-2.4.0.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/classes:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr-2.7.7.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr4-annotations-4.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr4-runtime-4.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-api-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-avl-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-constants-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-shared-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-i18n-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptor-kerberos-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-admin-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-authn-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-authz-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-changelog-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-collective-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-event-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-exception-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-journal-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-normalization-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-operational-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-referral-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-schema-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-subtree-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-trigger-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-jdbm-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-jdbm1-2.0.0-M2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-ldif-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-mavibot-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-kerberos-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-ldap-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-shared-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-xdbm-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-all-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-asn1-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-asn1-ber-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-i18n-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-client-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-codec-core-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-aci-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-codec-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-codec-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-sp-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-trigger-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-util-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-model-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-util-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/audience-annotations-0.5.0.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/bcprov-jdk15-140.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/checkstyle-6.1.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-beanutils-core-1.8.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-cli-1.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-collections-3.2.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-io-2.4.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-lang-2.6.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-logging-1.1.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-pool-1.6.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/ehcache-core-2.4.4.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/guava-18.0.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/hamcrest-all-1.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/hamcrest-core-1.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/jline-0.9.94.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/junit-4.12.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/log4j-1.2.17.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mavibot-1.0.0-M1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mina-core-2.0.7.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mockito-all-1.8.5.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/netty-3.10.6.Final.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/org.abego.treelayout.core-1.0.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/slf4j-api-1.7.25.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/slf4j-log4j12-1.7.25.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-junit4.jar
+2018-06-28 17:56:49,676 [myid:] - INFO  [main:Environment@100] - Server environment:java.library.path=/Users/hanm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2018-06-28 17:56:49,676 [myid:] - INFO  [main:Environment@100] - Server environment:java.io.tmpdir=/var/folders/wv/j6wmf1nj5h7c36qz9b81kmfw0000gn/T/
+2018-06-28 17:56:49,677 [myid:] - INFO  [main:Environment@100] - Server environment:java.compiler=<NA>
+2018-06-28 17:56:49,677 [myid:] - INFO  [main:Environment@100] - Server environment:os.name=Mac OS X
+2018-06-28 17:56:49,678 [myid:] - INFO  [main:Environment@100] - Server environment:os.arch=x86_64
+2018-06-28 17:56:49,678 [myid:] - INFO  [main:Environment@100] - Server environment:os.version=10.13.5
+2018-06-28 17:56:49,678 [myid:] - INFO  [main:Environment@100] - Server environment:user.name=hanm
+2018-06-28 17:56:49,678 [myid:] - INFO  [main:Environment@100] - Server environment:user.home=/Users/hanm
+2018-06-28 17:56:49,678 [myid:] - INFO  [main:Environment@100] - Server environment:user.dir=/Users/hanm/Desktop/projects/git/apache/zookeeper
+2018-06-28 17:56:49,689 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3184949598153550438.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3184949598153550438.junit.dir/version-2
+2018-06-28 17:56:49,703 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11221
+2018-06-28 17:56:49,706 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54812
+2018-06-28 17:56:49,711 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ServerCnxn@324] - The list of known four letter word commands is : [{1936881266=srvr, 1937006964=stat, 2003003491=wchc, 1685417328=dump, 1668445044=crst, 1936880500=srst, 1701738089=envi, 1668247142=conf, 2003003507=wchs, 2003003504=wchp, 1668247155=cons, 1835955314=mntr, 1769173615=isro, 1920298859=ruok, 1735683435=gtmk, 1937010027=stmk}]
+2018-06-28 17:56:49,711 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ServerCnxn@325] - The list of enabled four letter word commands is : [[wchs, stat, wchp, stmk, conf, ruok, mntr, srvr, wchc, envi, srst, isro, dump, gtmk, crst, cons]]
+2018-06-28 17:56:49,713 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:54812
+2018-06-28 17:56:49,714 [myid:] - INFO  [Thread-2:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:56:49,715 [myid:] - INFO  [Thread-2:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54812 (no session established for client)
+2018-06-28 17:56:49,717 [myid:] - INFO  [main:JMXEnv@230] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2018-06-28 17:56:49,721 [myid:] - INFO  [main:JMXEnv@247] - expect:InMemoryDataTree
+2018-06-28 17:56:49,721 [myid:] - INFO  [main:JMXEnv@251] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port11221,name1=InMemoryDataTree
+2018-06-28 17:56:49,721 [myid:] - INFO  [main:JMXEnv@247] - expect:StandaloneServer_port
+2018-06-28 17:56:49,721 [myid:] - INFO  [main:JMXEnv@251] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port11221
+2018-06-28 17:56:49,721 [myid:] - INFO  [main:ClientBase@503] - Client test setup finished
+2018-06-28 17:56:49,722 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testDeepChildWatcherAutoResetWithChroot
+2018-06-28 17:56:49,724 [myid:] - INFO  [main:Environment@100] - Client environment:zookeeper.version=3.4.13-2d71af4dbe22557fda74f9a9b4309b15a7487f03, built on 06/29/2018 00:39 GMT
+2018-06-28 17:56:49,725 [myid:] - INFO  [main:Environment@100] - Client environment:host.name=10.0.0.10
+2018-06-28 17:56:49,725 [myid:] - INFO  [main:Environment@100] - Client environment:java.version=1.8.0_172
+2018-06-28 17:56:49,725 [myid:] - INFO  [main:Environment@100] - Client environment:java.vendor=Oracle Corporation
+2018-06-28 17:56:49,725 [myid:] - INFO  [main:Environment@100] - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre
+2018-06-28 17:56:49,725 [myid:] - INFO  [main:Environment@100] - Client environment:java.class.path=/Users/hanm/Desktop/projects/git/apache/zookeeper/build/classes:/Users/hanm/Desktop/projects/git/apache/zookeeper/src/java/lib/ant-eclipse-1.0-jvm1.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/src/java/lib/ivy-2.4.0.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/classes:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr-2.7.7.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr4-annotations-4.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/antlr4-runtime-4.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-api-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-avl-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-constants-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-core-shared-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-i18n-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptor-kerberos-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-admin-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-authn-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-authz-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-changelog-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-collective-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-event-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-exception-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-journal-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-normalization-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-operational-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-referral-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-schema-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-subtree-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-interceptors-trigger-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-jdbm-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-jdbm1-2.0.0-M2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-ldif-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-mavibot-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-kerberos-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-ldap-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-protocol-shared-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/apacheds-xdbm-partition-2.0.0-M15.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-all-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-asn1-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-asn1-ber-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-i18n-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-client-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-codec-core-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-aci-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-codec-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-codec-api-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-sp-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-trigger-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-extras-util-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-ldap-model-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/api-util-1.0.0-M20.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/audience-annotations-0.5.0.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/bcprov-jdk15-140.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/checkstyle-6.1.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-beanutils-core-1.8.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-cli-1.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-collections-3.2.2.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-io-2.4.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-lang-2.6.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-logging-1.1.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/commons-pool-1.6.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/ehcache-core-2.4.4.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/guava-18.0.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/hamcrest-all-1.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/hamcrest-core-1.3.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/jline-0.9.94.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/junit-4.12.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/log4j-1.2.17.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mavibot-1.0.0-M1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mina-core-2.0.7.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/mockito-all-1.8.5.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/netty-3.10.6.Final.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/org.abego.treelayout.core-1.0.1.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/slf4j-api-1.7.25.jar:/Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/lib/slf4j-log4j12-1.7.25.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-launcher.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-junit.jar:/usr/local/Cellar/ant/1.10.3/libexec/lib/ant-junit4.jar
+2018-06-28 17:56:49,725 [myid:] - INFO  [main:Environment@100] - Client environment:java.library.path=/Users/hanm/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2018-06-28 17:56:49,725 [myid:] - INFO  [main:Environment@100] - Client environment:java.io.tmpdir=/var/folders/wv/j6wmf1nj5h7c36qz9b81kmfw0000gn/T/
+2018-06-28 17:56:49,726 [myid:] - INFO  [main:Environment@100] - Client environment:java.compiler=<NA>
+2018-06-28 17:56:49,726 [myid:] - INFO  [main:Environment@100] - Client environment:os.name=Mac OS X
+2018-06-28 17:56:49,726 [myid:] - INFO  [main:Environment@100] - Client environment:os.arch=x86_64
+2018-06-28 17:56:49,726 [myid:] - INFO  [main:Environment@100] - Client environment:os.version=10.13.5
+2018-06-28 17:56:49,726 [myid:] - INFO  [main:Environment@100] - Client environment:user.name=hanm
+2018-06-28 17:56:49,726 [myid:] - INFO  [main:Environment@100] - Client environment:user.home=/Users/hanm
+2018-06-28 17:56:49,726 [myid:] - INFO  [main:Environment@100] - Client environment:user.dir=/Users/hanm/Desktop/projects/git/apache/zookeeper
+2018-06-28 17:56:49,727 [myid:] - INFO  [main:ZooKeeper@442] - Initiating client connection, connectString=127.0.0.1:11221 sessionTimeout=30000 watcher=org.apache.zookeeper.test.ClientBase$CountdownWatcher@6e06451e
+2018-06-28 17:56:49,741 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11221. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:56:49,742 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54813
+2018-06-28 17:56:49,742 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11221, initiating session
+2018-06-28 17:56:49,745 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:54813
+2018-06-28 17:56:49,747 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1
+2018-06-28 17:56:49,755 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x1000662f7020000 with negotiated timeout 30000 for client /127.0.0.1:54813
+2018-06-28 17:56:49,756 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11221, sessionid = 0x1000662f7020000, negotiated timeout = 30000
+2018-06-28 17:56:49,759 [myid:] - INFO  [main:JMXEnv@118] - expect:0x1000662f7020000
+2018-06-28 17:56:49,759 [myid:] - INFO  [main:JMXEnv@121] - found:0x1000662f7020000 org.apache.ZooKeeperService:name0=StandaloneServer_port11221,name1=Connections,name2=127.0.0.1,name3=0x1000662f7020000
+2018-06-28 17:56:49,771 [myid:] - INFO  [main:ZooKeeper@442] - Initiating client connection, connectString=127.0.0.1:11221/ch1/here/we sessionTimeout=30000 watcher=org.apache.zookeeper.test.DisconnectedWatcherTest$MyWatcher@cb644e
+2018-06-28 17:56:49,772 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11221. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:56:49,772 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11221, initiating session
+2018-06-28 17:56:49,772 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54814
+2018-06-28 17:56:49,773 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:54814
+2018-06-28 17:56:49,773 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x1000662f7020001 with negotiated timeout 30000 for client /127.0.0.1:54814
+2018-06-28 17:56:49,773 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11221, sessionid = 0x1000662f7020001, negotiated timeout = 30000
+2018-06-28 17:56:49,775 [myid:] - INFO  [main:JMXEnv@118] - expect:0x1000662f7020001
+2018-06-28 17:56:49,775 [myid:] - INFO  [main:JMXEnv@121] - found:0x1000662f7020001 org.apache.ZooKeeperService:name0=StandaloneServer_port11221,name1=Connections,name2=127.0.0.1,name3=0x1000662f7020001
+2018-06-28 17:56:49,779 [myid:] - INFO  [main:ClientBase@554] - STOPPING server
+2018-06-28 17:56:49,780 [myid:] - INFO  [main:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54814 which had sessionid 0x1000662f7020001
+2018-06-28 17:56:49,780 [myid:] - INFO  [main:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54813 which had sessionid 0x1000662f7020000
+2018-06-28 17:56:49,780 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1162] - Unable to read additional data from server sessionid 0x1000662f7020001, likely server has closed socket, closing socket connection and attempting reconnect
+2018-06-28 17:56:49,780 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:56:49,780 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1162] - Unable to read additional data from server sessionid 0x1000662f7020000, likely server has closed socket, closing socket connection and attempting reconnect
+2018-06-28 17:56:49,781 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:56:49,781 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:56:49,781 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:56:49,781 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:56:49,781 [myid:] - INFO  [ProcessThread(sid:0 cport:11221)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:56:49,781 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:56:49,781 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:56:49,783 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11221
+2018-06-28 17:56:49,783 [myid:] - INFO  [main:JMXEnv@147] - ensureOnly:[]
+2018-06-28 17:56:49,891 [myid:] - INFO  [main:ClientBase@507] - STARTING server
+2018-06-28 17:56:49,891 [myid:] - INFO  [main:ClientBase@428] - CREATING server instance 127.0.0.1:11221
+2018-06-28 17:56:49,892 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:56:49,892 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11221
+2018-06-28 17:56:49,892 [myid:] - INFO  [main:ClientBase@403] - STARTING server instance 127.0.0.1:11221
+2018-06-28 17:56:49,893 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3184949598153550438.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3184949598153550438.junit.dir/version-2
+2018-06-28 17:56:49,895 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11221
+2018-06-28 17:56:49,896 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54816
+2018-06-28 17:56:49,897 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:54816
+2018-06-28 17:56:49,897 [myid:] - INFO  [Thread-3:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:56:49,897 [myid:] - INFO  [Thread-3:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54816 (no session established for client)
+2018-06-28 17:56:49,897 [myid:] - INFO  [main:JMXEnv@230] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2018-06-28 17:56:49,900 [myid:] - INFO  [main:JMXEnv@247] - expect:InMemoryDataTree
+2018-06-28 17:56:49,900 [myid:] - INFO  [main:JMXEnv@251] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port11221,name1=InMemoryDataTree
+2018-06-28 17:56:49,900 [myid:] - INFO  [main:JMXEnv@247] - expect:StandaloneServer_port
+2018-06-28 17:56:49,900 [myid:] - INFO  [main:JMXEnv@251] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port11221
+2018-06-28 17:56:50,947 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11221. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:56:50,948 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11221, initiating session
+2018-06-28 17:56:50,948 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54820
+2018-06-28 17:56:50,950 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@942] - Client attempting to renew session 0x1000662f7020001 at /127.0.0.1:54820
+2018-06-28 17:56:50,951 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@694] - Established session 0x1000662f7020001 with negotiated timeout 30000 for client /127.0.0.1:54820
+2018-06-28 17:56:50,951 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11221, sessionid = 0x1000662f7020001, negotiated timeout = 30000
+2018-06-28 17:56:51,408 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11221. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:56:51,409 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11221, initiating session
+2018-06-28 17:56:51,409 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54821
+2018-06-28 17:56:51,409 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@942] - Client attempting to renew session 0x1000662f7020000 at /127.0.0.1:54821
+2018-06-28 17:56:51,409 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:ZooKeeperServer@694] - Established session 0x1000662f7020000 with negotiated timeout 30000 for client /127.0.0.1:54821
+2018-06-28 17:56:51,410 [myid:] - INFO  [main-SendThread(localhost:11221):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11221, sessionid = 0x1000662f7020000, negotiated timeout = 30000
+2018-06-28 17:56:51,410 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.8
+2018-06-28 17:56:51,412 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 11679
+2018-06-28 17:56:51,412 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 21
+2018-06-28 17:56:51,413 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testDeepChildWatcherAutoResetWithChroot
+2018-06-28 17:56:51,413 [myid:] - INFO  [main:ClientBase@584] - tearDown starting
+2018-06-28 17:56:51,413 [myid:] - INFO  [ProcessThread(sid:0 cport:11221)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x1000662f7020000
+2018-06-28 17:56:51,414 [myid:] - INFO  [main:ZooKeeper@693] - Session: 0x1000662f7020000 closed
+2018-06-28 17:56:51,414 [myid:] - INFO  [main-EventThread:ClientCnxn$EventThread@522] - EventThread shut down for session: 0x1000662f7020000
+2018-06-28 17:56:51,415 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54821 which had sessionid 0x1000662f7020000
+2018-06-28 17:56:51,415 [myid:] - INFO  [ProcessThread(sid:0 cport:11221)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x1000662f7020001
+2018-06-28 17:56:51,415 [myid:] - INFO  [main:ZooKeeper@693] - Session: 0x1000662f7020001 closed
+2018-06-28 17:56:51,416 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54820 which had sessionid 0x1000662f7020001
+2018-06-28 17:56:51,416 [myid:] - INFO  [main-EventThread:ClientCnxn$EventThread@522] - EventThread shut down for session: 0x1000662f7020001
+2018-06-28 17:56:51,416 [myid:] - INFO  [main:ClientBase@554] - STOPPING server
+2018-06-28 17:56:51,416 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11221:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:56:51,416 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:56:51,417 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:56:51,417 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:56:51,417 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:56:51,417 [myid:] - INFO  [ProcessThread(sid:0 cport:11221)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:56:51,417 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:56:51,417 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:56:51,418 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11221
+2018-06-28 17:56:51,418 [myid:] - INFO  [main:JMXEnv@147] - ensureOnly:[]
+2018-06-28 17:56:51,422 [myid:] - INFO  [main:ClientBase@609] - fdcount after test is: 107 at start it was 84
+2018-06-28 17:56:51,422 [myid:] - INFO  [main:ClientBase@611] - sleeping for 20 secs
+2018-06-28 17:56:51,423 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testDeepChildWatcherAutoResetWithChroot
+2018-06-28 17:56:51,423 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testDeepChildWatcherAutoResetWithChroot
+2018-06-28 17:56:51,426 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11222
+2018-06-28 17:56:51,426 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testChildWatcherAutoResetWithChroot
+2018-06-28 17:56:51,427 [myid:] - INFO  [main:ClientBase@489] - Initial fdcount is: 107
+2018-06-28 17:56:51,432 [myid:] - INFO  [main:ClientBase@507] - STARTING server
+2018-06-28 17:56:51,432 [myid:] - INFO  [main:ClientBase@428] - CREATING server instance 127.0.0.1:11222
+2018-06-28 17:56:51,432 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:56:51,433 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11222
+2018-06-28 17:56:51,433 [myid:] - INFO  [main:ClientBase@403] - STARTING server instance 127.0.0.1:11222
+2018-06-28 17:56:51,433 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test2129668326918280151.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test2129668326918280151.junit.dir/version-2
+2018-06-28 17:56:51,434 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11222
+2018-06-28 17:56:51,434 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54823
+2018-06-28 17:56:51,435 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:54823
+2018-06-28 17:56:51,435 [myid:] - INFO  [Thread-5:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:56:51,435 [myid:] - INFO  [Thread-5:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54823 (no session established for client)
+2018-06-28 17:56:51,435 [myid:] - INFO  [main:JMXEnv@230] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2018-06-28 17:56:51,436 [myid:] - INFO  [main:JMXEnv@247] - expect:InMemoryDataTree
+2018-06-28 17:56:51,436 [myid:] - INFO  [main:JMXEnv@251] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port11222,name1=InMemoryDataTree
+2018-06-28 17:56:51,436 [myid:] - INFO  [main:JMXEnv@247] - expect:StandaloneServer_port
+2018-06-28 17:56:51,436 [myid:] - INFO  [main:JMXEnv@251] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port11222
+2018-06-28 17:56:51,437 [myid:] - INFO  [main:ClientBase@503] - Client test setup finished
+2018-06-28 17:56:51,437 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testChildWatcherAutoResetWithChroot
+2018-06-28 17:56:51,437 [myid:] - INFO  [main:ZooKeeper@442] - Initiating client connection, connectString=127.0.0.1:11222 sessionTimeout=30000 watcher=org.apache.zookeeper.test.ClientBase$CountdownWatcher@4fe3c938
+2018-06-28 17:56:51,438 [myid:] - INFO  [main-SendThread(localhost:11222):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11222. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:56:51,438 [myid:] - INFO  [main-SendThread(localhost:11222):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11222, initiating session
+2018-06-28 17:56:51,438 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54824
+2018-06-28 17:56:51,438 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:54824
+2018-06-28 17:56:51,439 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1
+2018-06-28 17:56:51,440 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x1000662fdce0000 with negotiated timeout 30000 for client /127.0.0.1:54824
+2018-06-28 17:56:51,440 [myid:] - INFO  [main-SendThread(localhost:11222):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11222, sessionid = 0x1000662fdce0000, negotiated timeout = 30000
+2018-06-28 17:56:51,441 [myid:] - INFO  [main:JMXEnv@118] - expect:0x1000662fdce0000
+2018-06-28 17:56:51,441 [myid:] - INFO  [main:JMXEnv@121] - found:0x1000662fdce0000 org.apache.ZooKeeperService:name0=StandaloneServer_port11222,name1=Connections,name2=127.0.0.1,name3=0x1000662fdce0000
+2018-06-28 17:56:51,442 [myid:] - INFO  [main:ZooKeeper@442] - Initiating client connection, connectString=127.0.0.1:11222/ch1 sessionTimeout=30000 watcher=org.apache.zookeeper.test.DisconnectedWatcherTest$MyWatcher@20398b7c
+2018-06-28 17:56:51,443 [myid:] - INFO  [main-SendThread(localhost:11222):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11222. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:56:51,444 [myid:] - INFO  [main-SendThread(localhost:11222):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11222, initiating session
+2018-06-28 17:56:51,444 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54825
+2018-06-28 17:56:51,444 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:54825
+2018-06-28 17:56:51,445 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x1000662fdce0001 with negotiated timeout 30000 for client /127.0.0.1:54825
+2018-06-28 17:56:51,445 [myid:] - INFO  [main-SendThread(localhost:11222):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11222, sessionid = 0x1000662fdce0001, negotiated timeout = 30000
+2018-06-28 17:56:51,446 [myid:] - INFO  [main:JMXEnv@118] - expect:0x1000662fdce0001
+2018-06-28 17:56:51,446 [myid:] - INFO  [main:JMXEnv@121] - found:0x1000662fdce0001 org.apache.ZooKeeperService:name0=StandaloneServer_port11222,name1=Connections,name2=127.0.0.1,name3=0x1000662fdce0001
+2018-06-28 17:56:51,448 [myid:] - INFO  [main:ClientBase@554] - STOPPING server
+2018-06-28 17:56:51,449 [myid:] - INFO  [main:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54825 which had sessionid 0x1000662fdce0001
+2018-06-28 17:56:51,449 [myid:] - INFO  [main-SendThread(localhost:11222):ClientCnxn$SendThread@1162] - Unable to read additional data from server sessionid 0x1000662fdce0001, likely server has closed socket, closing socket connection and attempting reconnect
+2018-06-28 17:56:51,449 [myid:] - INFO  [main:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54824 which had sessionid 0x1000662fdce0000
+2018-06-28 17:56:51,449 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:56:51,449 [myid:] - INFO  [main-SendThread(localhost:11222):ClientCnxn$SendThread@1162] - Unable to read additional data from server sessionid 0x1000662fdce0000, likely server has closed socket, closing socket connection and attempting reconnect
+2018-06-28 17:56:51,449 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:56:51,449 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:56:51,449 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:56:51,450 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:56:51,450 [myid:] - INFO  [ProcessThread(sid:0 cport:11222)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:56:51,450 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:56:51,450 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:56:51,450 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11222
+2018-06-28 17:56:51,451 [myid:] - INFO  [main:JMXEnv@147] - ensureOnly:[]
+2018-06-28 17:56:51,557 [myid:] - INFO  [main:ClientBase@507] - STARTING server
+2018-06-28 17:56:51,558 [myid:] - INFO  [main:ClientBase@428] - CREATING server instance 127.0.0.1:11222
+2018-06-28 17:56:51,558 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:56:51,558 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11222
+2018-06-28 17:56:51,558 [myid:] - INFO  [main:ClientBase@403] - STARTING server instance 127.0.0.1:11222
+2018-06-28 17:56:51,559 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test2129668326918280151.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test2129668326918280151.junit.dir/version-2
+2018-06-28 17:56:51,561 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11222
+2018-06-28 17:56:51,562 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54827
+2018-06-28 17:56:51,562 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:54827
+2018-06-28 17:56:51,563 [myid:] - INFO  [Thread-6:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:56:51,563 [myid:] - INFO  [Thread-6:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54827 (no session established for client)
+2018-06-28 17:56:51,564 [myid:] - INFO  [main:JMXEnv@230] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2018-06-28 17:56:51,566 [myid:] - INFO  [main:JMXEnv@247] - expect:InMemoryDataTree
+2018-06-28 17:56:51,566 [myid:] - INFO  [main:JMXEnv@251] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port11222,name1=InMemoryDataTree
+2018-06-28 17:56:51,566 [myid:] - INFO  [main:JMXEnv@247] - expect:StandaloneServer_port
+2018-06-28 17:56:51,567 [myid:] - INFO  [main:JMXEnv@251] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port11222
+2018-06-28 17:56:51,638 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:56:51,638 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:56:51,638 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:56:53,198 [myid:] - INFO  [main-SendThread(localhost:11222):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11222. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:56:53,199 [myid:] - INFO  [main-SendThread(localhost:11222):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11222, initiating session
+2018-06-28 17:56:53,199 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54828
+2018-06-28 17:56:53,199 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:ZooKeeperServer@942] - Client attempting to renew session 0x1000662fdce0001 at /127.0.0.1:54828
+2018-06-28 17:56:53,200 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:ZooKeeperServer@694] - Established session 0x1000662fdce0001 with negotiated timeout 30000 for client /127.0.0.1:54828
+2018-06-28 17:56:53,200 [myid:] - INFO  [main-SendThread(localhost:11222):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11222, sessionid = 0x1000662fdce0001, negotiated timeout = 30000
+2018-06-28 17:56:53,238 [myid:] - INFO  [main-SendThread(localhost:11222):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11222. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:56:53,239 [myid:] - INFO  [main-SendThread(localhost:11222):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11222, initiating session
+2018-06-28 17:56:53,239 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54829
+2018-06-28 17:56:53,239 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:ZooKeeperServer@942] - Client attempting to renew session 0x1000662fdce0000 at /127.0.0.1:54829
+2018-06-28 17:56:53,240 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:ZooKeeperServer@694] - Established session 0x1000662fdce0000 with negotiated timeout 30000 for client /127.0.0.1:54829
+2018-06-28 17:56:53,240 [myid:] - INFO  [main-SendThread(localhost:11222):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11222, sessionid = 0x1000662fdce0000, negotiated timeout = 30000
+2018-06-28 17:56:53,240 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.6
+2018-06-28 17:56:53,245 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 17806
+2018-06-28 17:56:53,245 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 20
+2018-06-28 17:56:53,245 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testChildWatcherAutoResetWithChroot
+2018-06-28 17:56:53,245 [myid:] - INFO  [main:ClientBase@584] - tearDown starting
+2018-06-28 17:56:53,246 [myid:] - INFO  [ProcessThread(sid:0 cport:11222)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x1000662fdce0000
+2018-06-28 17:56:53,247 [myid:] - INFO  [main:ZooKeeper@693] - Session: 0x1000662fdce0000 closed
+2018-06-28 17:56:53,247 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54829 which had sessionid 0x1000662fdce0000
+2018-06-28 17:56:53,247 [myid:] - INFO  [main-EventThread:ClientCnxn$EventThread@522] - EventThread shut down for session: 0x1000662fdce0000
+2018-06-28 17:56:53,247 [myid:] - INFO  [ProcessThread(sid:0 cport:11222)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x1000662fdce0001
+2018-06-28 17:56:53,248 [myid:] - INFO  [main:ZooKeeper@693] - Session: 0x1000662fdce0001 closed
+2018-06-28 17:56:53,248 [myid:] - INFO  [main:ClientBase@554] - STOPPING server
+2018-06-28 17:56:53,248 [myid:] - INFO  [main-EventThread:ClientCnxn$EventThread@522] - EventThread shut down for session: 0x1000662fdce0001
+2018-06-28 17:56:53,248 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54828 which had sessionid 0x1000662fdce0001
+2018-06-28 17:56:53,249 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11222:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:56:53,249 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:56:53,249 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:56:53,249 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:56:53,249 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:56:53,249 [myid:] - INFO  [ProcessThread(sid:0 cport:11222)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:56:53,249 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:56:53,250 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:56:53,251 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11222
+2018-06-28 17:56:53,251 [myid:] - INFO  [main:JMXEnv@147] - ensureOnly:[]
+2018-06-28 17:56:53,254 [myid:] - INFO  [main:ClientBase@609] - fdcount after test is: 107 at start it was 107
+2018-06-28 17:56:53,254 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testChildWatcherAutoResetWithChroot
+2018-06-28 17:56:53,254 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testChildWatcherAutoResetWithChroot
+2018-06-28 17:56:53,255 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11223
+2018-06-28 17:56:53,255 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testDefaultWatcherAutoResetWithChroot
+2018-06-28 17:56:53,255 [myid:] - INFO  [main:ClientBase@489] - Initial fdcount is: 107
+2018-06-28 17:56:53,261 [myid:] - INFO  [main:ClientBase@507] - STARTING server
+2018-06-28 17:56:53,261 [myid:] - INFO  [main:ClientBase@428] - CREATING server instance 127.0.0.1:11223
+2018-06-28 17:56:53,262 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:56:53,262 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11223
+2018-06-28 17:56:53,262 [myid:] - INFO  [main:ClientBase@403] - STARTING server instance 127.0.0.1:11223
+2018-06-28 17:56:53,262 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3301540038728775367.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3301540038728775367.junit.dir/version-2
+2018-06-28 17:56:53,264 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11223
+2018-06-28 17:56:53,264 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54831
+2018-06-28 17:56:53,265 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:54831
+2018-06-28 17:56:53,265 [myid:] - INFO  [Thread-8:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:56:53,265 [myid:] - INFO  [Thread-8:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54831 (no session established for client)
+2018-06-28 17:56:53,266 [myid:] - INFO  [main:JMXEnv@230] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2018-06-28 17:56:53,267 [myid:] - INFO  [main:JMXEnv@247] - expect:InMemoryDataTree
+2018-06-28 17:56:53,267 [myid:] - INFO  [main:JMXEnv@251] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port11223,name1=InMemoryDataTree
+2018-06-28 17:56:53,267 [myid:] - INFO  [main:JMXEnv@247] - expect:StandaloneServer_port
+2018-06-28 17:56:53,267 [myid:] - INFO  [main:JMXEnv@251] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port11223
+2018-06-28 17:56:53,267 [myid:] - INFO  [main:ClientBase@503] - Client test setup finished
+2018-06-28 17:56:53,267 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testDefaultWatcherAutoResetWithChroot
+2018-06-28 17:56:53,267 [myid:] - INFO  [main:ZooKeeper@442] - Initiating client connection, connectString=127.0.0.1:11223 sessionTimeout=30000 watcher=org.apache.zookeeper.test.ClientBase$CountdownWatcher@67b92f0a
+2018-06-28 17:56:53,269 [myid:] - INFO  [main-SendThread(localhost:11223):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11223. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:56:53,269 [myid:] - INFO  [main-SendThread(localhost:11223):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11223, initiating session
+2018-06-28 17:56:53,269 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54832
+2018-06-28 17:56:53,269 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:54832
+2018-06-28 17:56:53,269 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1
+2018-06-28 17:56:53,271 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066304f40000 with negotiated timeout 30000 for client /127.0.0.1:54832
+2018-06-28 17:56:53,271 [myid:] - INFO  [main-SendThread(localhost:11223):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11223, sessionid = 0x100066304f40000, negotiated timeout = 30000
+2018-06-28 17:56:53,273 [myid:] - INFO  [main:JMXEnv@118] - expect:0x100066304f40000
+2018-06-28 17:56:53,273 [myid:] - INFO  [main:JMXEnv@121] - found:0x100066304f40000 org.apache.ZooKeeperService:name0=StandaloneServer_port11223,name1=Connections,name2=127.0.0.1,name3=0x100066304f40000
+2018-06-28 17:56:53,275 [myid:] - INFO  [main:ZooKeeper@442] - Initiating client connection, connectString=127.0.0.1:11223/ch1 sessionTimeout=30000 watcher=org.apache.zookeeper.test.DisconnectedWatcherTest$MyWatcher@61f8bee4
+2018-06-28 17:56:53,276 [myid:] - INFO  [main-SendThread(localhost:11223):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11223. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:56:53,276 [myid:] - INFO  [main-SendThread(localhost:11223):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11223, initiating session
+2018-06-28 17:56:53,276 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54833
+2018-06-28 17:56:53,277 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:54833
+2018-06-28 17:56:53,278 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x100066304f40001 with negotiated timeout 30000 for client /127.0.0.1:54833
+2018-06-28 17:56:53,278 [myid:] - INFO  [main-SendThread(localhost:11223):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11223, sessionid = 0x100066304f40001, negotiated timeout = 30000
+2018-06-28 17:56:53,279 [myid:] - INFO  [main:JMXEnv@118] - expect:0x100066304f40001
+2018-06-28 17:56:53,280 [myid:] - INFO  [main:JMXEnv@121] - found:0x100066304f40001 org.apache.ZooKeeperService:name0=StandaloneServer_port11223,name1=Connections,name2=127.0.0.1,name3=0x100066304f40001
+2018-06-28 17:56:53,283 [myid:] - INFO  [main:ClientBase@554] - STOPPING server
+2018-06-28 17:56:53,283 [myid:] - INFO  [main:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54832 which had sessionid 0x100066304f40000
+2018-06-28 17:56:53,283 [myid:] - INFO  [main-SendThread(localhost:11223):ClientCnxn$SendThread@1162] - Unable to read additional data from server sessionid 0x100066304f40000, likely server has closed socket, closing socket connection and attempting reconnect
+2018-06-28 17:56:53,284 [myid:] - INFO  [main:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54833 which had sessionid 0x100066304f40001
+2018-06-28 17:56:53,284 [myid:] - INFO  [main-SendThread(localhost:11223):ClientCnxn$SendThread@1162] - Unable to read additional data from server sessionid 0x100066304f40001, likely server has closed socket, closing socket connection and attempting reconnect
+2018-06-28 17:56:53,284 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:56:53,284 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:56:53,284 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:56:53,284 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:56:53,285 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:56:53,285 [myid:] - INFO  [ProcessThread(sid:0 cport:11223)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:56:53,285 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:56:53,285 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:56:53,286 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11223
+2018-06-28 17:56:53,286 [myid:] - INFO  [main:JMXEnv@147] - ensureOnly:[]
+2018-06-28 17:56:53,391 [myid:] - INFO  [main:ClientBase@507] - STARTING server
+2018-06-28 17:56:53,391 [myid:] - INFO  [main:ClientBase@428] - CREATING server instance 127.0.0.1:11223
+2018-06-28 17:56:53,392 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:56:53,392 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11223
+2018-06-28 17:56:53,392 [myid:] - INFO  [main:ClientBase@403] - STARTING server instance 127.0.0.1:11223
+2018-06-28 17:56:53,393 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3301540038728775367.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test3301540038728775367.junit.dir/version-2
+2018-06-28 17:56:53,395 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11223
+2018-06-28 17:56:53,396 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54835
+2018-06-28 17:56:53,396 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:54835
+2018-06-28 17:56:53,397 [myid:] - INFO  [Thread-9:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:56:53,398 [myid:] - INFO  [Thread-9:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54835 (no session established for client)
+2018-06-28 17:56:53,398 [myid:] - INFO  [main:JMXEnv@230] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2018-06-28 17:56:53,399 [myid:] - INFO  [main:JMXEnv@247] - expect:InMemoryDataTree
+2018-06-28 17:56:53,399 [myid:] - INFO  [main:JMXEnv@251] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port11223,name1=InMemoryDataTree
+2018-06-28 17:56:53,399 [myid:] - INFO  [main:JMXEnv@247] - expect:StandaloneServer_port
+2018-06-28 17:56:53,399 [myid:] - INFO  [main:JMXEnv@251] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port11223
+2018-06-28 17:56:54,641 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:56:54,641 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:56:54,654 [myid:] - INFO  [main-SendThread(localhost:11223):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11223. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:56:54,654 [myid:] - INFO  [main-SendThread(localhost:11223):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11223, initiating session
+2018-06-28 17:56:54,654 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54836
+2018-06-28 17:56:54,655 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:ZooKeeperServer@942] - Client attempting to renew session 0x100066304f40001 at /127.0.0.1:54836
+2018-06-28 17:56:54,655 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:ZooKeeperServer@694] - Established session 0x100066304f40001 with negotiated timeout 30000 for client /127.0.0.1:54836
+2018-06-28 17:56:54,655 [myid:] - INFO  [main-SendThread(localhost:11223):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11223, sessionid = 0x100066304f40001, negotiated timeout = 30000
+2018-06-28 17:56:55,158 [myid:] - INFO  [main-SendThread(localhost:11223):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11223. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:56:55,158 [myid:] - INFO  [main-SendThread(localhost:11223):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11223, initiating session
+2018-06-28 17:56:55,158 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54837
+2018-06-28 17:56:55,159 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:ZooKeeperServer@942] - Client attempting to renew session 0x100066304f40000 at /127.0.0.1:54837
+2018-06-28 17:56:55,159 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:ZooKeeperServer@694] - Established session 0x100066304f40000 with negotiated timeout 30000 for client /127.0.0.1:54837
+2018-06-28 17:56:55,159 [myid:] - INFO  [main-SendThread(localhost:11223):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11223, sessionid = 0x100066304f40000, negotiated timeout = 30000
+2018-06-28 17:56:55,160 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.6
+2018-06-28 17:56:55,169 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 22425
+2018-06-28 17:56:55,170 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 20
+2018-06-28 17:56:55,170 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testDefaultWatcherAutoResetWithChroot
+2018-06-28 17:56:55,170 [myid:] - INFO  [main:ClientBase@584] - tearDown starting
+2018-06-28 17:56:55,170 [myid:] - INFO  [ProcessThread(sid:0 cport:11223)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100066304f40000
+2018-06-28 17:56:55,171 [myid:] - INFO  [main:ZooKeeper@693] - Session: 0x100066304f40000 closed
+2018-06-28 17:56:55,171 [myid:] - INFO  [main-EventThread:ClientCnxn$EventThread@522] - EventThread shut down for session: 0x100066304f40000
+2018-06-28 17:56:55,172 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54837 which had sessionid 0x100066304f40000
+2018-06-28 17:56:55,172 [myid:] - INFO  [ProcessThread(sid:0 cport:11223)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x100066304f40001
+2018-06-28 17:56:55,173 [myid:] - INFO  [main:ZooKeeper@693] - Session: 0x100066304f40001 closed
+2018-06-28 17:56:55,173 [myid:] - INFO  [main-EventThread:ClientCnxn$EventThread@522] - EventThread shut down for session: 0x100066304f40001
+2018-06-28 17:56:55,173 [myid:] - INFO  [main:ClientBase@554] - STOPPING server
+2018-06-28 17:56:55,173 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54836 which had sessionid 0x100066304f40001
+2018-06-28 17:56:55,174 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11223:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:56:55,174 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:56:55,174 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:56:55,174 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:56:55,174 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:56:55,174 [myid:] - INFO  [ProcessThread(sid:0 cport:11223)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:56:55,174 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:56:55,175 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:56:55,176 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11223
+2018-06-28 17:56:55,176 [myid:] - INFO  [main:JMXEnv@147] - ensureOnly:[]
+2018-06-28 17:56:55,179 [myid:] - INFO  [main:ClientBase@609] - fdcount after test is: 107 at start it was 107
+2018-06-28 17:56:55,180 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testDefaultWatcherAutoResetWithChroot
+2018-06-28 17:56:55,180 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testDefaultWatcherAutoResetWithChroot
+2018-06-28 17:56:55,180 [myid:] - INFO  [main:PortAssignment@32] - assigning port 11224
+2018-06-28 17:56:55,182 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testManyChildWatchersAutoReset
+2018-06-28 17:56:55,182 [myid:] - INFO  [main:ClientBase@489] - Initial fdcount is: 107
+2018-06-28 17:56:55,189 [myid:] - INFO  [main:ClientBase@507] - STARTING server
+2018-06-28 17:56:55,189 [myid:] - INFO  [main:ClientBase@428] - CREATING server instance 127.0.0.1:11224
+2018-06-28 17:56:55,190 [myid:] - INFO  [main:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:56:55,190 [myid:] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11224
+2018-06-28 17:56:55,190 [myid:] - INFO  [main:ClientBase@403] - STARTING server instance 127.0.0.1:11224
+2018-06-28 17:56:55,190 [myid:] - INFO  [main:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test772615707739316153.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test772615707739316153.junit.dir/version-2
+2018-06-28 17:56:55,191 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:56:55,192 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54839
+2018-06-28 17:56:55,192 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:54839
+2018-06-28 17:56:55,192 [myid:] - INFO  [Thread-11:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:56:55,193 [myid:] - INFO  [Thread-11:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54839 (no session established for client)
+2018-06-28 17:56:55,193 [myid:] - INFO  [main:JMXEnv@230] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2018-06-28 17:56:55,194 [myid:] - INFO  [main:JMXEnv@247] - expect:InMemoryDataTree
+2018-06-28 17:56:55,195 [myid:] - INFO  [main:JMXEnv@251] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port11224,name1=InMemoryDataTree
+2018-06-28 17:56:55,195 [myid:] - INFO  [main:JMXEnv@247] - expect:StandaloneServer_port
+2018-06-28 17:56:55,195 [myid:] - INFO  [main:JMXEnv@251] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port11224
+2018-06-28 17:56:55,195 [myid:] - INFO  [main:ClientBase@503] - Client test setup finished
+2018-06-28 17:56:55,196 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testManyChildWatchersAutoReset
+2018-06-28 17:56:55,196 [myid:] - INFO  [Time-limited test:ZooKeeper@442] - Initiating client connection, connectString=127.0.0.1:11224 sessionTimeout=30000 watcher=org.apache.zookeeper.test.ClientBase$CountdownWatcher@7544d9e
+2018-06-28 17:56:55,197 [myid:] - INFO  [Time-limited test-SendThread(localhost:11224):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11224. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:56:55,197 [myid:] - INFO  [Time-limited test-SendThread(localhost:11224):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11224, initiating session
+2018-06-28 17:56:55,198 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54840
+2018-06-28 17:56:55,198 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:54840
+2018-06-28 17:56:55,198 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.1
+2018-06-28 17:56:55,200 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x10006630c7c0000 with negotiated timeout 30000 for client /127.0.0.1:54840
+2018-06-28 17:56:55,200 [myid:] - INFO  [Time-limited test-SendThread(localhost:11224):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11224, sessionid = 0x10006630c7c0000, negotiated timeout = 30000
+2018-06-28 17:56:55,201 [myid:] - INFO  [Time-limited test:JMXEnv@118] - expect:0x10006630c7c0000
+2018-06-28 17:56:55,201 [myid:] - INFO  [Time-limited test:JMXEnv@121] - found:0x10006630c7c0000 org.apache.ZooKeeperService:name0=StandaloneServer_port11224,name1=Connections,name2=127.0.0.1,name3=0x10006630c7c0000
+2018-06-28 17:56:55,202 [myid:] - INFO  [Time-limited test:ZooKeeper@442] - Initiating client connection, connectString=127.0.0.1:11224 sessionTimeout=30000 watcher=org.apache.zookeeper.test.DisconnectedWatcherTest$MyWatcher@6db32509
+2018-06-28 17:56:55,203 [myid:] - INFO  [Time-limited test-SendThread(localhost:11224):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11224. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:56:55,203 [myid:] - INFO  [Time-limited test-SendThread(localhost:11224):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11224, initiating session
+2018-06-28 17:56:55,203 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54841
+2018-06-28 17:56:55,203 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:ZooKeeperServer@949] - Client attempting to establish new session at /127.0.0.1:54841
+2018-06-28 17:56:55,204 [myid:] - INFO  [SyncThread:0:ZooKeeperServer@694] - Established session 0x10006630c7c0001 with negotiated timeout 30000 for client /127.0.0.1:54841
+2018-06-28 17:56:55,204 [myid:] - INFO  [Time-limited test-SendThread(localhost:11224):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11224, sessionid = 0x10006630c7c0001, negotiated timeout = 30000
+2018-06-28 17:56:55,206 [myid:] - INFO  [Time-limited test:JMXEnv@118] - expect:0x10006630c7c0001
+2018-06-28 17:56:55,206 [myid:] - INFO  [Time-limited test:JMXEnv@121] - found:0x10006630c7c0001 org.apache.ZooKeeperService:name0=StandaloneServer_port11224,name1=Connections,name2=127.0.0.1,name3=0x10006630c7c0001
+2018-06-28 17:56:57,635 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:56:58,667 [myid:] - INFO  [Time-limited test:DisconnectedWatcherTest@203] - Created 10,000 nodes.
+2018-06-28 17:57:00,104 [myid:] - INFO  [Time-limited test:ClientBase@554] - STOPPING server
+2018-06-28 17:57:00,105 [myid:] - INFO  [Time-limited test:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54840 which had sessionid 0x10006630c7c0000
+2018-06-28 17:57:00,105 [myid:] - INFO  [Time-limited test-SendThread(localhost:11224):ClientCnxn$SendThread@1162] - Unable to read additional data from server sessionid 0x10006630c7c0000, likely server has closed socket, closing socket connection and attempting reconnect
+2018-06-28 17:57:00,109 [myid:] - INFO  [Time-limited test:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54841 which had sessionid 0x10006630c7c0001
+2018-06-28 17:57:00,110 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:57:00,110 [myid:] - INFO  [Time-limited test-SendThread(localhost:11224):ClientCnxn$SendThread@1162] - Unable to read additional data from server sessionid 0x10006630c7c0001, likely server has closed socket, closing socket connection and attempting reconnect
+2018-06-28 17:57:00,110 [myid:] - INFO  [Time-limited test:ZooKeeperServer@502] - shutting down
+2018-06-28 17:57:00,110 [myid:] - INFO  [Time-limited test:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:57:00,110 [myid:] - INFO  [Time-limited test:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:57:00,110 [myid:] - INFO  [Time-limited test:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:57:00,110 [myid:] - INFO  [ProcessThread(sid:0 cport:11224)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:57:00,111 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:57:00,111 [myid:] - INFO  [Time-limited test:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:57:00,136 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:57:00,136 [myid:] - INFO  [Time-limited test:JMXEnv@147] - ensureOnly:[]
+2018-06-28 17:57:00,215 [myid:] - INFO  [Time-limited test:ClientBase@507] - STARTING server
+2018-06-28 17:57:00,215 [myid:] - INFO  [Time-limited test:ClientBase@428] - CREATING server instance 127.0.0.1:11224
+2018-06-28 17:57:00,215 [myid:] - INFO  [Time-limited test:ServerCnxnFactory@117] - Using org.apache.zookeeper.server.NIOServerCnxnFactory as server connection factory
+2018-06-28 17:57:00,216 [myid:] - INFO  [Time-limited test:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:11224
+2018-06-28 17:57:00,216 [myid:] - INFO  [Time-limited test:ClientBase@403] - STARTING server instance 127.0.0.1:11224
+2018-06-28 17:57:00,216 [myid:] - INFO  [Time-limited test:ZooKeeperServer@174] - Created server with tickTime 3000 minSessionTimeout 6000 maxSessionTimeout 60000 datadir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test772615707739316153.junit.dir/version-2 snapdir /Users/hanm/Desktop/projects/git/apache/zookeeper/build/test/tmp/test772615707739316153.junit.dir/version-2
+2018-06-28 17:57:00,310 [myid:] - INFO  [Time-limited test:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:57:00,311 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54843
+2018-06-28 17:57:00,311 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:NIOServerCnxn@908] - Processing stat command from /127.0.0.1:54843
+2018-06-28 17:57:00,312 [myid:] - INFO  [Thread-12:NIOServerCnxn$StatCommand@687] - Stat command output
+2018-06-28 17:57:00,312 [myid:] - INFO  [Thread-12:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54843 (no session established for client)
+2018-06-28 17:57:00,313 [myid:] - INFO  [Time-limited test:JMXEnv@230] - ensureParent:[InMemoryDataTree, StandaloneServer_port]
+2018-06-28 17:57:00,314 [myid:] - INFO  [Time-limited test:JMXEnv@247] - expect:InMemoryDataTree
+2018-06-28 17:57:00,314 [myid:] - INFO  [Time-limited test:JMXEnv@251] - found:InMemoryDataTree org.apache.ZooKeeperService:name0=StandaloneServer_port11224,name1=InMemoryDataTree
+2018-06-28 17:57:00,314 [myid:] - INFO  [Time-limited test:JMXEnv@247] - expect:StandaloneServer_port
+2018-06-28 17:57:00,314 [myid:] - INFO  [Time-limited test:JMXEnv@251] - found:StandaloneServer_port org.apache.ZooKeeperService:name0=StandaloneServer_port11224
+2018-06-28 17:57:00,636 [myid:] - INFO  [SessionTracker:SessionTrackerImpl@163] - SessionTrackerImpl exited loop!
+2018-06-28 17:57:01,250 [myid:] - INFO  [Time-limited test-SendThread(localhost:11224):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11224. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:57:01,251 [myid:] - INFO  [Time-limited test-SendThread(localhost:11224):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11224, initiating session
+2018-06-28 17:57:01,251 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54844
+2018-06-28 17:57:01,256 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:ZooKeeperServer@942] - Client attempting to renew session 0x10006630c7c0001 at /127.0.0.1:54844
+2018-06-28 17:57:01,257 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:ZooKeeperServer@694] - Established session 0x10006630c7c0001 with negotiated timeout 30000 for client /127.0.0.1:54844
+2018-06-28 17:57:01,257 [myid:] - INFO  [Time-limited test-SendThread(localhost:11224):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11224, sessionid = 0x10006630c7c0001, negotiated timeout = 30000
+2018-06-28 17:57:02,115 [myid:] - INFO  [Time-limited test-SendThread(localhost:11224):ClientCnxn$SendThread@1029] - Opening socket connection to server localhost/127.0.0.1:11224. Will not attempt to authenticate using SASL (unknown error)
+2018-06-28 17:57:02,115 [myid:] - INFO  [Time-limited test-SendThread(localhost:11224):ClientCnxn$SendThread@879] - Socket connection established to localhost/127.0.0.1:11224, initiating session
+2018-06-28 17:57:02,115 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:NIOServerCnxnFactory@215] - Accepted socket connection from /127.0.0.1:54845
+2018-06-28 17:57:02,115 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:ZooKeeperServer@942] - Client attempting to renew session 0x10006630c7c0000 at /127.0.0.1:54845
+2018-06-28 17:57:02,116 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:ZooKeeperServer@694] - Established session 0x10006630c7c0000 with negotiated timeout 30000 for client /127.0.0.1:54845
+2018-06-28 17:57:02,116 [myid:] - INFO  [Time-limited test-SendThread(localhost:11224):ClientCnxn$SendThread@1303] - Session establishment complete on server localhost/127.0.0.1:11224, sessionid = 0x10006630c7c0000, negotiated timeout = 30000
+2018-06-28 17:57:02,117 [myid:] - INFO  [SyncThread:0:FileTxnLog@213] - Creating new log file: log.2714
+2018-06-28 17:57:05,505 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 74554
+2018-06-28 17:57:05,506 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 21
+2018-06-28 17:57:05,506 [myid:] - INFO  [Time-limited test:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testManyChildWatchersAutoReset
+2018-06-28 17:57:05,506 [myid:] - INFO  [main:ClientBase@584] - tearDown starting
+2018-06-28 17:57:05,507 [myid:] - INFO  [ProcessThread(sid:0 cport:11224)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x10006630c7c0000
+2018-06-28 17:57:05,507 [myid:] - INFO  [main:ZooKeeper@693] - Session: 0x10006630c7c0000 closed
+2018-06-28 17:57:05,507 [myid:] - INFO  [Time-limited test-EventThread:ClientCnxn$EventThread@522] - EventThread shut down for session: 0x10006630c7c0000
+2018-06-28 17:57:05,507 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54845 which had sessionid 0x10006630c7c0000
+2018-06-28 17:57:05,508 [myid:] - INFO  [ProcessThread(sid:0 cport:11224)::PrepRequestProcessor@487] - Processed session termination for sessionid: 0x10006630c7c0001
+2018-06-28 17:57:05,508 [myid:] - INFO  [main:ZooKeeper@693] - Session: 0x10006630c7c0001 closed
+2018-06-28 17:57:05,508 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:NIOServerCnxn@1056] - Closed socket connection for client /127.0.0.1:54844 which had sessionid 0x10006630c7c0001
+2018-06-28 17:57:05,508 [myid:] - INFO  [Time-limited test-EventThread:ClientCnxn$EventThread@522] - EventThread shut down for session: 0x10006630c7c0001
+2018-06-28 17:57:05,508 [myid:] - INFO  [main:ClientBase@554] - STOPPING server
+2018-06-28 17:57:05,509 [myid:] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:11224:NIOServerCnxnFactory@242] - NIOServerCnxn factory exited run method
+2018-06-28 17:57:05,509 [myid:] - INFO  [main:ZooKeeperServer@502] - shutting down
+2018-06-28 17:57:05,509 [myid:] - INFO  [main:SessionTrackerImpl@226] - Shutting down
+2018-06-28 17:57:05,509 [myid:] - INFO  [main:PrepRequestProcessor@769] - Shutting down
+2018-06-28 17:57:05,509 [myid:] - INFO  [main:SyncRequestProcessor@208] - Shutting down
+2018-06-28 17:57:05,509 [myid:] - INFO  [ProcessThread(sid:0 cport:11224)::PrepRequestProcessor@144] - PrepRequestProcessor exited loop!
+2018-06-28 17:57:05,509 [myid:] - INFO  [SyncThread:0:SyncRequestProcessor@186] - SyncRequestProcessor exited!
+2018-06-28 17:57:05,509 [myid:] - INFO  [main:FinalRequestProcessor@403] - shutdown of request processor complete
+2018-06-28 17:57:05,523 [myid:] - INFO  [main:FourLetterWordMain@65] - connecting to 127.0.0.1 11224
+2018-06-28 17:57:05,524 [myid:] - INFO  [main:JMXEnv@147] - ensureOnly:[]
+2018-06-28 17:57:05,527 [myid:] - INFO  [main:ClientBase@609] - fdcount after test is: 107 at start it was 107
+2018-06-28 17:57:05,527 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testManyChildWatchersAutoReset
+2018-06-28 17:57:05,527 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testManyChildWatchersAutoReset
+------------- ---------------- ---------------
+
+Testcase: testDeepChildWatcherAutoResetWithChroot took 1.947 sec
+Testcase: testChildWatcherAutoResetWithChroot took 1.828 sec
+Testcase: testDefaultWatcherAutoResetWithChroot took 1.925 sec
+Testcase: testManyChildWatchersAutoReset took 10.345 sec

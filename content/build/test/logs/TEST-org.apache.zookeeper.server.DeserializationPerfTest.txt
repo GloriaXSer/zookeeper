@@ -1,0 +1,77 @@
+Testsuite: org.apache.zookeeper.server.DeserializationPerfTest
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec
+------------- Standard Output ---------------
+2018-06-28 17:39:38,342 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING test300Wide3DeepDeserialize
+2018-06-28 17:39:38,349 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD test300Wide3DeepDeserialize
+2018-06-28 17:39:38,372 [myid:] - INFO  [main:DeserializationPerfTest@66] - Deserialized 5 nodes in 0 ms (69us/node), depth=3 width=300 datalen=20
+2018-06-28 17:39:38,372 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 3430
+2018-06-28 17:39:38,373 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:39:38,373 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD test300Wide3DeepDeserialize
+2018-06-28 17:39:38,373 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED test300Wide3DeepDeserialize
+2018-06-28 17:39:38,373 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED test300Wide3DeepDeserialize
+2018-06-28 17:39:38,377 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING test10Wide5DeepDeserialize
+2018-06-28 17:39:38,377 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD test10Wide5DeepDeserialize
+2018-06-28 17:39:38,394 [myid:] - INFO  [main:DeserializationPerfTest@66] - Deserialized 5 nodes in 0 ms (30us/node), depth=5 width=10 datalen=20
+2018-06-28 17:39:38,395 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 2265
+2018-06-28 17:39:38,395 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:39:38,395 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD test10Wide5DeepDeserialize
+2018-06-28 17:39:38,395 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED test10Wide5DeepDeserialize
+2018-06-28 17:39:38,395 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED test10Wide5DeepDeserialize
+2018-06-28 17:39:38,397 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING test15Wide5DeepDeserialize
+2018-06-28 17:39:38,397 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD test15Wide5DeepDeserialize
+2018-06-28 17:39:38,415 [myid:] - INFO  [main:DeserializationPerfTest@66] - Deserialized 5 nodes in 0 ms (46us/node), depth=5 width=15 datalen=20
+2018-06-28 17:39:38,416 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 2270
+2018-06-28 17:39:38,416 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:39:38,416 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD test15Wide5DeepDeserialize
+2018-06-28 17:39:38,416 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED test15Wide5DeepDeserialize
+2018-06-28 17:39:38,416 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED test15Wide5DeepDeserialize
+2018-06-28 17:39:38,417 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testSingleDeserialize
+2018-06-28 17:39:38,417 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testSingleDeserialize
+2018-06-28 17:39:38,423 [myid:] - INFO  [main:DeserializationPerfTest@66] - Deserialized 5 nodes in 0 ms (34us/node), depth=1 width=0 datalen=20
+2018-06-28 17:39:38,423 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 2270
+2018-06-28 17:39:38,423 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:39:38,423 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testSingleDeserialize
+2018-06-28 17:39:38,423 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testSingleDeserialize
+2018-06-28 17:39:38,424 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testSingleDeserialize
+2018-06-28 17:39:38,424 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING test40Wide4DeepDeserialize
+2018-06-28 17:39:38,424 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD test40Wide4DeepDeserialize
+2018-06-28 17:39:38,431 [myid:] - INFO  [main:DeserializationPerfTest@66] - Deserialized 5 nodes in 0 ms (48us/node), depth=4 width=40 datalen=20
+2018-06-28 17:39:38,431 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 2274
+2018-06-28 17:39:38,431 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:39:38,431 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD test40Wide4DeepDeserialize
+2018-06-28 17:39:38,431 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED test40Wide4DeepDeserialize
+2018-06-28 17:39:38,431 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED test40Wide4DeepDeserialize
+2018-06-28 17:39:38,432 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testWideDeserialize
+2018-06-28 17:39:38,432 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testWideDeserialize
+2018-06-28 17:39:38,438 [myid:] - INFO  [main:DeserializationPerfTest@66] - Deserialized 5 nodes in 0 ms (26us/node), depth=2 width=10000 datalen=20
+2018-06-28 17:39:38,438 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 2274
+2018-06-28 17:39:38,438 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:39:38,438 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testWideDeserialize
+2018-06-28 17:39:38,438 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testWideDeserialize
+2018-06-28 17:39:38,438 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testWideDeserialize
+2018-06-28 17:39:38,439 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING testDeepDeserialize
+2018-06-28 17:39:38,439 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD testDeepDeserialize
+2018-06-28 17:39:38,446 [myid:] - INFO  [main:DeserializationPerfTest@66] - Deserialized 5 nodes in 0 ms (33us/node), depth=400 width=1 datalen=20
+2018-06-28 17:39:38,447 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 2274
+2018-06-28 17:39:38,447 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:39:38,447 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD testDeepDeserialize
+2018-06-28 17:39:38,447 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED testDeepDeserialize
+2018-06-28 17:39:38,447 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED testDeepDeserialize
+2018-06-28 17:39:38,448 [myid:] - INFO  [main:ZKTestCase$1@59] - STARTING test25Wide4DeepDeserialize
+2018-06-28 17:39:38,448 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@53] - RUNNING TEST METHOD test25Wide4DeepDeserialize
+2018-06-28 17:39:38,454 [myid:] - INFO  [main:DeserializationPerfTest@66] - Deserialized 5 nodes in 0 ms (34us/node), depth=4 width=25 datalen=20
+2018-06-28 17:39:38,454 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@58] - Memory used 2274
+2018-06-28 17:39:38,454 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@63] - Number of threads 4
+2018-06-28 17:39:38,454 [myid:] - INFO  [main:JUnit4ZKTestRunner$LoggedInvokeMethod@78] - FINISHED TEST METHOD test25Wide4DeepDeserialize
+2018-06-28 17:39:38,454 [myid:] - INFO  [main:ZKTestCase$1@69] - SUCCEEDED test25Wide4DeepDeserialize
+2018-06-28 17:39:38,454 [myid:] - INFO  [main:ZKTestCase$1@64] - FINISHED test25Wide4DeepDeserialize
+------------- ---------------- ---------------
+
+Testcase: test300Wide3DeepDeserialize took 0.033 sec
+Testcase: test10Wide5DeepDeserialize took 0.02 sec
+Testcase: test15Wide5DeepDeserialize took 0.019 sec
+Testcase: testSingleDeserialize took 0.007 sec
+Testcase: test40Wide4DeepDeserialize took 0.007 sec
+Testcase: testWideDeserialize took 0.007 sec
+Testcase: testDeepDeserialize took 0.008 sec
+Testcase: test25Wide4DeepDeserialize took 0.006 sec
